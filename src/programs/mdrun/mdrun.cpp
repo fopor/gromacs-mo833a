@@ -267,7 +267,11 @@ int gmx_mdrun(int argc, char* argv[])
 
     auto runner = builder.build();
 
-    return runner.mdrunner();
+    int mdrunnerReturn;
+
+    mdrunnerReturn = runner.mdrunner();
+
+    return mdrunnerReturn;
 }
 
 } // namespace gmx
