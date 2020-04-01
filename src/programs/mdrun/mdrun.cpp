@@ -70,6 +70,8 @@
 
 #include "mdrun_main.h"
 
+#include<sys/time.h>
+
 namespace gmx
 {
 
@@ -268,8 +270,24 @@ int gmx_mdrun(int argc, char* argv[])
     auto runner = builder.build();
 
     int mdrunnerReturn;
+    double tStart, tEnd, elapsed;
+
+    //Time structures
+    struct timeval tp;
+    struct timezone tzp;
+
+    //Get current time
+    gettimeofday(&tp, &tzp);
+    tStart = (double) tp.tv_sec + (double) tp.tv_usec * 1.e-6;
 
     mdrunnerReturn = runner.mdrunner();
+
+    //Get current time
+    gettimeofday(&tp, &tzp);
+    tEnd= (double) tp.tv_sec + (double) tp.tv_usec * 1.e-6;
+
+    elapsed = tEnd - tStart;
+    printf("[MO833]: runner.mdrunner() exec. time: %f\n", elapsed);
 
     return mdrunnerReturn;
 }
