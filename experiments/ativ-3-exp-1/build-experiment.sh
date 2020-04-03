@@ -22,7 +22,7 @@ echo "Building gromax (type: debug)"
 # build debug version
 cd $scriptDir
 cd ../../       # go to repo root
-rm -rf build/   # delete old build
+#rm -rf build/   # delete old build
 mkdir -p build/debug/
 cd build/debug # go to build dir
 cmake ../../ -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON -DGMX_GPU=off -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
