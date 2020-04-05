@@ -6,15 +6,16 @@ scriptDir=$('pwd')
 cd ../../       # go to repo root
 cd build/debug/bin # go to build dir
 ls
-echo "" > output.log
+#echo "" > output.log
 
 cd $scriptDir
 cd ../../       # go to repo root
 cd build/release/bin # go to build dir
-echo "" > output.log
+#echo "" > output.log
 cd $scriptDir
 sensors > temp_output.log
 
+export GMX_MAXBACKUP=-1
 for ((a=0; a <= 10000; a++))
 do
     echo "DEBUG RUN $a"
