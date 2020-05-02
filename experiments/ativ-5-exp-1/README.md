@@ -94,4 +94,18 @@ Now, select the two security groups we created earlier:
 
 ![Security group name ](img/selecting_2sg.png)
 
-And now, everything is set.
+And now, everything is set. We must get the private IPs of each machine. To do this just click on the instance on the manage page:
+
+![Getting private IP](img/getting_private_ip.png)
+
+SSH to one of the machines and create a text file called `hostfile` with the IPs:
+```
+<IP1>
+<IP2>
+```
+Now, just run our simulation on the nodes :)
+
+`$ mpirun -np N gmx mdrun_mpi -v deffnm em`
+
+(replace N with the number of instances)
+
