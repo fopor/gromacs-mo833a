@@ -9,6 +9,7 @@ echo "Setting SSH key..." >> /home/ubuntu/progress.txt
 ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
+cd /home/ubuntu
 # Compile Gromacs
 wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2020.2.tar.gz
 tar -xf  gromacs-2020.2.tar.gz
