@@ -105,7 +105,7 @@ SSH to one of the machines and create a text file called `hostfile` with the IPs
 ```
 Now, just run our simulation on the nodes :)
 
-`$ mpirun -np N gmx mdrun_mpi -v deffnm em`
+`$ mpirun -hostfile hostfile /home/ubuntu/gromacs-2020.2/build/bin/gmx_mpi mdrun -v -deffnm /home/ubuntu/em`
 
 (replace N with the number of instances)
 
