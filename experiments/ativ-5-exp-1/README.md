@@ -46,7 +46,7 @@ The installation process is already running (the machines is already executing t
 ```
 $ ssh -i "your_key_path.pem" ubuntu@machine_public_dns
 
-$ watch -x progress.txt
+$ watch -x cat progress.txt
 ```
 The 'Building Gromacs' bit is the longest one (good time to take a break from the screen).
 
@@ -108,4 +108,7 @@ Now, just run our simulation on the nodes :)
 `$ mpirun -np N gmx mdrun_mpi -v deffnm em`
 
 (replace N with the number of instances)
+
+# Results
+Using 2 t2.micro machines, the simulation ran in XXXX seconcds, while using 1 t2.micro machine the simulation ran in XXXX, using the spread instanciation.
 
