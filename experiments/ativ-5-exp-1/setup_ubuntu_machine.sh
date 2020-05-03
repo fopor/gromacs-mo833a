@@ -6,8 +6,8 @@ sudo apt install -y wget make gcc libgfortran3 sysstat libibnetdisc-dev openmpi-
 
 # Set SSH key
 echo "Setting SSH key..." >> /home/ubuntu/progress.txt
-ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+ssh-keygen -t rsa -q -f "/home/ubuntu/.ssh/id_rsa" -N ""
+cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
 
 cd /home/ubuntu
 # Compile Gromacs
