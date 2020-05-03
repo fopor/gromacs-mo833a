@@ -110,5 +110,9 @@ Now, just run our simulation on the nodes :)
 (replace N with the number of instances)
 
 # Results
-Using 2 t2.micro machines, the simulation ran in XXXX seconcds, while using 1 t2.micro machine the simulation ran in XXXX, using the spread instanciation.
+Using 2 t2.micro machines, the simulation ran in 56.41 seconcds, while using 1 t2.micro machine the simulation ran in 99.38, using the spread instanciation.
+
+The program `time` was used to measure the time:
+```time mpirun -hostfile hostfile /home/ubuntu/gromacs-2020.2/build/bin/gmx_mpi mdrun -v -deffnm /home/ubuntu/```
+
 
