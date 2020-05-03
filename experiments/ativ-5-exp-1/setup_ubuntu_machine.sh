@@ -28,6 +28,6 @@ rm ~/gromacs-2020.2 -rf # remove source files
 
 # Downloading the simulation input
 echo "Downloading the simulation input!" >> /home/ubuntu/progress.txt
-wget https://github.com/fopor/gromacs-mo833a/raw/ativi-5-exp-1/experiments/ativ-5-exp-1/em.tpr
+wget https://github.com/fopor/gromacs-mo833a/raw/ativi-5-exp-1/experiments/ativ-5-exp-1/em.tpr -P /home/ubuntu
 
 echo "Done!" >> /home/ubuntu/progress.txt
