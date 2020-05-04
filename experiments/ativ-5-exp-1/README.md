@@ -3,20 +3,20 @@
 This tutorial will show you how to deploy Gromacs, a distributed application, on the [Amazon Web Services plataform](https://aws.amazon.com/).
 
 ## 1. Basic info
-This first step will create an base image with our application and a MPI implementation. [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) is a high performance communication pattern. Our image will look like the following image:
+This first step will create a base image with our application and an MPI implementation. [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) is a high-performance communication pattern. Our image will look like the following image:
 
 ![Tutorial image 1](img/gromacs_stack.jpg)
 
-We will generate an RSA key, install a SSH server, an MPI implementation and compile Gromacs.
+We will generate an RSA key, install an SSH server, an MPI implementation, and compile Gromacs.
 
-Altough most implementations support differnt hardware for communication (i.g. InfiniBand and Ethernet), MPI uses SSH to spwan the envoriment on every node and thus requires that a connection can be made without interactive password insertion. To achive this, we will copy the generated RSA key to the list of accepted keys. Doing this, when we achive the following:
+Although most implementations support different hardware for communication (i.g. InfiniBand and Ethernet), MPI uses SSH to spawn the environment on every node and thus requires that a connection can be made without interactive password insertion. To achieve this, we will copy the generated RSA key to the list of accepted keys. Doing this, when we achieve the following:
 
 ![Tutorial image 1](img/gromacs_stack_copy.png)
 
-In the last steps, when we create more than one instance, since they use the same base image, they will have the same RSA key and thus accept connections from each other, making them ready to run the MPI application without additional configuration.
+In the last steps, when we create more than one instance since they use the same base image, they will have the same RSA key and thus accept connections from each other, making them ready to run the MPI application without additional configuration.
 
 ## 2. Creating the Base image
-To create the base image we will need a machine. To this, first create and AWS account and go to the console page. Then, click in Services (located at the top bar) -> EC2:
+To create the base image we will need a machine. To this, first, create an AWS account and go to the console page. Then, click in Services (located at the top bar) -> EC2:
 
 ![Going to EC2 page screenshot](img/ec2_select.png)
 
@@ -24,7 +24,7 @@ This will load a page with a "Launch Instance" button. Click on it:
 ![Launch Instance button screenshot](img/launch_instance.png)
 
 
-In this tutorial we will chose the Ubuntu Server 18.04 LTS (HVM) image:
+In this tutorial we will choose the Ubuntu Server 18.04 LTS (HVM) image:
 ![Launch instance image selection screenshot](img/image_slect.png)
 
 Now, select the t2.micro machine. We will use this machine to install the required programs and compile Gromacs.
@@ -42,7 +42,7 @@ Now launch the image and download your key. On this page, get the machine public
 
 ![Connection instructions](img/connect.png)
 
-The installation process is already running (the machines is already executing the instructions we pasted on the steps above) and will take a while, specially if you chose a machine with low computing power. To follow to progress you can SSH to it and run:
+The installation process is already running (the machine is already executing the instructions we pasted on the steps above) and will take a while, especially if you chose a machine with low computing power. To follow to progress you can SSH to it and run:
 ```
 $ ssh -i "your_key_path.pem" ubuntu@machine_public_dns
 
@@ -54,7 +54,7 @@ When done, the script writes the line "Done" to the text file located at `/home/
 
 ![Installation done](img/done.png)
 
-To save the image, go to the managment page and right-click on the instance. Go to Image -> Create Image.
+To save the image, go to the management page and right-click on the instance. Go to Image -> Create Image.
 ![Creating image part 1](img/create_image.png)
 
 Just give it a nice name and click on the big blue button:
@@ -68,24 +68,24 @@ We have an image READY to run MPI apps, let's use it!
 
 ## 2. Using our image to run the Gromacs simulation
 ### 2.1 Creating the security groups
-Before using our image, let's create a security group to allow our machines to communicate with each other. To to this, let's create the security groups:
+Before using our image, let's create a security group to allow our machines to communicate with each other. To do this, let's create the security groups:
 
-![Creating security group](img/creating_sg.png)
+![Creating a security group](img/creating_sg.png)
 
 First, we create the group necessary to use our machine though SSH:
 
-![Creating security group](img/ssh_group.png)
+![Creating a security group](img/ssh_group.png)
 
 Now, we create the group to allow the communication between the VMs:
 
-![Creating security group](img/creating_sg2.png)
+![Creating a security group](img/creating_sg2.png)
 
 ### 2.2 Deploying the cluster
 To use our image, just go to the Launch image section and select the image we just built:
 
 ![Selecting own image](img/select_own_image.png)
 
-Choose a machine that best fit your computational needs. Next, select how many nodes your cluster will have:
+Choose a machine that best fits your computational needs. Next, select how many nodes your cluster will have:
 
 ![Setting number of machines](img/number_of_machines.png)
 
@@ -110,7 +110,7 @@ Now, just run our simulation on the nodes :)
 (replace N with the number of instances)
 
 # Results
-Using 2 t2.micro machines, the simulation ran in 56.41 seconcds, while using 1 t2.micro machine the simulation ran in 99.38, using the spread instanciation.
+Using 2 t2.micro machines, the simulation ran in 56.41 seconds, while using 1 t2.micro machine the simulation ran in 99.38, using the spread instantiation.
 
 The program `time` was used to measure the time:
 ```time mpirun -hostfile hostfile /home/ubuntu/gromacs-2020.2/build/bin/gmx_mpi mdrun -v -deffnm /home/ubuntu/```
