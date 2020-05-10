@@ -2422,8 +2422,13 @@ void LegacySimulator::do_steep()
     count  = 0;
     bDone  = FALSE;
     bAbort = FALSE;
+
+    printf("[ATIV-6] End of init time\n");
+    printf("[ATIV-6] Init time = \n");
+    printf("[ATIV-6] Start of paramount iterations!\n");
     while (!bDone && !bAbort)
     {
+        printf("[ATIV-6] Paramount iteration start\n");
         bAbort = (nsteps >= 0) && (count == nsteps);
 
         /* set new coordinates, except for first step */
@@ -2555,7 +2560,10 @@ void LegacySimulator::do_steep()
         }
 
         count++;
+
+        printf("[ATIV-6] Paramount iteration end\n");
     } /* End of the loop  */
+    printf("[ATIV-6] Finish process start\n");
 
     /* Print some data...  */
     if (MASTER(cr))

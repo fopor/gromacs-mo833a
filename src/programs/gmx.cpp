@@ -49,6 +49,7 @@
 
 int main(int argc, char* argv[])
 {
+    printf("[ATIV-6]Application started\n");
     gmx::CommandLineProgramContext& context = gmx::initForCommandLine(&argc, &argv);
     try
     {
@@ -58,6 +59,8 @@ int main(int argc, char* argv[])
         manager.addHelpTopic(gmx::createSelectionHelpTopic());
         int rc = manager.run(argc, argv);
         gmx::finalizeForCommandLine();
+
+        printf("[ATIV-6]Application finished\n");
         return rc;
     }
     catch (const std::exception& ex)
