@@ -114,6 +114,7 @@ using gmx::MdrunScheduleWorkload;
 double initTimeStamp;
 double finishTimeStamp;
 
+
 double mysecond() {
     struct timeval tp;
     struct timezone tzp;
@@ -2583,7 +2584,7 @@ void LegacySimulator::do_steep()
         printf("Iteration,%d,%f,%f\n", par_count, (par_end - par_start), (par_end - initTimeStamp));
     } /* End of the loop  */
 
-    double finishTimeStamp = mysecond();
+    finishTimeStamp = mysecond();
     
 
     /* Print some data...  */
