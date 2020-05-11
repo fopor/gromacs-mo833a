@@ -111,6 +111,9 @@
 
 using gmx::MdrunScheduleWorkload;
 
+double initTimeStamp;
+double finishTimeStamp;
+
 double mysecond() {
     struct timeval tp;
     struct timezone tzp;
@@ -2433,7 +2436,7 @@ void LegacySimulator::do_steep()
     bAbort = FALSE;
 
     double init_end = mysecond();
-    printf("[ATIV-6]End of init time: %f\n", init_end);
+    printf("Init time,%f\n", init_end - initTimeStamp);
 
     double par_start;
     double par_end;
@@ -2577,11 +2580,10 @@ void LegacySimulator::do_steep()
         count++;
 
         par_end = mysecond();
-        printf("[ATIV-6]Paramount number %d, elapsed = %f\n", par_count, (par_end - par_start));
+        printf("Iteration,%d,%f,%f\n", par_count, (par_end - par_start), (par_end - initTimeStamp));
     } /* End of the loop  */
 
-    double finish_start = mysecond();
-    printf("[ATIV-6] Finish process start: %f\n", finish_start);
+    double finishTimeStamp = mysecond();
     
 
     /* Print some data...  */

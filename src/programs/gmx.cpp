@@ -56,12 +56,13 @@ double mysecond() {
     return ((double) tp.tv_sec + (double) tp.tv_usec * 1.e-6 );
 }
 
+extern double initTimeStamp;
+extern double finishTimeStamp;
+
 int main(int argc, char* argv[])
 {
-    printf("[ATIV-6]Application started\n");
     /* Profiling vars */
-    double start_time = mysecond();
-    printf("[ATIV-6]Start time stamp: %f\n", start_time);
+    initTimeStamp = mysecond();
 
     gmx::CommandLineProgramContext& context = gmx::initForCommandLine(&argc, &argv);
 
@@ -74,11 +75,8 @@ int main(int argc, char* argv[])
         int rc = manager.run(argc, argv);
         gmx::finalizeForCommandLine();
 
-        printf("[ATIV-6]Application finished\n");
-        double finish_time = mysecond();
-
-        printf("[ATIV-6]Finish time stamp %f\n", finish_time);
-
+        double finishEnd = mysecond();
+        printf("Finish time %f\n", finishEnd - finishTimeStamp);
         return rc;
     }
     catch (const std::exception& ex)
