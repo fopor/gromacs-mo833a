@@ -47,15 +47,21 @@
 
 #include "legacymodules.h"
 #include <iostream>
-#include <chrono>
+#include <sys/time.h>
+
+double mysecond() {
+    struct timeval tp;
+    struct timezone tzp;
+    gettimeofday(&tp,&tzp);
+    return ((double) tp.tv_sec + (double) tp.tv_usec * 1.e-6 );
+}
 
 int main(int argc, char* argv[])
 {
     printf("[ATIV-6]Application started\n");
     /* Profiling vars */
-    std::chrono::duration<double> elapsed_seconds;
-    std::chrono::system_clock::time_point total_start = std::chrono::system_clock::now();
-    std::chrono::system_clock::time_point init_start = std::chrono::system_clock::now();
+    double start_time = mysecond();
+    printf("[ATIV-6]Start time stamp: %f\n", start_time);
 
     gmx::CommandLineProgramContext& context = gmx::initForCommandLine(&argc, &argv);
 
@@ -69,14 +75,9 @@ int main(int argc, char* argv[])
         gmx::finalizeForCommandLine();
 
         printf("[ATIV-6]Application finished\n");
-        std::chrono::system_clock::time_point finish_end = std::chrono::system_clock::now();
-        std::chrono::system_clock::time_point total_end = std::chrono::system_clock::now();
+        double finish_time = mysecond();
 
-        elapsed_seconds = finish_end - finish_start;
-        std::cout << "[ATIV-6]Total finish time: " << elapsed_seconds.count() << "s\n";
-
-        elapsed_seconds = total_end - total_start;
-        std::cout << "[ATIV-6]Total time: " << elapsed_seconds.count() << "s\n";
+        printf("[ATIV-6]Finish time stamp %f\n", finish_time);
 
         return rc;
     }

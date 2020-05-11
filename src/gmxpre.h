@@ -91,15 +91,6 @@
 #    include "swindirect.h"
 #endif
 //! \endcond
-//
-//
-//Instrumentation values
-#include <chrono>
-extern std::chrono::system_clock::time_point finish_start;
-extern std::chrono::system_clock::time_point total_start;
-extern std::chrono::system_clock::time_point init_start;
-extern std::chrono::system_clock::time_point init_end;
-extern std::chrono::system_clock::time_point finish_end;
-extern std::chrono::system_clock::time_point total_end;
+
 
 
