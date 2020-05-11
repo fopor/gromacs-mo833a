@@ -107,6 +107,10 @@
 #include "legacysimulator.h"
 #include "shellfc.h"
 
+#include <chrono>
+#include <ctime>
+#include <iostream>
+
 using gmx::MdrunScheduleWorkload;
 
 //! Utility structure for manipulating states during EM
@@ -2424,11 +2428,23 @@ void LegacySimulator::do_steep()
     bAbort = FALSE;
 
     printf("[ATIV-6] End of init time\n");
-    printf("[ATIV-6] Init time = \n");
+    std::chrono::duration<double> elapsed_seconds;
+    auto init_end = std::chrono::system_clock::now();
+
+    elapsed_seconds = init_end - init_start;
+    std::cout << "[ATIV-6]Total init time: " << elapsed_seconds.count() << "s\n";
+
     printf("[ATIV-6] Start of paramount iterations!\n");
+    auto par_start = std::chrono::system_clock::now();
+    auto par_end = std::chrono::system_clock::now();
+    int par_count = 0;
+
     while (!bDone && !bAbort)
     {
         printf("[ATIV-6] Paramount iteration start\n");
+        par_count++;
+        par_start = std::chrono::system_clock::now();
+
         bAbort = (nsteps >= 0) && (count == nsteps);
 
         /* set new coordinates, except for first step */
@@ -2561,9 +2577,15 @@ void LegacySimulator::do_steep()
 
         count++;
 
+        par_end = std::chrono::system_clock::now();
+        elapsed_seconds = par_end - par_start;
+        std::cout << "[ATIV-6]Paramount number" << par_count << "duration: " << elapsed_seconds.count() << "s\n";
         printf("[ATIV-6] Paramount iteration end\n");
     } /* End of the loop  */
+
+    auto finish_start = std::chrono::system_clock::now();
     printf("[ATIV-6] Finish process start\n");
+    
 
     /* Print some data...  */
     if (MASTER(cr))
