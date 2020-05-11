@@ -1,1532 +1,812 @@
-    :-) GROMACS - gmx mdrun, 2020.2-dev-20200510-5d8a3c5d1-dirty-unknown (-:
-
-                            GROMACS is written by:
-     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
-    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
- Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
-  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
-  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
-    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
-  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
-    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
-    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
-   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
- Christian Wennberg    Maarten Wolf      Artem Zhmurov   
-                           and the project leaders:
-        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
-
-Copyright (c) 1991-2000, University of Groningen, The Netherlands.
-Copyright (c) 2001-2019, The GROMACS development team at
-Uppsala University, Stockholm University and
-the Royal Institute of Technology, Sweden.
-check out http://www.gromacs.org for more information.
-
-GROMACS is free software; you can redistribute it and/or modify it
-under the terms of the GNU Lesser General Public License
-as published by the Free Software Foundation; either version 2.1
-of the License, or (at your option) any later version.
-
-GROMACS:      gmx mdrun, version 2020.2-dev-20200510-5d8a3c5d1-dirty-unknown
-Executable:   /home/fopor/dev/gromacs-mo833a/experiments/ativ-6-exp-1/../../build/bin/gmx
-Data prefix:  /home/fopor/dev/gromacs-mo833a (source tree)
-Working dir:  /home/fopor/dev/gromacs-mo833a/experiments/ativ-6-exp-1
-Command line:
-  gmx mdrun -v -deffnm em
-
-
-Back Off! I just backed up em.log to ./#em.log.4#
-Reading file em.tpr, VERSION 2020.2-dev-20200320-7267a4fda-unknown (single precision)
-Using 1 MPI thread
-
-Non-default thread affinity set, disabling internal thread affinity
-
-Using 12 OpenMP threads 
-
-
-Back Off! I just backed up em.trr to ./#em.trr.4#
-
-Back Off! I just backed up em.edr to ./#em.edr.4#
-
-Steepest Descents:
-   Tolerance (Fmax)   =  1.00000e+03
-   Number of steps    =        50000
-Step=    0, Dmax= 1.0e-02 nm, Epot= -3.95889e+05 Fmax= 2.20591e+05, atom= 28037
-Step=    1, Dmax= 1.0e-02 nm, Epot= -4.70776e+05 Fmax= 8.29062e+04, atom= 2201
-Step=    2, Dmax= 1.2e-02 nm, Epot= -5.56917e+05 Fmax= 3.06080e+04, atom= 31238
-Step=    3, Dmax= 1.4e-02 nm, Epot= -6.28584e+05 Fmax= 1.12279e+04, atom= 31238
-Step=    4, Dmax= 1.7e-02 nm, Epot= -6.80271e+05 Fmax= 6.80656e+03, atom= 2151
-Step=    5, Dmax= 2.1e-02 nm, Epot= -7.11581e+05 Fmax= 9.98383e+03, atom= 2147
-Step=    6, Dmax= 2.5e-02 nm, Epot= -7.24739e+05 Fmax= 2.95769e+04, atom= 2147
-Step=    7, Dmax= 3.0e-02 nm, Epot= -7.32069e+05 Fmax= 1.62734e+04, atom= 2147
-Step=    8, Dmax= 3.6e-02 nm, Epot= -7.39949e+05 Fmax= 3.96021e+04, atom= 2147
-[ATIV-6]Application started
-[ATIV-6]Start time stamp: 1589180638.471862
-[ATIV-6]End of init time: 1589180638.530930
-[ATIV-6]Paramount number 1, elapsed = 0.046735
-[ATIV-6]Paramount number 2, elapsed = 0.013421
-[ATIV-6]Paramount number 3, elapsed = 0.014351
-[ATIV-6]Paramount number 4, elapsed = 0.012605
-[ATIV-6]Paramount number 5, elapsed = 0.013413
-[ATIV-6]Paramount number 6, elapsed = 0.013534
-[ATIV-6]Paramount number 7, elapsed = 0.011394
-[ATIV-6]Paramount number 8, elapsed = 0.018421
-[ATIV-6]Paramount nuStep=    9, Dmax= 4.3e-02 nm, Epot= -7.45945e+05 Fmax= 2.58182e+04, atom= 2147
-Step=   10, Dmax= 5.2e-02 nm, Epot= -7.50210e+05 Fmax= 5.30914e+04, atom= 2147
-Step=   11, Dmax= 6.2e-02 nm, Epot= -7.56103e+05 Fmax= 3.93771e+04, atom= 2147
-Step=   12, Dmax= 7.4e-02 nm, Epot= -7.56676e+05 Fmax= 6.95527e+04, atom= 2147
-Step=   13, Dmax= 8.9e-02 nm, Epot= -7.62216e+05 Fmax= 5.40314e+04, atom= 2147
-Step=   14, Dmax= 1.1e-01 nm, Epot= -7.53972e+05 Fmax= 7.76041e+04, atom= 1093Step=   15, Dmax= 5.3e-02 nm, Epot= -7.70162e+05 Fmax= 2.01894e+04, atom= 208
-Step=   16, Dmax= 6.4e-02 nm, Epot= -7.64380e+05 Fmax= 7.44710e+04, atom= 1093Step=   17, Dmax= 3.2e-02 nm, Epot= -7.73666e+05 Fmax= 2.75366e+04, atom= 1093
-Step=   18, Dmax= 3.9e-02 nm, Epot= -7.76947e+05 Fmax= 2.98017e+04, atom= 1093
-Step=   19, Dmax= 4.6e-02 nm, Epot= -7.79005e+05 Fmax= 3.94026e+04, atom= 1093
-mber 9, elapsed = 0.011071
-[ATIV-6]Paramount number 10, elapsed = 0.013049
-[ATIV-6]Paramount number 11, elapsed = 0.011250
-[ATIV-6]Paramount number 12, elapsed = 0.015115
-[ATIV-6]Paramount number 13, elapsed = 0.013927
-[ATIV-6]Paramount number 14, elapsed = 0.015101
-[ATIV-6]Paramount number 15, elapsed = 0.012657
-[ATIV-6]Paramount number 16, elapsed = 0.014027
-[ATIV-6]Paramount number 17, elapsed = 0.013021
-[ATIV-6]Paramount number 18, elapsed = 0.014297
-[ATIV-6]Paramount number 19, elapsed = 0.012270
-[ATIVStep=   20, Dmax= 5.5e-02 nm, Epot= -7.81399e+05 Fmax= 4.26028e+04, atom= 1093
-Step=   21, Dmax= 6.7e-02 nm, Epot= -7.81031e+05 Fmax= 5.50939e+04, atom= 1093Step=   22, Dmax= 3.3e-02 nm, Epot= -7.88210e+05 Fmax= 7.34220e+03, atom= 1093
-Step=   23, Dmax= 4.0e-02 nm, Epot= -7.92354e+05 Fmax= 5.25973e+04, atom= 1093
-Step=   24, Dmax= 4.8e-02 nm, Epot= -8.00627e+05 Fmax= 2.10413e+04, atom= 1093
-Step=   25, Dmax= 5.8e-02 nm, Epot= -7.94622e+05 Fmax= 6.49504e+04, atom= 1093Step=   26, Dmax= 2.9e-02 nm, Epot= -8.03015e+05 Fmax= 2.22314e+04, atom= 1093
-Step=   27, Dmax= 3.5e-02 nm, Epot= -8.04603e+05 Fmax= 3.03028e+04, atom= 1093
-Step=   28, Dmax= 4.1e-02 nm, Epot= -8.06602e+05 Fmax= 3.16923e+04, atom= 1093
-Step=   29, Dmax= 5.0e-02 nm, Epot= -8.06510e+05 Fmax= 4.29204e+04, atom= 1093-6]Paramount number 20, elapsed = 0.012098
-[ATIV-6]Paramount number 21, elapsed = 0.014061
-[ATIV-6]Paramount number 22, elapsed = 0.012458
-[ATIV-6]Paramount number 23, elapsed = 0.013456
-[ATIV-6]Paramount number 24, elapsed = 0.011780
-[ATIV-6]Paramount number 25, elapsed = 0.015236
-[ATIV-6]Paramount number 26, elapsed = 0.024009
-[ATIV-6]Paramount number 27, elapsed = 0.024956
-[ATIV-6]Paramount number 28, elapsed = 0.018083
-[ATIV-6]Paramount number 29, elapsed = 0.037882
-[ATIV-6]Paramount number 30, elapsed Step=   30, Dmax= 2.5e-02 nm, Epot= -8.10928e+05 Fmax= 6.14609e+03, atom= 1093
-Step=   31, Dmax= 3.0e-02 nm, Epot= -8.14387e+05 Fmax= 3.86245e+04, atom= 1093
-Step=   32, Dmax= 3.6e-02 nm, Epot= -8.19606e+05 Fmax= 1.62131e+04, atom= 1093
-Step=   33, Dmax= 4.3e-02 nm, Epot= -8.16831e+05 Fmax= 4.84585e+04, atom= 1093Step=   34, Dmax= 2.1e-02 nm, Epot= -8.21570e+05 Fmax= 1.62247e+04, atom= 1093
-Step=   35, Dmax= 2.6e-02 nm, Epot= -8.23012e+05 Fmax= 2.30577e+04, atom= 1093
-Step=   36, Dmax= 3.1e-02 nm, Epot= -8.24760e+05 Fmax= 2.40033e+04, atom= 311
-Step=   37, Dmax= 3.7e-02 nm, Epot= -8.25331e+05 Fmax= 3.21018e+04, atom= 311
-Step=   38, Dmax= 4.5e-02 nm, Epot= -8.26428e+05 Fmax= 3.57219e+04, atom= 311
-Step=   39, Dmax= 5.3e-02 nm, Epot= -8.25870e+05 Fmax= 4.40627e+04, atom= 311Step=   40, Dmax= 2.7e-02 nm, Epot= -8.31512e+05 Fmax= 4.77604e+03, atom= 311
-= 0.026620
-[ATIV-6]Paramount number 31, elapsed = 0.017937
-[ATIV-6]Paramount number 32, elapsed = 0.017555
-[ATIV-6]Paramount number 33, elapsed = 0.019236
-[ATIV-6]Paramount number 34, elapsed = 0.014406
-[ATIV-6]Paramount number 35, elapsed = 0.013405
-[ATIV-6]Paramount number 36, elapsed = 0.012071
-[ATIV-6]Paramount number 37, elapsed = 0.017123
-[ATIV-6]Paramount number 38, elapsed = 0.053891
-[ATIV-6]Paramount number 39, elapsed = 0.012347
-[ATIV-6]Paramount number 40, elapsed = 0.015251
-[ATIV-6]Paramount numStep=   41, Dmax= 3.2e-02 nm, Epot= -8.33262e+05 Fmax= 4.49047e+04, atom= 311
-Step=   42, Dmax= 3.8e-02 nm, Epot= -8.40235e+05 Fmax= 1.46371e+04, atom= 311
-Step=   43, Dmax= 4.6e-02 nm, Epot= -8.34346e+05 Fmax= 5.63543e+04, atom= 311Step=   44, Dmax= 2.3e-02 nm, Epot= -8.41357e+05 Fmax= 2.11247e+04, atom= 311
-Step=   45, Dmax= 2.8e-02 nm, Epot= -8.42795e+05 Fmax= 2.11467e+04, atom= 311
-Step=   46, Dmax= 3.3e-02 nm, Epot= -8.43151e+05 Fmax= 2.99093e+04, atom= 311
-Step=   47, Dmax= 4.0e-02 nm, Epot= -8.44368e+05 Fmax= 3.05014e+04, atom= 311
-Step=   48, Dmax= 4.8e-02 nm, Epot= -8.43287e+05 Fmax= 4.20464e+04, atom= 311Step=   49, Dmax= 2.4e-02 nm, Epot= -8.48062e+05 Fmax= 6.02152e+03, atom= 311
-Step=   50, Dmax= 2.9e-02 nm, Epot= -8.48609e+05 Fmax= 3.70109e+04, atom= 311
-Step=   51, Dmax= 3.4e-02 nm, Epot= -8.53100e+05 Fmax= 1.61176e+04, atom= 311
-ber 41, elapsed = 0.016502
-[ATIV-6]Paramount number 42, elapsed = 0.015866
-[ATIV-6]Paramount number 43, elapsed = 0.011546
-[ATIV-6]Paramount number 44, elapsed = 0.012387
-[ATIV-6]Paramount number 45, elapsed = 0.013399
-[ATIV-6]Paramount number 46, elapsed = 0.012788
-[ATIV-6]Paramount number 47, elapsed = 0.011571
-[ATIV-6]Paramount number 48, elapsed = 0.012528
-[ATIV-6]Paramount number 49, elapsed = 0.012129
-[ATIV-6]Paramount number 50, elapsed = 0.016314
-[ATIV-6]Paramount number 51, elapsed = 0.013386
-[ATIVStep=   52, Dmax= 4.1e-02 nm, Epot= -8.49505e+05 Fmax= 4.63416e+04, atom= 311Step=   53, Dmax= 2.1e-02 nm, Epot= -8.54393e+05 Fmax= 1.53626e+04, atom= 311
-Step=   54, Dmax= 2.5e-02 nm, Epot= -8.55039e+05 Fmax= 2.27913e+04, atom= 311
-Step=   55, Dmax= 3.0e-02 nm, Epot= -8.56234e+05 Fmax= 2.25692e+04, atom= 311
-Step=   56, Dmax= 3.6e-02 nm, Epot= -8.56023e+05 Fmax= 3.21650e+04, atom= 311Step=   57, Dmax= 1.8e-02 nm, Epot= -8.58496e+05 Fmax= 4.90919e+03, atom= 311
-Step=   58, Dmax= 2.1e-02 nm, Epot= -8.60078e+05 Fmax= 2.70764e+04, atom= 311
-Step=   59, Dmax= 2.6e-02 nm, Epot= -8.62710e+05 Fmax= 1.26854e+04, atom= 311
-Step=   60, Dmax= 3.1e-02 nm, Epot= -8.61639e+05 Fmax= 3.41447e+04, atom= 311Step=   61, Dmax= 1.5e-02 nm, Epot= -8.63854e+05 Fmax= 1.09157e+04, atom= 311
--6]Paramount number 52, elapsed = 0.011949
-[ATIV-6]Paramount number 53, elapsed = 0.014330
-[ATIV-6]Paramount number 54, elapsed = 0.014370
-[ATIV-6]Paramount number 55, elapsed = 0.013385
-[ATIV-6]Paramount number 56, elapsed = 0.012534
-[ATIV-6]Paramount number 57, elapsed = 0.040196
-[ATIV-6]Paramount number 58, elapsed = 0.017581
-[ATIV-6]Paramount number 59, elapsed = 0.016800
-[ATIV-6]Paramount number 60, elapsed = 0.012596
-[ATIV-6]Paramount number 61, elapsed = 0.013304
-[ATIV-6]Paramount number 62, elapsed Step=   62, Dmax= 1.9e-02 nm, Epot= -8.64685e+05 Fmax= 1.78680e+04, atom= 311
-Step=   63, Dmax= 2.2e-02 nm, Epot= -8.65849e+05 Fmax= 1.61262e+04, atom= 311
-Step=   64, Dmax= 2.7e-02 nm, Epot= -8.66117e+05 Fmax= 2.49728e+04, atom= 311
-Step=   65, Dmax= 3.2e-02 nm, Epot= -8.67245e+05 Fmax= 2.36863e+04, atom= 311
-Step=   66, Dmax= 3.8e-02 nm, Epot= -8.66492e+05 Fmax= 3.50482e+04, atom= 311Step=   67, Dmax= 1.9e-02 nm, Epot= -8.69474e+05 Fmax= 5.78389e+03, atom= 311
-Step=   68, Dmax= 2.3e-02 nm, Epot= -8.70031e+05 Fmax= 2.91300e+04, atom= 311
-Step=   69, Dmax= 2.8e-02 nm, Epot= -8.72739e+05 Fmax= 1.34934e+04, atom= 311
-Step=   70, Dmax= 3.3e-02 nm, Epot= -8.71014e+05 Fmax= 3.68339e+04, atom= 311Step=   71, Dmax= 1.7e-02 nm, Epot= -8.73750e+05 Fmax= 1.18938e+04, atom= 311
-Step=   72, Dmax= 2.0e-02 nm, Epot= -8.74334e+05 Fmax= 1.89722e+04, atom= 311
-= 0.022004
-[ATIV-6]Paramount number 63, elapsed = 0.015375
-[ATIV-6]Paramount number 64, elapsed = 0.011234
-[ATIV-6]Paramount number 65, elapsed = 0.011911
-[ATIV-6]Paramount number 66, elapsed = 0.014628
-[ATIV-6]Paramount number 67, elapsed = 0.017006
-[ATIV-6]Paramount number 68, elapsed = 0.015136
-[ATIV-6]Paramount number 69, elapsed = 0.014701
-[ATIV-6]Paramount number 70, elapsed = 0.017601
-[ATIV-6]Paramount number 71, elapsed = 0.016020
-[ATIV-6]Paramount number 72, elapsed = 0.018654
-[ATIV-6]Paramount numStep=   73, Dmax= 2.4e-02 nm, Epot= -8.75345e+05 Fmax= 1.75415e+04, atom= 311
-Step=   74, Dmax= 2.9e-02 nm, Epot= -8.75320e+05 Fmax= 2.67015e+04, atom= 311Step=   75, Dmax= 1.4e-02 nm, Epot= -8.76754e+05 Fmax= 4.64608e+03, atom= 311
-Step=   76, Dmax= 1.7e-02 nm, Epot= -8.77987e+05 Fmax= 2.15895e+04, atom= 311
-Step=   77, Dmax= 2.1e-02 nm, Epot= -8.79659e+05 Fmax= 1.03181e+04, atom= 311
-Step=   78, Dmax= 2.5e-02 nm, Epot= -8.79424e+05 Fmax= 2.75727e+04, atom= 311Step=   79, Dmax= 1.2e-02 nm, Epot= -8.80535e+05 Fmax= 8.70827e+03, atom= 311
-Step=   80, Dmax= 1.5e-02 nm, Epot= -8.81292e+05 Fmax= 1.44581e+04, atom= 311
-Step=   81, Dmax= 1.8e-02 nm, Epot= -8.82188e+05 Fmax= 1.29463e+04, atom= 311
-Step=   82, Dmax= 2.1e-02 nm, Epot= -8.82594e+05 Fmax= 2.03960e+04, atom= 311
-Step=   83, Dmax= 2.6e-02 nm, Epot= -8.83509e+05 Fmax= 1.88946e+04, atom= 311
-ber 73, elapsed = 0.014747
-[ATIV-6]Paramount number 74, elapsed = 0.013652
-[ATIV-6]Paramount number 75, elapsed = 0.022806
-[ATIV-6]Paramount number 76, elapsed = 0.012894
-[ATIV-6]Paramount number 77, elapsed = 0.012465
-[ATIV-6]Paramount number 78, elapsed = 0.011192
-[ATIV-6]Paramount number 79, elapsed = 0.011739
-[ATIV-6]Paramount number 80, elapsed = 0.012374
-[ATIV-6]Paramount number 81, elapsed = 0.032479
-[ATIV-6]Paramount number 82, elapsed = 0.013572
-[ATIV-6]Paramount number 83, elapsed = 0.012848
-[ATIVStep=   84, Dmax= 3.1e-02 nm, Epot= -8.83296e+05 Fmax= 2.85543e+04, atom= 311Step=   85, Dmax= 1.5e-02 nm, Epot= -8.84914e+05 Fmax= 4.80394e+03, atom= 311
-Step=   86, Dmax= 1.8e-02 nm, Epot= -8.85768e+05 Fmax= 2.34905e+04, atom= 311
-Step=   87, Dmax= 2.2e-02 nm, Epot= -8.87538e+05 Fmax= 1.08481e+04, atom= 311
-Step=   88, Dmax= 2.7e-02 nm, Epot= -8.86882e+05 Fmax= 2.99225e+04, atom= 311Step=   89, Dmax= 1.3e-02 nm, Epot= -8.88327e+05 Fmax= 9.66842e+03, atom= 311
-Step=   90, Dmax= 1.6e-02 nm, Epot= -8.88934e+05 Fmax= 1.52229e+04, atom= 311
-Step=   91, Dmax= 1.9e-02 nm, Epot= -8.89725e+05 Fmax= 1.42683e+04, atom= 311
-Step=   92, Dmax= 2.3e-02 nm, Epot= -8.89991e+05 Fmax= 2.14144e+04, atom= 311
-Step=   93, Dmax= 2.8e-02 nm, Epot= -8.90748e+05 Fmax= 2.08193e+04, atom= 311
--6]Paramount number 84, elapsed = 0.014196
-[ATIV-6]Paramount number 85, elapsed = 0.019433
-[ATIV-6]Paramount number 86, elapsed = 0.022132
-[ATIV-6]Paramount number 87, elapsed = 0.018882
-[ATIV-6]Paramount number 88, elapsed = 0.012473
-[ATIV-6]Paramount number 89, elapsed = 0.020559
-[ATIV-6]Paramount number 90, elapsed = 0.012218
-[ATIV-6]Paramount number 91, elapsed = 0.025532
-[ATIV-6]Paramount number 92, elapsed = 0.012385
-[ATIV-6]Paramount number 93, elapsed = 0.011763
-[ATIV-6]Paramount number 94, elapsed Step=   94, Dmax= 3.3e-02 nm, Epot= -8.90398e+05 Fmax= 3.00921e+04, atom= 311Step=   95, Dmax= 1.7e-02 nm, Epot= -8.92275e+05 Fmax= 4.60986e+03, atom= 311
-Step=   96, Dmax= 2.0e-02 nm, Epot= -8.92844e+05 Fmax= 2.58605e+04, atom= 311
-Step=   97, Dmax= 2.4e-02 nm, Epot= -8.94810e+05 Fmax= 1.11019e+04, atom= 311
-Step=   98, Dmax= 2.9e-02 nm, Epot= -8.93718e+05 Fmax= 3.26242e+04, atom= 311Step=   99, Dmax= 1.4e-02 nm, Epot= -8.95505e+05 Fmax= 1.09879e+04, atom= 311
-Step=  100, Dmax= 1.7e-02 nm, Epot= -8.96015e+05 Fmax= 1.57017e+04, atom= 311
-Step=  101, Dmax= 2.1e-02 nm, Epot= -8.96658e+05 Fmax= 1.60090e+04, atom= 311
-Step=  102, Dmax= 2.5e-02 nm, Epot= -8.96861e+05 Fmax= 2.23031e+04, atom= 311
-Step=  103, Dmax= 3.0e-02 nm, Epot= -8.97401e+05 Fmax= 2.31148e+04, atom= 311
-Step=  104, Dmax= 3.6e-02 nm, Epot= -8.97012e+05 Fmax= 3.15990e+04, atom= 311= 0.011433
-[ATIV-6]Paramount number 95, elapsed = 0.012874
-[ATIV-6]Paramount number 96, elapsed = 0.015801
-[ATIV-6]Paramount number 97, elapsed = 0.013831
-[ATIV-6]Paramount number 98, elapsed = 0.013560
-[ATIV-6]Paramount number 99, elapsed = 0.037491
-[ATIV-6]Paramount number 100, elapsed = 0.011683
-[ATIV-6]Paramount number 101, elapsed = 0.014788
-[ATIV-6]Paramount number 102, elapsed = 0.012684
-[ATIV-6]Paramount number 103, elapsed = 0.012186
-[ATIV-6]Paramount number 104, elapsed = 0.012020
-[ATIV-6]ParamounStep=  105, Dmax= 1.8e-02 nm, Epot= -8.99077e+05 Fmax= 4.26036e+03, atom= 311
-Step=  106, Dmax= 2.1e-02 nm, Epot= -8.99471e+05 Fmax= 2.83650e+04, atom= 311
-Step=  107, Dmax= 2.6e-02 nm, Epot= -9.01627e+05 Fmax= 1.12842e+04, atom= 311
-Step=  108, Dmax= 3.1e-02 nm, Epot= -9.00069e+05 Fmax= 3.57468e+04, atom= 311Step=  109, Dmax= 1.5e-02 nm, Epot= -9.02222e+05 Fmax= 1.23584e+04, atom= 311
-Step=  110, Dmax= 1.8e-02 nm, Epot= -9.02662e+05 Fmax= 1.62729e+04, atom= 311
-Step=  111, Dmax= 2.2e-02 nm, Epot= -9.03156e+05 Fmax= 1.78351e+04, atom= 311
-Step=  112, Dmax= 2.7e-02 nm, Epot= -9.03313e+05 Fmax= 2.32697e+04, atom= 311
-Step=  113, Dmax= 3.2e-02 nm, Epot= -9.03628e+05 Fmax= 2.55113e+04, atom= 311
-Step=  114, Dmax= 3.8e-02 nm, Epot= -9.03192e+05 Fmax= 3.32038e+04, atom= 311t number 105, elapsed = 0.015472
-[ATIV-6]Paramount number 106, elapsed = 0.018375
-[ATIV-6]Paramount number 107, elapsed = 0.019488
-[ATIV-6]Paramount number 108, elapsed = 0.014466
-[ATIV-6]Paramount number 109, elapsed = 0.020823
-[ATIV-6]Paramount number 110, elapsed = 0.016067
-[ATIV-6]Paramount number 111, elapsed = 0.014895
-[ATIV-6]Paramount number 112, elapsed = 0.014153
-[ATIV-6]Paramount number 113, elapsed = 0.010919
-[ATIV-6]Paramount number 114, elapsed = 0.013962
-[ATIV-6]Paramount number 115, elapsed Step=  115, Dmax= 1.9e-02 nm, Epot= -9.05533e+05 Fmax= 3.90519e+03, atom= 311
-Step=  116, Dmax= 2.3e-02 nm, Epot= -9.05682e+05 Fmax= 3.15311e+04, atom= 311
-Step=  117, Dmax= 2.8e-02 nm, Epot= -9.08169e+05 Fmax= 1.11379e+04, atom= 311
-Step=  118, Dmax= 3.3e-02 nm, Epot= -9.06110e+05 Fmax= 3.93567e+04, atom= 311Step=  119, Dmax= 1.7e-02 nm, Epot= -9.08640e+05 Fmax= 1.42327e+04, atom= 311
-Step=  120, Dmax= 2.0e-02 nm, Epot= -9.09087e+05 Fmax= 1.65473e+04, atom= 311
-Step=  121, Dmax= 2.4e-02 nm, Epot= -9.09380e+05 Fmax= 2.00641e+04, atom= 311
-Step=  122, Dmax= 2.9e-02 nm, Epot= -9.09578e+05 Fmax= 2.41174e+04, atom= 311
-Step=  123, Dmax= 3.4e-02 nm, Epot= -9.09619e+05 Fmax= 2.81861e+04, atom= 311
-Step=  124, Dmax= 4.1e-02 nm, Epot= -9.09227e+05 Fmax= 3.47633e+04, atom= 311Step=  125, Dmax= 2.1e-02 nm, Epot= -9.11741e+05 Fmax= 3.34809e+03, atom= 311
-= 0.012094
-[ATIV-6]Paramount number 116, elapsed = 0.014643
-[ATIV-6]Paramount number 117, elapsed = 0.012845
-[ATIV-6]Paramount number 118, elapsed = 0.011716
-[ATIV-6]Paramount number 119, elapsed = 0.028817
-[ATIV-6]Paramount number 120, elapsed = 0.029033
-[ATIV-6]Paramount number 121, elapsed = 0.011236
-[ATIV-6]Paramount number 122, elapsed = 0.020821
-[ATIV-6]Paramount number 123, elapsed = 0.011434
-[ATIV-6]Paramount number 124, elapsed = 0.012423
-[ATIV-6]Paramount number 125, elapsed = 0.013335
-[ATIV-6]ParStep=  126, Dmax= 2.5e-02 nm, Epot= -9.11710e+05 Fmax= 3.47571e+04, atom= 311Step=  127, Dmax= 1.2e-02 nm, Epot= -9.12612e+05 Fmax= 1.54826e+04, atom= 311
-Step=  128, Dmax= 1.5e-02 nm, Epot= -9.13456e+05 Fmax= 7.39119e+03, atom= 311
-Step=  129, Dmax= 1.8e-02 nm, Epot= -9.13580e+05 Fmax= 1.98675e+04, atom= 311
-Step=  130, Dmax= 2.1e-02 nm, Epot= -9.14535e+05 Fmax= 1.30419e+04, atom= 311
-Step=  131, Dmax= 2.6e-02 nm, Epot= -9.14041e+05 Fmax= 2.62476e+04, atom= 311Step=  132, Dmax= 1.3e-02 nm, Epot= -9.15200e+05 Fmax= 6.62645e+03, atom= 311
-Step=  133, Dmax= 1.5e-02 nm, Epot= -9.15466e+05 Fmax= 1.72684e+04, atom= 311
-Step=  134, Dmax= 1.8e-02 nm, Epot= -9.16277e+05 Fmax= 1.10682e+04, atom= 311
-Step=  135, Dmax= 2.2e-02 nm, Epot= -9.16039e+05 Fmax= 2.32446e+04, atom= 311amount number 126, elapsed = 0.012190
-[ATIV-6]Paramount number 127, elapsed = 0.012611
-[ATIV-6]Paramount number 128, elapsed = 0.025407
-[ATIV-6]Paramount number 129, elapsed = 0.012213
-[ATIV-6]Paramount number 130, elapsed = 0.016786
-[ATIV-6]Paramount number 131, elapsed = 0.011118
-[ATIV-6]Paramount number 132, elapsed = 0.028002
-[ATIV-6]Paramount number 133, elapsed = 0.016397
-[ATIV-6]Paramount number 134, elapsed = 0.016076
-[ATIV-6]Paramount number 135, elapsed = 0.013774
-[ATIV-6]Paramount number 136, elaStep=  136, Dmax= 1.1e-02 nm, Epot= -9.16854e+05 Fmax= 5.98622e+03, atom= 311
-Step=  137, Dmax= 1.3e-02 nm, Epot= -9.17236e+05 Fmax= 1.43802e+04, atom= 311
-Step=  138, Dmax= 1.6e-02 nm, Epot= -9.17898e+05 Fmax= 1.02235e+04, atom= 311
-Step=  139, Dmax= 1.9e-02 nm, Epot= -9.17933e+05 Fmax= 1.91592e+04, atom= 311
-Step=  140, Dmax= 2.3e-02 nm, Epot= -9.18618e+05 Fmax= 1.62304e+04, atom= 311
-Step=  141, Dmax= 2.8e-02 nm, Epot= -9.18218e+05 Fmax= 2.59757e+04, atom= 311Step=  142, Dmax= 1.4e-02 nm, Epot= -9.19476e+05 Fmax= 4.93088e+03, atom= 311
-Step=  143, Dmax= 1.7e-02 nm, Epot= -9.19630e+05 Fmax= 2.08891e+04, atom= 311
-Step=  144, Dmax= 2.0e-02 nm, Epot= -9.20782e+05 Fmax= 9.63463e+03, atom= 311
-Step=  145, Dmax= 2.4e-02 nm, Epot= -9.20113e+05 Fmax= 2.72954e+04, atom= 311Step=  146, Dmax= 1.2e-02 nm, Epot= -9.21254e+05 Fmax= 8.70677e+03, atom= 311
-psed = 0.020409
-[ATIV-6]Paramount number 137, elapsed = 0.016753
-[ATIV-6]Paramount number 138, elapsed = 0.018909
-[ATIV-6]Paramount number 139, elapsed = 0.011238
-[ATIV-6]Paramount number 140, elapsed = 0.012211
-[ATIV-6]Paramount number 141, elapsed = 0.015481
-[ATIV-6]Paramount number 142, elapsed = 0.011751
-[ATIV-6]Paramount number 143, elapsed = 0.012329
-[ATIV-6]Paramount number 144, elapsed = 0.012167
-[ATIV-6]Paramount number 145, elapsed = 0.017114
-[ATIV-6]Paramount number 146, elapsed = 0.021253
-[ATIV-Step=  147, Dmax= 1.4e-02 nm, Epot= -9.21566e+05 Fmax= 1.32905e+04, atom= 311
-Step=  148, Dmax= 1.7e-02 nm, Epot= -9.22016e+05 Fmax= 1.31831e+04, atom= 311
-Step=  149, Dmax= 2.1e-02 nm, Epot= -9.22136e+05 Fmax= 1.84360e+04, atom= 311
-Step=  150, Dmax= 2.5e-02 nm, Epot= -9.22483e+05 Fmax= 1.97193e+04, atom= 311
-Step=  151, Dmax= 3.0e-02 nm, Epot= -9.22330e+05 Fmax= 2.56728e+04, atom= 311Step=  152, Dmax= 1.5e-02 nm, Epot= -9.23605e+05 Fmax= 3.13352e+03, atom= 311
-Step=  153, Dmax= 1.8e-02 nm, Epot= -9.24004e+05 Fmax= 2.44048e+04, atom= 311
-Step=  154, Dmax= 2.1e-02 nm, Epot= -9.25492e+05 Fmax= 8.63732e+03, atom= 311
-Step=  155, Dmax= 2.6e-02 nm, Epot= -9.24523e+05 Fmax= 3.11442e+04, atom= 311Step=  156, Dmax= 1.3e-02 nm, Epot= -9.25886e+05 Fmax= 1.11859e+04, atom= 311
-6]Paramount number 147, elapsed = 0.017366
-[ATIV-6]Paramount number 148, elapsed = 0.029392
-[ATIV-6]Paramount number 149, elapsed = 0.014696
-[ATIV-6]Paramount number 150, elapsed = 0.016988
-[ATIV-6]Paramount number 151, elapsed = 0.026917
-[ATIV-6]Paramount number 152, elapsed = 0.011692
-[ATIV-6]Paramount number 153, elapsed = 0.011107
-[ATIV-6]Paramount number 154, elapsed = 0.015766
-[ATIV-6]Paramount number 155, elapsed = 0.011634
-[ATIV-6]Paramount number 156, elapsed = 0.011895
-[ATIV-6]Paramount number 157Step=  157, Dmax= 1.5e-02 nm, Epot= -9.26258e+05 Fmax= 1.24834e+04, atom= 311
-Step=  158, Dmax= 1.8e-02 nm, Epot= -9.26507e+05 Fmax= 1.60357e+04, atom= 311
-Step=  159, Dmax= 2.2e-02 nm, Epot= -9.26781e+05 Fmax= 1.79507e+04, atom= 311
-Step=  160, Dmax= 2.6e-02 nm, Epot= -9.26794e+05 Fmax= 2.31028e+04, atom= 311
-Step=  161, Dmax= 3.2e-02 nm, Epot= -9.26917e+05 Fmax= 2.57132e+04, atom= 311
-Step=  162, Dmax= 3.8e-02 nm, Epot= -9.26458e+05 Fmax= 3.29098e+04, atom= 311Step=  163, Dmax= 1.9e-02 nm, Epot= -9.28547e+05 Fmax= 3.60738e+03, atom= 311
-Step=  164, Dmax= 2.3e-02 nm, Epot= -9.28161e+05 Fmax= 3.19390e+04, atom= 311Step=  165, Dmax= 1.1e-02 nm, Epot= -9.29052e+05 Fmax= 1.40144e+04, atom= 311
-Step=  166, Dmax= 1.4e-02 nm, Epot= -9.29680e+05 Fmax= 7.30022e+03, atom= 311
-Step=  167, Dmax= 1.6e-02 nm, Epot= -9.29758e+05 Fmax= 1.80972e+04, atom= 311
-, elapsed = 0.011139
-[ATIV-6]Paramount number 158, elapsed = 0.011851
-[ATIV-6]Paramount number 159, elapsed = 0.012842
-[ATIV-6]Paramount number 160, elapsed = 0.012380
-[ATIV-6]Paramount number 161, elapsed = 0.011295
-[ATIV-6]Paramount number 162, elapsed = 0.011476
-[ATIV-6]Paramount number 163, elapsed = 0.011621
-[ATIV-6]Paramount number 164, elapsed = 0.012617
-[ATIV-6]Paramount number 165, elapsed = 0.019016
-[ATIV-6]Paramount number 166, elapsed = 0.012923
-[ATIV-6]Paramount number 167, elapsed = 0.011864
-[Step=  168, Dmax= 2.0e-02 nm, Epot= -9.30454e+05 Fmax= 1.25114e+04, atom= 311
-Step=  169, Dmax= 2.4e-02 nm, Epot= -9.30110e+05 Fmax= 2.41762e+04, atom= 311Step=  170, Dmax= 1.2e-02 nm, Epot= -9.30985e+05 Fmax= 5.84531e+03, atom= 311
-Step=  171, Dmax= 1.4e-02 nm, Epot= -9.31187e+05 Fmax= 1.62312e+04, atom= 311
-Step=  172, Dmax= 1.7e-02 nm, Epot= -9.31830e+05 Fmax= 1.01725e+04, atom= 311
-Step=  173, Dmax= 2.1e-02 nm, Epot= -9.31647e+05 Fmax= 2.18355e+04, atom= 311Step=  174, Dmax= 1.0e-02 nm, Epot= -9.32261e+05 Fmax= 5.77780e+03, atom= 311
-Step=  175, Dmax= 1.2e-02 nm, Epot= -9.32552e+05 Fmax= 1.32590e+04, atom= 311
-Step=  176, Dmax= 1.5e-02 nm, Epot= -9.33043e+05 Fmax= 9.67892e+03, atom= 311
-Step=  177, Dmax= 1.8e-02 nm, Epot= -9.33113e+05 Fmax= 1.76672e+04, atom= 311
-ATIV-6]Paramount number 168, elapsed = 0.017552
-[ATIV-6]Paramount number 169, elapsed = 0.011362
-[ATIV-6]Paramount number 170, elapsed = 0.012197
-[ATIV-6]Paramount number 171, elapsed = 0.012679
-[ATIV-6]Paramount number 172, elapsed = 0.011314
-[ATIV-6]Paramount number 173, elapsed = 0.013435
-[ATIV-6]Paramount number 174, elapsed = 0.020548
-[ATIV-6]Paramount number 175, elapsed = 0.011433
-[ATIV-6]Paramount number 176, elapsed = 0.011300
-[ATIV-6]Paramount number 177, elapsed = 0.011706
-[ATIV-6]Paramount numbeStep=  178, Dmax= 2.1e-02 nm, Epot= -9.33608e+05 Fmax= 1.52789e+04, atom= 311
-Step=  179, Dmax= 2.6e-02 nm, Epot= -9.33386e+05 Fmax= 2.40483e+04, atom= 311Step=  180, Dmax= 1.3e-02 nm, Epot= -9.34246e+05 Fmax= 4.40306e+03, atom= 311
-Step=  181, Dmax= 1.5e-02 nm, Epot= -9.34434e+05 Fmax= 1.93776e+04, atom= 311
-Step=  182, Dmax= 1.8e-02 nm, Epot= -9.35281e+05 Fmax= 9.11214e+03, atom= 311
-Step=  183, Dmax= 2.2e-02 nm, Epot= -9.34899e+05 Fmax= 2.51474e+04, atom= 311Step=  184, Dmax= 1.1e-02 nm, Epot= -9.35649e+05 Fmax= 7.95639e+03, atom= 311
-Step=  185, Dmax= 1.3e-02 nm, Epot= -9.35907e+05 Fmax= 1.25243e+04, atom= 311
-Step=  186, Dmax= 1.6e-02 nm, Epot= -9.36266e+05 Fmax= 1.21055e+04, atom= 311
-Step=  187, Dmax= 1.9e-02 nm, Epot= -9.36386e+05 Fmax= 1.73732e+04, atom= 311
-r 178, elapsed = 0.012421
-[ATIV-6]Paramount number 179, elapsed = 0.012303
-[ATIV-6]Paramount number 180, elapsed = 0.013345
-[ATIV-6]Paramount number 181, elapsed = 0.013486
-[ATIV-6]Paramount number 182, elapsed = 0.013900
-[ATIV-6]Paramount number 183, elapsed = 0.011776
-[ATIV-6]Paramount number 184, elapsed = 0.011619
-[ATIV-6]Paramount number 185, elapsed = 0.019353
-[ATIV-6]Paramount number 186, elapsed = 0.035957
-[ATIV-6]Paramount number 187, elapsed = 0.014025
-[ATIV-6]Paramount number 188, elapsed = 0.016Step=  188, Dmax= 2.3e-02 nm, Epot= -9.36690e+05 Fmax= 1.80682e+04, atom= 311
-Step=  189, Dmax= 2.7e-02 nm, Epot= -9.36602e+05 Fmax= 2.41493e+04, atom= 311Step=  190, Dmax= 1.4e-02 nm, Epot= -9.37454e+05 Fmax= 3.11991e+03, atom= 311
-Step=  191, Dmax= 1.6e-02 nm, Epot= -9.37774e+05 Fmax= 2.24721e+04, atom= 311
-Step=  192, Dmax= 2.0e-02 nm, Epot= -9.38819e+05 Fmax= 8.18733e+03, atom= 311
-Step=  193, Dmax= 2.4e-02 nm, Epot= -9.38268e+05 Fmax= 2.86437e+04, atom= 311Step=  194, Dmax= 1.2e-02 nm, Epot= -9.39148e+05 Fmax= 1.01840e+04, atom= 311
-Step=  195, Dmax= 1.4e-02 nm, Epot= -9.39439e+05 Fmax= 1.18643e+04, atom= 311
-Step=  196, Dmax= 1.7e-02 nm, Epot= -9.39669e+05 Fmax= 1.45818e+04, atom= 311
-Step=  197, Dmax= 2.0e-02 nm, Epot= -9.39875e+05 Fmax= 1.70435e+04, atom= 311
-Step=  198, Dmax= 2.5e-02 nm, Epot= -9.39970e+05 Fmax= 2.10523e+04, atom= 311
-250
-[ATIV-6]Paramount number 189, elapsed = 0.018886
-[ATIV-6]Paramount number 190, elapsed = 0.017623
-[ATIV-6]Paramount number 191, elapsed = 0.019209
-[ATIV-6]Paramount number 192, elapsed = 0.016060
-[ATIV-6]Paramount number 193, elapsed = 0.014633
-[ATIV-6]Paramount number 194, elapsed = 0.013404
-[ATIV-6]Paramount number 195, elapsed = 0.012206
-[ATIV-6]Paramount number 196, elapsed = 0.011081
-[ATIV-6]Paramount number 197, elapsed = 0.012493
-[ATIV-6]Paramount number 198, elapsed = 0.011062
-[ATIV-6]Paramount Step=  199, Dmax= 2.9e-02 nm, Epot= -9.40043e+05 Fmax= 2.43694e+04, atom= 311
-Step=  200, Dmax= 3.5e-02 nm, Epot= -9.39852e+05 Fmax= 3.02351e+04, atom= 311Step=  201, Dmax= 1.8e-02 nm, Epot= -9.41210e+05 Fmax= 2.95627e+03, atom= 311
-Step=  202, Dmax= 2.1e-02 nm, Epot= -9.41232e+05 Fmax= 3.01725e+04, atom= 311
-Step=  203, Dmax= 2.5e-02 nm, Epot= -9.42809e+05 Fmax= 9.59500e+03, atom= 311
-Step=  204, Dmax= 3.1e-02 nm, Epot= -9.41583e+05 Fmax= 3.73248e+04, atom= 311Step=  205, Dmax= 1.5e-02 nm, Epot= -9.43076e+05 Fmax= 1.40794e+04, atom= 311
-Step=  206, Dmax= 1.8e-02 nm, Epot= -9.43384e+05 Fmax= 1.44346e+04, atom= 311
-Step=  207, Dmax= 2.2e-02 nm, Epot= -9.43474e+05 Fmax= 1.95856e+04, atom= 311
-Step=  208, Dmax= 2.6e-02 nm, Epot= -9.43681e+05 Fmax= 2.14330e+04, atom= 311
-number 199, elapsed = 0.013047
-[ATIV-6]Paramount number 200, elapsed = 0.016364
-[ATIV-6]Paramount number 201, elapsed = 0.011676
-[ATIV-6]Paramount number 202, elapsed = 0.013376
-[ATIV-6]Paramount number 203, elapsed = 0.012096
-[ATIV-6]Paramount number 204, elapsed = 0.012750
-[ATIV-6]Paramount number 205, elapsed = 0.013300
-[ATIV-6]Paramount number 206, elapsed = 0.013110
-[ATIV-6]Paramount number 207, elapsed = 0.014861
-[ATIV-6]Paramount number 208, elapsed = 0.012721
-[ATIV-6]Paramount number 209, elapsed = Step=  209, Dmax= 3.2e-02 nm, Epot= -9.43571e+05 Fmax= 2.73981e+04, atom= 311Step=  210, Dmax= 1.6e-02 nm, Epot= -9.44511e+05 Fmax= 3.08767e+03, atom= 311
-Step=  211, Dmax= 1.9e-02 nm, Epot= -9.44714e+05 Fmax= 2.65740e+04, atom= 311
-Step=  212, Dmax= 2.3e-02 nm, Epot= -9.45852e+05 Fmax= 8.96262e+03, atom= 311
-Step=  213, Dmax= 2.7e-02 nm, Epot= -9.45110e+05 Fmax= 3.35409e+04, atom= 311Step=  214, Dmax= 1.4e-02 nm, Epot= -9.46131e+05 Fmax= 1.22778e+04, atom= 311
-Step=  215, Dmax= 1.6e-02 nm, Epot= -9.46402e+05 Fmax= 1.32505e+04, atom= 311
-Step=  216, Dmax= 2.0e-02 nm, Epot= -9.46553e+05 Fmax= 1.74021e+04, atom= 311
-Step=  217, Dmax= 2.4e-02 nm, Epot= -9.46753e+05 Fmax= 1.92001e+04, atom= 311
-Step=  218, Dmax= 2.8e-02 nm, Epot= -9.46735e+05 Fmax= 2.47732e+04, atom= 311Step=  219, Dmax= 1.4e-02 nm, Epot= -9.47405e+05 Fmax= 2.75588e+03, atom= 311
-0.011615
-[ATIV-6]Paramount number 210, elapsed = 0.017766
-[ATIV-6]Paramount number 211, elapsed = 0.011249
-[ATIV-6]Paramount number 212, elapsed = 0.012348
-[ATIV-6]Paramount number 213, elapsed = 0.012834
-[ATIV-6]Paramount number 214, elapsed = 0.012052
-[ATIV-6]Paramount number 215, elapsed = 0.014441
-[ATIV-6]Paramount number 216, elapsed = 0.011582
-[ATIV-6]Paramount number 217, elapsed = 0.014024
-[ATIV-6]Paramount number 218, elapsed = 0.023286
-[ATIV-6]Paramount number 219, elapsed = 0.012492
-[ATIV-6]ParamStep=  220, Dmax= 1.7e-02 nm, Epot= -9.47776e+05 Fmax= 2.40125e+04, atom= 311
-Step=  221, Dmax= 2.0e-02 nm, Epot= -9.48694e+05 Fmax= 7.85655e+03, atom= 311
-Step=  222, Dmax= 2.5e-02 nm, Epot= -9.48293e+05 Fmax= 3.00554e+04, atom= 311Step=  223, Dmax= 1.2e-02 nm, Epot= -9.48984e+05 Fmax= 1.11852e+04, atom= 311
-Step=  224, Dmax= 1.5e-02 nm, Epot= -9.49256e+05 Fmax= 1.17414e+04, atom= 311
-Step=  225, Dmax= 1.8e-02 nm, Epot= -9.49427e+05 Fmax= 1.56471e+04, atom= 311
-Step=  226, Dmax= 2.1e-02 nm, Epot= -9.49638e+05 Fmax= 1.72507e+04, atom= 311
-Step=  227, Dmax= 2.5e-02 nm, Epot= -9.49690e+05 Fmax= 2.20081e+04, atom= 311
-Step=  228, Dmax= 3.1e-02 nm, Epot= -9.49780e+05 Fmax= 2.51914e+04, atom= 311
-Step=  229, Dmax= 3.7e-02 nm, Epot= -9.49627e+05 Fmax= 3.10650e+04, atom= 311ount number 220, elapsed = 0.017323
-[ATIV-6]Paramount number 221, elapsed = 0.018682
-[ATIV-6]Paramount number 222, elapsed = 0.028558
-[ATIV-6]Paramount number 223, elapsed = 0.012116
-[ATIV-6]Paramount number 224, elapsed = 0.016420
-[ATIV-6]Paramount number 225, elapsed = 0.014146
-[ATIV-6]Paramount number 226, elapsed = 0.011927
-[ATIV-6]Paramount number 227, elapsed = 0.016333
-[ATIV-6]Paramount number 228, elapsed = 0.011066
-[ATIV-6]Paramount number 229, elapsed = 0.020471
-[ATIV-6]Paramount number 230, elapsStep=  230, Dmax= 1.8e-02 nm, Epot= -9.50716e+05 Fmax= 3.10866e+03, atom= 311
-Step=  231, Dmax= 2.2e-02 nm, Epot= -9.50664e+05 Fmax= 3.15017e+04, atom= 311Step=  232, Dmax= 1.1e-02 nm, Epot= -9.51100e+05 Fmax= 1.40019e+04, atom= 311
-Step=  233, Dmax= 1.3e-02 nm, Epot= -9.51518e+05 Fmax= 6.54146e+03, atom= 311
-Step=  234, Dmax= 1.6e-02 nm, Epot= -9.51617e+05 Fmax= 1.80885e+04, atom= 311
-Step=  235, Dmax= 1.9e-02 nm, Epot= -9.52087e+05 Fmax= 1.14176e+04, atom= 311
-Step=  236, Dmax= 2.3e-02 nm, Epot= -9.51908e+05 Fmax= 2.40108e+04, atom= 311Step=  237, Dmax= 1.1e-02 nm, Epot= -9.52394e+05 Fmax= 6.23306e+03, atom= 311
-Step=  238, Dmax= 1.4e-02 nm, Epot= -9.52547e+05 Fmax= 1.50667e+04, atom= 311
-Step=  239, Dmax= 1.6e-02 nm, Epot= -9.52920e+05 Fmax= 1.04236e+04, atom= 311
-Step=  240, Dmax= 2.0e-02 nm, Epot= -9.52892e+05 Fmax= 2.00600e+04, atom= 311ed = 0.016526
-[ATIV-6]Paramount number 231, elapsed = 0.017578
-[ATIV-6]Paramount number 232, elapsed = 0.017663
-[ATIV-6]Paramount number 233, elapsed = 0.018675
-[ATIV-6]Paramount number 234, elapsed = 0.022692
-[ATIV-6]Paramount number 235, elapsed = 0.020253
-[ATIV-6]Paramount number 236, elapsed = 0.016239
-[ATIV-6]Paramount number 237, elapsed = 0.011689
-[ATIV-6]Paramount number 238, elapsed = 0.013001
-[ATIV-6]Paramount number 239, elapsed = 0.014285
-[ATIV-6]Paramount number 240, elapsed = 0.013989
-[ATIV-6]Step=  241, Dmax= 9.8e-03 nm, Epot= -9.53206e+05 Fmax= 4.82951e+03, atom= 311
-Step=  242, Dmax= 1.2e-02 nm, Epot= -9.53418e+05 Fmax= 1.36626e+04, atom= 311
-Step=  243, Dmax= 1.4e-02 nm, Epot= -9.53780e+05 Fmax= 8.41497e+03, atom= 311
-Step=  244, Dmax= 1.7e-02 nm, Epot= -9.53827e+05 Fmax= 1.80653e+04, atom= 311
-Step=  245, Dmax= 2.0e-02 nm, Epot= -9.54218e+05 Fmax= 1.36315e+04, atom= 311
-Step=  246, Dmax= 2.4e-02 nm, Epot= -9.54042e+05 Fmax= 2.44325e+04, atom= 311Step=  247, Dmax= 1.2e-02 nm, Epot= -9.54573e+05 Fmax= 5.34647e+03, atom= 311
-Step=  248, Dmax= 1.5e-02 nm, Epot= -9.54679e+05 Fmax= 1.75897e+04, atom= 311
-Step=  249, Dmax= 1.8e-02 nm, Epot= -9.55147e+05 Fmax= 9.78498e+03, atom= 311
-Step=  250, Dmax= 2.1e-02 nm, Epot= -9.54997e+05 Fmax= 2.30250e+04, atom= 311Paramount number 241, elapsed = 0.016770
-[ATIV-6]Paramount number 242, elapsed = 0.100277
-[ATIV-6]Paramount number 243, elapsed = 0.013723
-[ATIV-6]Paramount number 244, elapsed = 0.013006
-[ATIV-6]Paramount number 245, elapsed = 0.012552
-[ATIV-6]Paramount number 246, elapsed = 0.013280
-[ATIV-6]Paramount number 247, elapsed = 0.013754
-[ATIV-6]Paramount number 248, elapsed = 0.020317
-[ATIV-6]Paramount number 249, elapsed = 0.011331
-[ATIV-6]Paramount number 250, elapsed = 0.021119
-[ATIV-6]Paramount number 251, Step=  251, Dmax= 1.1e-02 nm, Epot= -9.55408e+05 Fmax= 6.63961e+03, atom= 311
-Step=  252, Dmax= 1.3e-02 nm, Epot= -9.55573e+05 Fmax= 1.31834e+04, atom= 311
-Step=  253, Dmax= 1.5e-02 nm, Epot= -9.55867e+05 Fmax= 1.05596e+04, atom= 311
-Step=  254, Dmax= 1.8e-02 nm, Epot= -9.55914e+05 Fmax= 1.78635e+04, atom= 311
-Step=  255, Dmax= 2.2e-02 nm, Epot= -9.56204e+05 Fmax= 1.61230e+04, atom= 311
-Step=  256, Dmax= 2.6e-02 nm, Epot= -9.56067e+05 Fmax= 2.47474e+04, atom= 311Step=  257, Dmax= 1.3e-02 nm, Epot= -9.56634e+05 Fmax= 4.25551e+03, atom= 311
-Step=  258, Dmax= 1.6e-02 nm, Epot= -9.56713e+05 Fmax= 2.01101e+04, atom= 311
-Step=  259, Dmax= 1.9e-02 nm, Epot= -9.57307e+05 Fmax= 9.28158e+03, atom= 311
-Step=  260, Dmax= 2.3e-02 nm, Epot= -9.56996e+05 Fmax= 2.60409e+04, atom= 311Step=  261, Dmax= 1.1e-02 nm, Epot= -9.57553e+05 Fmax= 8.36899e+03, atom= 311
-elapsed = 0.020337
-[ATIV-6]Paramount number 252, elapsed = 0.013516
-[ATIV-6]Paramount number 253, elapsed = 0.013321
-[ATIV-6]Paramount number 254, elapsed = 0.013139
-[ATIV-6]Paramount number 255, elapsed = 0.012639
-[ATIV-6]Paramount number 256, elapsed = 0.015651
-[ATIV-6]Paramount number 257, elapsed = 0.012015
-[ATIV-6]Paramount number 258, elapsed = 0.012917
-[ATIV-6]Paramount number 259, elapsed = 0.011975
-[ATIV-6]Paramount number 260, elapsed = 0.014560
-[ATIV-6]Paramount number 261, elapsed = 0.013283
-[ATStep=  262, Dmax= 1.4e-02 nm, Epot= -9.57706e+05 Fmax= 1.28921e+04, atom= 311
-Step=  263, Dmax= 1.6e-02 nm, Epot= -9.57937e+05 Fmax= 1.26461e+04, atom= 311
-Step=  264, Dmax= 2.0e-02 nm, Epot= -9.57995e+05 Fmax= 1.79101e+04, atom= 311
-Step=  265, Dmax= 2.4e-02 nm, Epot= -9.58184e+05 Fmax= 1.85202e+04, atom= 311
-Step=  266, Dmax= 2.8e-02 nm, Epot= -9.58066e+05 Fmax= 2.53409e+04, atom= 311Step=  267, Dmax= 1.4e-02 nm, Epot= -9.58724e+05 Fmax= 3.33257e+03, atom= 311
-Step=  268, Dmax= 1.7e-02 nm, Epot= -9.58753e+05 Fmax= 2.30347e+04, atom= 311
-Step=  269, Dmax= 2.0e-02 nm, Epot= -9.59539e+05 Fmax= 8.65287e+03, atom= 311
-Step=  270, Dmax= 2.4e-02 nm, Epot= -9.59013e+05 Fmax= 2.94252e+04, atom= 311Step=  271, Dmax= 1.2e-02 nm, Epot= -9.59765e+05 Fmax= 1.03759e+04, atom= 311
-IV-6]Paramount number 262, elapsed = 0.020694
-[ATIV-6]Paramount number 263, elapsed = 0.013559
-[ATIV-6]Paramount number 264, elapsed = 0.015001
-[ATIV-6]Paramount number 265, elapsed = 0.015164
-[ATIV-6]Paramount number 266, elapsed = 0.015143
-[ATIV-6]Paramount number 267, elapsed = 0.020179
-[ATIV-6]Paramount number 268, elapsed = 0.014444
-[ATIV-6]Paramount number 269, elapsed = 0.016668
-[ATIV-6]Paramount number 270, elapsed = 0.014364
-[ATIV-6]Paramount number 271, elapsed = 0.015982
-[ATIV-6]Paramount number Step=  272, Dmax= 1.5e-02 nm, Epot= -9.59943e+05 Fmax= 1.24556e+04, atom= 311
-Step=  273, Dmax= 1.8e-02 nm, Epot= -9.60087e+05 Fmax= 1.49275e+04, atom= 311
-Step=  274, Dmax= 2.1e-02 nm, Epot= -9.60189e+05 Fmax= 1.79464e+04, atom= 311
-Step=  275, Dmax= 2.5e-02 nm, Epot= -9.60244e+05 Fmax= 2.12144e+04, atom= 311
-Step=  276, Dmax= 3.0e-02 nm, Epot= -9.60190e+05 Fmax= 2.58871e+04, atom= 311Step=  277, Dmax= 1.5e-02 nm, Epot= -9.60931e+05 Fmax= 2.39216e+03, atom= 311
-Step=  278, Dmax= 1.8e-02 nm, Epot= -9.61033e+05 Fmax= 2.57742e+04, atom= 311
-Step=  279, Dmax= 2.2e-02 nm, Epot= -9.61991e+05 Fmax= 8.38956e+03, atom= 311
-Step=  280, Dmax= 2.6e-02 nm, Epot= -9.61342e+05 Fmax= 3.25700e+04, atom= 311Step=  281, Dmax= 1.3e-02 nm, Epot= -9.62221e+05 Fmax= 1.21555e+04, atom= 311
-272, elapsed = 0.012194
-[ATIV-6]Paramount number 273, elapsed = 0.011850
-[ATIV-6]Paramount number 274, elapsed = 0.016928
-[ATIV-6]Paramount number 275, elapsed = 0.012002
-[ATIV-6]Paramount number 276, elapsed = 0.014025
-[ATIV-6]Paramount number 277, elapsed = 0.021448
-[ATIV-6]Paramount number 278, elapsed = 0.012422
-[ATIV-6]Paramount number 279, elapsed = 0.014013
-[ATIV-6]Paramount number 280, elapsed = 0.011510
-[ATIV-6]Paramount number 281, elapsed = 0.014320
-[ATIV-6]Paramount number 282, elapsed = 0.02490Step=  282, Dmax= 1.6e-02 nm, Epot= -9.62445e+05 Fmax= 1.24173e+04, atom= 311
-Step=  283, Dmax= 1.9e-02 nm, Epot= -9.62524e+05 Fmax= 1.69271e+04, atom= 311
-Step=  284, Dmax= 2.3e-02 nm, Epot= -9.62675e+05 Fmax= 1.84186e+04, atom= 311
-Step=  285, Dmax= 2.7e-02 nm, Epot= -9.62621e+05 Fmax= 2.36923e+04, atom= 311Step=  286, Dmax= 1.4e-02 nm, Epot= -9.63199e+05 Fmax= 2.71361e+03, atom= 311
-Step=  287, Dmax= 1.6e-02 nm, Epot= -9.63309e+05 Fmax= 2.32744e+04, atom= 311
-Step=  288, Dmax= 2.0e-02 nm, Epot= -9.64071e+05 Fmax= 7.25642e+03, atom= 311
-Step=  289, Dmax= 2.4e-02 nm, Epot= -9.63651e+05 Fmax= 2.94490e+04, atom= 311Step=  290, Dmax= 1.2e-02 nm, Epot= -9.64283e+05 Fmax= 1.10402e+04, atom= 311
-Step=  291, Dmax= 1.4e-02 nm, Epot= -9.64492e+05 Fmax= 1.09813e+04, atom= 311
-Step=  292, Dmax= 1.7e-02 nm, Epot= -9.64582e+05 Fmax= 1.54290e+04, atom= 311
-8
-[ATIV-6]Paramount number 283, elapsed = 0.032665
-[ATIV-6]Paramount number 284, elapsed = 0.011345
-[ATIV-6]Paramount number 285, elapsed = 0.016938
-[ATIV-6]Paramount number 286, elapsed = 0.014850
-[ATIV-6]Paramount number 287, elapsed = 0.013099
-[ATIV-6]Paramount number 288, elapsed = 0.010945
-[ATIV-6]Paramount number 289, elapsed = 0.011887
-[ATIV-6]Paramount number 290, elapsed = 0.011966
-[ATIV-6]Paramount number 291, elapsed = 0.012544
-[ATIV-6]Paramount number 292, elapsed = 0.012182
-[ATIV-6]Paramount nuStep=  293, Dmax= 2.0e-02 nm, Epot= -9.64752e+05 Fmax= 1.60706e+04, atom= 311
-Step=  294, Dmax= 2.4e-02 nm, Epot= -9.64715e+05 Fmax= 2.18724e+04, atom= 311Step=  295, Dmax= 1.2e-02 nm, Epot= -9.65158e+05 Fmax= 2.87495e+03, atom= 311
-Step=  296, Dmax= 1.5e-02 nm, Epot= -9.65277e+05 Fmax= 2.00779e+04, atom= 311
-Step=  297, Dmax= 1.8e-02 nm, Epot= -9.65872e+05 Fmax= 7.28748e+03, atom= 311
-Step=  298, Dmax= 2.1e-02 nm, Epot= -9.65593e+05 Fmax= 2.56221e+04, atom= 311Step=  299, Dmax= 1.1e-02 nm, Epot= -9.66080e+05 Fmax= 9.15312e+03, atom= 311
-Step=  300, Dmax= 1.3e-02 nm, Epot= -9.66252e+05 Fmax= 1.05992e+04, atom= 311
-Step=  301, Dmax= 1.5e-02 nm, Epot= -9.66386e+05 Fmax= 1.29591e+04, atom= 311
-Step=  302, Dmax= 1.8e-02 nm, Epot= -9.66502e+05 Fmax= 1.54393e+04, atom= 311
-mber 293, elapsed = 0.012282
-[ATIV-6]Paramount number 294, elapsed = 0.022338
-[ATIV-6]Paramount number 295, elapsed = 0.010618
-[ATIV-6]Paramount number 296, elapsed = 0.013053
-[ATIV-6]Paramount number 297, elapsed = 0.013221
-[ATIV-6]Paramount number 298, elapsed = 0.013961
-[ATIV-6]Paramount number 299, elapsed = 0.014093
-[ATIV-6]Paramount number 300, elapsed = 0.011859
-[ATIV-6]Paramount number 301, elapsed = 0.012860
-[ATIV-6]Paramount number 302, elapsed = 0.012617
-[ATIV-6]Paramount number 303, elapsed = 0.Step=  303, Dmax= 2.2e-02 nm, Epot= -9.66577e+05 Fmax= 1.83336e+04, atom= 311
-Step=  304, Dmax= 2.6e-02 nm, Epot= -9.66577e+05 Fmax= 2.24258e+04, atom= 311
-Step=  305, Dmax= 3.1e-02 nm, Epot= -9.66544e+05 Fmax= 2.61923e+04, atom= 311Step=  306, Dmax= 1.6e-02 nm, Epot= -9.67273e+05 Fmax= 2.03992e+03, atom= 311
-Step=  307, Dmax= 1.9e-02 nm, Epot= -9.67340e+05 Fmax= 2.69563e+04, atom= 311
-Step=  308, Dmax= 2.3e-02 nm, Epot= -9.68296e+05 Fmax= 8.42554e+03, atom= 311
-Step=  309, Dmax= 2.7e-02 nm, Epot= -9.67665e+05 Fmax= 3.39798e+04, atom= 311Step=  310, Dmax= 1.4e-02 nm, Epot= -9.68523e+05 Fmax= 1.28188e+04, atom= 311
-Step=  311, Dmax= 1.6e-02 nm, Epot= -9.68748e+05 Fmax= 1.24792e+04, atom= 311
-Step=  312, Dmax= 2.0e-02 nm, Epot= -9.68792e+05 Fmax= 1.80258e+04, atom= 311
-Step=  313, Dmax= 2.3e-02 nm, Epot= -9.68961e+05 Fmax= 1.83102e+04, atom= 311
-011525
-[ATIV-6]Paramount number 304, elapsed = 0.013007
-[ATIV-6]Paramount number 305, elapsed = 0.011724
-[ATIV-6]Paramount number 306, elapsed = 0.012903
-[ATIV-6]Paramount number 307, elapsed = 0.013677
-[ATIV-6]Paramount number 308, elapsed = 0.017735
-[ATIV-6]Paramount number 309, elapsed = 0.015607
-[ATIV-6]Paramount number 310, elapsed = 0.022740
-[ATIV-6]Paramount number 311, elapsed = 0.015961
-[ATIV-6]Paramount number 312, elapsed = 0.018108
-[ATIV-6]Paramount number 313, elapsed = 0.024632
-[ATIV-6]ParamouStep=  314, Dmax= 2.8e-02 nm, Epot= -9.68811e+05 Fmax= 2.54785e+04, atom= 311Step=  315, Dmax= 1.4e-02 nm, Epot= -9.69434e+05 Fmax= 3.59694e+03, atom= 311
-Step=  316, Dmax= 1.7e-02 nm, Epot= -9.69352e+05 Fmax= 2.29843e+04, atom= 311Step=  317, Dmax= 8.5e-03 nm, Epot= -9.69621e+05 Fmax= 9.66610e+03, atom= 311
-Step=  318, Dmax= 1.0e-02 nm, Epot= -9.69847e+05 Fmax= 6.19353e+03, atom= 311
-Step=  319, Dmax= 1.2e-02 nm, Epot= -9.69942e+05 Fmax= 1.27127e+04, atom= 311
-Step=  320, Dmax= 1.5e-02 nm, Epot= -9.70177e+05 Fmax= 1.00101e+04, atom= 311
-Step=  321, Dmax= 1.8e-02 nm, Epot= -9.70162e+05 Fmax= 1.71611e+04, atom= 311Step=  322, Dmax= 8.8e-03 nm, Epot= -9.70394e+05 Fmax= 3.62581e+03, atom= 311
-Step=  323, Dmax= 1.1e-02 nm, Epot= -9.70525e+05 Fmax= 1.29747e+04, atom= 311
-nt number 314, elapsed = 0.013253
-[ATIV-6]Paramount number 315, elapsed = 0.022375
-[ATIV-6]Paramount number 316, elapsed = 0.011245
-[ATIV-6]Paramount number 317, elapsed = 0.020423
-[ATIV-6]Paramount number 318, elapsed = 0.018417
-[ATIV-6]Paramount number 319, elapsed = 0.018465
-[ATIV-6]Paramount number 320, elapsed = 0.014239
-[ATIV-6]Paramount number 321, elapsed = 0.031121
-[ATIV-6]Paramount number 322, elapsed = 0.013380
-[ATIV-6]Paramount number 323, elapsed = 0.013878
-[ATIV-6]Paramount number 324, elapsedStep=  324, Dmax= 1.3e-02 nm, Epot= -9.70830e+05 Fmax= 6.63912e+03, atom= 311
-Step=  325, Dmax= 1.5e-02 nm, Epot= -9.70826e+05 Fmax= 1.71236e+04, atom= 311Step=  326, Dmax= 7.6e-03 nm, Epot= -9.71002e+05 Fmax= 5.23601e+03, atom= 311
-Step=  327, Dmax= 9.1e-03 nm, Epot= -9.71146e+05 Fmax= 8.97701e+03, atom= 311
-Step=  328, Dmax= 1.1e-02 nm, Epot= -9.71327e+05 Fmax= 8.10252e+03, atom= 311
-Step=  329, Dmax= 1.3e-02 nm, Epot= -9.71425e+05 Fmax= 1.22074e+04, atom= 311
-Step=  330, Dmax= 1.6e-02 nm, Epot= -9.71589e+05 Fmax= 1.22176e+04, atom= 311
-Step=  331, Dmax= 1.9e-02 nm, Epot= -9.71616e+05 Fmax= 1.70375e+04, atom= 311
-Step=  332, Dmax= 2.3e-02 nm, Epot= -9.71740e+05 Fmax= 1.81823e+04, atom= 311
-Step=  333, Dmax= 2.7e-02 nm, Epot= -9.71654e+05 Fmax= 2.38243e+04, atom= 311Step=  334, Dmax= 1.4e-02 nm, Epot= -9.72193e+05 Fmax= 2.89414e+03, atom= 311
- = 0.015448
-[ATIV-6]Paramount number 325, elapsed = 0.031138
-[ATIV-6]Paramount number 326, elapsed = 0.017725
-[ATIV-6]Paramount number 327, elapsed = 0.012112
-[ATIV-6]Paramount number 328, elapsed = 0.027967
-[ATIV-6]Paramount number 329, elapsed = 0.013176
-[ATIV-6]Paramount number 330, elapsed = 0.013024
-[ATIV-6]Paramount number 331, elapsed = 0.015601
-[ATIV-6]Paramount number 332, elapsed = 0.011172
-[ATIV-6]Paramount number 333, elapsed = 0.010758
-[ATIV-6]Paramount number 334, elapsed = 0.012868
-[ATIV-6]PaStep=  335, Dmax= 1.6e-02 nm, Epot= -9.72155e+05 Fmax= 2.24006e+04, atom= 311Step=  336, Dmax= 8.1e-03 nm, Epot= -9.72379e+05 Fmax= 9.63239e+03, atom= 311
-Step=  337, Dmax= 9.8e-03 nm, Epot= -9.72612e+05 Fmax= 5.54263e+03, atom= 311
-Step=  338, Dmax= 1.2e-02 nm, Epot= -9.72702e+05 Fmax= 1.28660e+04, atom= 311
-Step=  339, Dmax= 1.4e-02 nm, Epot= -9.72950e+05 Fmax= 8.91219e+03, atom= 311
-Step=  340, Dmax= 1.7e-02 nm, Epot= -9.72913e+05 Fmax= 1.75073e+04, atom= 311Step=  341, Dmax= 8.4e-03 nm, Epot= -9.73137e+05 Fmax= 4.25534e+03, atom= 311
-Step=  342, Dmax= 1.0e-02 nm, Epot= -9.73248e+05 Fmax= 1.15512e+04, atom= 311
-Step=  343, Dmax= 1.2e-02 nm, Epot= -9.73494e+05 Fmax= 7.44260e+03, atom= 311
-Step=  344, Dmax= 1.5e-02 nm, Epot= -9.73514e+05 Fmax= 1.52194e+04, atom= 311
-ramount number 335, elapsed = 0.012875
-[ATIV-6]Paramount number 336, elapsed = 0.012999
-[ATIV-6]Paramount number 337, elapsed = 0.011874
-[ATIV-6]Paramount number 338, elapsed = 0.012960
-[ATIV-6]Paramount number 339, elapsed = 0.011893
-[ATIV-6]Paramount number 340, elapsed = 0.012826
-[ATIV-6]Paramount number 341, elapsed = 0.028509
-[ATIV-6]Paramount number 342, elapsed = 0.011594
-[ATIV-6]Paramount number 343, elapsed = 0.012402
-[ATIV-6]Paramount number 344, elapsed = 0.011984
-[ATIV-6]Paramount number 345, elStep=  345, Dmax= 1.8e-02 nm, Epot= -9.73764e+05 Fmax= 1.19951e+04, atom= 311
-Step=  346, Dmax= 2.1e-02 nm, Epot= -9.73643e+05 Fmax= 2.06095e+04, atom= 311Step=  347, Dmax= 1.1e-02 nm, Epot= -9.74011e+05 Fmax= 4.31838e+03, atom= 311
-Step=  348, Dmax= 1.3e-02 nm, Epot= -9.74041e+05 Fmax= 1.54804e+04, atom= 311
-Step=  349, Dmax= 1.5e-02 nm, Epot= -9.74393e+05 Fmax= 7.94296e+03, atom= 311
-Step=  350, Dmax= 1.8e-02 nm, Epot= -9.74249e+05 Fmax= 2.05480e+04, atom= 311Step=  351, Dmax= 9.1e-03 nm, Epot= -9.74564e+05 Fmax= 6.22732e+03, atom= 311
-Step=  352, Dmax= 1.1e-02 nm, Epot= -9.74665e+05 Fmax= 1.07179e+04, atom= 311
-Step=  353, Dmax= 1.3e-02 nm, Epot= -9.74844e+05 Fmax= 9.71975e+03, atom= 311
-Step=  354, Dmax= 1.6e-02 nm, Epot= -9.74885e+05 Fmax= 1.47151e+04, atom= 311
-Step=  355, Dmax= 1.9e-02 nm, Epot= -9.75042e+05 Fmax= 1.45506e+04, atom= 311
-apsed = 0.019323
-[ATIV-6]Paramount number 346, elapsed = 0.026361
-[ATIV-6]Paramount number 347, elapsed = 0.025981
-[ATIV-6]Paramount number 348, elapsed = 0.014740
-[ATIV-6]Paramount number 349, elapsed = 0.015576
-[ATIV-6]Paramount number 350, elapsed = 0.017709
-[ATIV-6]Paramount number 351, elapsed = 0.016535
-[ATIV-6]Paramount number 352, elapsed = 0.012474
-[ATIV-6]Paramount number 353, elapsed = 0.011520
-[ATIV-6]Paramount number 354, elapsed = 0.013138
-[ATIV-6]Paramount number 355, elapsed = 0.012350
-[ATIVStep=  356, Dmax= 2.3e-02 nm, Epot= -9.74979e+05 Fmax= 2.04640e+04, atom= 311Step=  357, Dmax= 1.1e-02 nm, Epot= -9.75366e+05 Fmax= 2.97772e+03, atom= 311
-Step=  358, Dmax= 1.4e-02 nm, Epot= -9.75387e+05 Fmax= 1.79121e+04, atom= 311
-Step=  359, Dmax= 1.6e-02 nm, Epot= -9.75860e+05 Fmax= 7.32302e+03, atom= 311
-Step=  360, Dmax= 2.0e-02 nm, Epot= -9.75619e+05 Fmax= 2.34162e+04, atom= 311Step=  361, Dmax= 9.8e-03 nm, Epot= -9.76036e+05 Fmax= 7.99181e+03, atom= 311
-Step=  362, Dmax= 1.2e-02 nm, Epot= -9.76162e+05 Fmax= 1.01874e+04, atom= 311
-Step=  363, Dmax= 1.4e-02 nm, Epot= -9.76282e+05 Fmax= 1.17068e+04, atom= 311
-Step=  364, Dmax= 1.7e-02 nm, Epot= -9.76358e+05 Fmax= 1.45630e+04, atom= 311
-Step=  365, Dmax= 2.0e-02 nm, Epot= -9.76428e+05 Fmax= 1.69459e+04, atom= 311
--6]Paramount number 356, elapsed = 0.013235
-[ATIV-6]Paramount number 357, elapsed = 0.011819
-[ATIV-6]Paramount number 358, elapsed = 0.012997
-[ATIV-6]Paramount number 359, elapsed = 0.012418
-[ATIV-6]Paramount number 360, elapsed = 0.012452
-[ATIV-6]Paramount number 361, elapsed = 0.014567
-[ATIV-6]Paramount number 362, elapsed = 0.016915
-[ATIV-6]Paramount number 363, elapsed = 0.011873
-[ATIV-6]Paramount number 364, elapsed = 0.012956
-[ATIV-6]Paramount number 365, elapsed = 0.011457
-[ATIV-6]Paramount number 36Step=  366, Dmax= 2.4e-02 nm, Epot= -9.76424e+05 Fmax= 2.06392e+04, atom= 311Step=  367, Dmax= 1.2e-02 nm, Epot= -9.76838e+05 Fmax= 1.91642e+03, atom= 311
-Step=  368, Dmax= 1.5e-02 nm, Epot= -9.76895e+05 Fmax= 2.04218e+04, atom= 311
-Step=  369, Dmax= 1.7e-02 nm, Epot= -9.77510e+05 Fmax= 6.75093e+03, atom= 311
-Step=  370, Dmax= 2.1e-02 nm, Epot= -9.77214e+05 Fmax= 2.63832e+04, atom= 311Step=  371, Dmax= 1.0e-02 nm, Epot= -9.77720e+05 Fmax= 9.84045e+03, atom= 311
-Step=  372, Dmax= 1.3e-02 nm, Epot= -9.77894e+05 Fmax= 9.80130e+03, atom= 311
-Step=  373, Dmax= 1.5e-02 nm, Epot= -9.77966e+05 Fmax= 1.37751e+04, atom= 311
-Step=  374, Dmax= 1.8e-02 nm, Epot= -9.78096e+05 Fmax= 1.44488e+04, atom= 311
-Step=  375, Dmax= 2.2e-02 nm, Epot= -9.78064e+05 Fmax= 1.94597e+04, atom= 311Step=  376, Dmax= 1.1e-02 nm, Epot= -9.78411e+05 Fmax= 2.53103e+03, atom= 311
-6, elapsed = 0.012871
-[ATIV-6]Paramount number 367, elapsed = 0.013349
-[ATIV-6]Paramount number 368, elapsed = 0.015600
-[ATIV-6]Paramount number 369, elapsed = 0.011802
-[ATIV-6]Paramount number 370, elapsed = 0.014552
-[ATIV-6]Paramount number 371, elapsed = 0.011710
-[ATIV-6]Paramount number 372, elapsed = 0.012702
-[ATIV-6]Paramount number 373, elapsed = 0.011207
-[ATIV-6]Paramount number 374, elapsed = 0.012527
-[ATIV-6]Paramount number 375, elapsed = 0.013289
-[ATIV-6]Paramount number 376, elapsed = 0.013445
-Step=  377, Dmax= 1.3e-02 nm, Epot= -9.78452e+05 Fmax= 1.79789e+04, atom= 311
-Step=  378, Dmax= 1.6e-02 nm, Epot= -9.78918e+05 Fmax= 6.54866e+03, atom= 311
-Step=  379, Dmax= 1.9e-02 nm, Epot= -9.78732e+05 Fmax= 2.26643e+04, atom= 311Step=  380, Dmax= 9.4e-03 nm, Epot= -9.79087e+05 Fmax= 8.02293e+03, atom= 311
-Step=  381, Dmax= 1.1e-02 nm, Epot= -9.79215e+05 Fmax= 9.70095e+03, atom= 311
-Step=  382, Dmax= 1.4e-02 nm, Epot= -9.79322e+05 Fmax= 1.13881e+04, atom= 311
-Step=  383, Dmax= 1.6e-02 nm, Epot= -9.79400e+05 Fmax= 1.39156e+04, atom= 311
-Step=  384, Dmax= 1.9e-02 nm, Epot= -9.79464e+05 Fmax= 1.63901e+04, atom= 311
-Step=  385, Dmax= 2.3e-02 nm, Epot= -9.79468e+05 Fmax= 2.00161e+04, atom= 311
-Step=  386, Dmax= 2.8e-02 nm, Epot= -9.79446e+05 Fmax= 2.34042e+04, atom= 311[ATIV-6]Paramount number 377, elapsed = 0.013496
-[ATIV-6]Paramount number 378, elapsed = 0.012707
-[ATIV-6]Paramount number 379, elapsed = 0.011135
-[ATIV-6]Paramount number 380, elapsed = 0.012733
-[ATIV-6]Paramount number 381, elapsed = 0.013192
-[ATIV-6]Paramount number 382, elapsed = 0.029852
-[ATIV-6]Paramount number 383, elapsed = 0.011958
-[ATIV-6]Paramount number 384, elapsed = 0.013749
-[ATIV-6]Paramount number 385, elapsed = 0.012654
-[ATIV-6]Paramount number 386, elapsed = 0.021847
-[ATIV-6]Paramount numbStep=  387, Dmax= 1.4e-02 nm, Epot= -9.79969e+05 Fmax= 1.80896e+03, atom= 311
-Step=  388, Dmax= 1.7e-02 nm, Epot= -9.79885e+05 Fmax= 2.39316e+04, atom= 311Step=  389, Dmax= 8.4e-03 nm, Epot= -9.80160e+05 Fmax= 1.09954e+04, atom= 311
-Step=  390, Dmax= 1.0e-02 nm, Epot= -9.80434e+05 Fmax= 4.73123e+03, atom= 311
-Step=  391, Dmax= 1.2e-02 nm, Epot= -9.80499e+05 Fmax= 1.44361e+04, atom= 311
-Step=  392, Dmax= 1.5e-02 nm, Epot= -9.80786e+05 Fmax= 8.11005e+03, atom= 311
-Step=  393, Dmax= 1.7e-02 nm, Epot= -9.80648e+05 Fmax= 1.92184e+04, atom= 311Step=  394, Dmax= 8.7e-03 nm, Epot= -9.80938e+05 Fmax= 5.54758e+03, atom= 311
-Step=  395, Dmax= 1.0e-02 nm, Epot= -9.81010e+05 Fmax= 1.07735e+04, atom= 311
-Step=  396, Dmax= 1.3e-02 nm, Epot= -9.81185e+05 Fmax= 8.88494e+03, atom= 311
-er 387, elapsed = 0.012873
-[ATIV-6]Paramount number 388, elapsed = 0.012744
-[ATIV-6]Paramount number 389, elapsed = 0.013630
-[ATIV-6]Paramount number 390, elapsed = 0.014156
-[ATIV-6]Paramount number 391, elapsed = 0.016761
-[ATIV-6]Paramount number 392, elapsed = 0.018756
-[ATIV-6]Paramount number 393, elapsed = 0.018331
-[ATIV-6]Paramount number 394, elapsed = 0.018593
-[ATIV-6]Paramount number 395, elapsed = 0.015283
-[ATIV-6]Paramount number 396, elapsed = 0.018375
-[ATIV-6]Paramount number 397, elapsed = 0.01Step=  397, Dmax= 1.5e-02 nm, Epot= -9.81190e+05 Fmax= 1.47150e+04, atom= 311
-Step=  398, Dmax= 1.8e-02 nm, Epot= -9.81358e+05 Fmax= 1.35487e+04, atom= 311
-Step=  399, Dmax= 2.2e-02 nm, Epot= -9.81261e+05 Fmax= 2.01699e+04, atom= 311Step=  400, Dmax= 1.1e-02 nm, Epot= -9.81629e+05 Fmax= 3.27467e+03, atom= 311
-Step=  401, Dmax= 1.3e-02 nm, Epot= -9.81587e+05 Fmax= 1.68887e+04, atom= 311Step=  402, Dmax= 6.5e-03 nm, Epot= -9.81749e+05 Fmax= 6.77478e+03, atom= 311
-Step=  403, Dmax= 7.8e-03 nm, Epot= -9.81902e+05 Fmax= 5.35282e+03, atom= 311
-Step=  404, Dmax= 9.4e-03 nm, Epot= -9.81985e+05 Fmax= 9.34210e+03, atom= 311
-Step=  405, Dmax= 1.1e-02 nm, Epot= -9.82137e+05 Fmax= 8.21595e+03, atom= 311
-Step=  406, Dmax= 1.4e-02 nm, Epot= -9.82167e+05 Fmax= 1.29759e+04, atom= 311
-Step=  407, Dmax= 1.6e-02 nm, Epot= -9.82316e+05 Fmax= 1.23589e+04, atom= 311
-3695
-[ATIV-6]Paramount number 398, elapsed = 0.014118
-[ATIV-6]Paramount number 399, elapsed = 0.012480
-[ATIV-6]Paramount number 400, elapsed = 0.013522
-[ATIV-6]Paramount number 401, elapsed = 0.012634
-[ATIV-6]Paramount number 402, elapsed = 0.012973
-[ATIV-6]Paramount number 403, elapsed = 0.010476
-[ATIV-6]Paramount number 404, elapsed = 0.012999
-[ATIV-6]Paramount number 405, elapsed = 0.021397
-[ATIV-6]Paramount number 406, elapsed = 0.013000
-[ATIV-6]Paramount number 407, elapsed = 0.014368
-[ATIV-6]ParamountStep=  408, Dmax= 1.9e-02 nm, Epot= -9.82263e+05 Fmax= 1.79710e+04, atom= 311Step=  409, Dmax= 9.7e-03 nm, Epot= -9.82563e+05 Fmax= 2.83377e+03, atom= 311
-Step=  410, Dmax= 1.2e-02 nm, Epot= -9.82572e+05 Fmax= 1.55851e+04, atom= 311
-Step=  411, Dmax= 1.4e-02 nm, Epot= -9.82940e+05 Fmax= 6.33375e+03, atom= 311
-Step=  412, Dmax= 1.7e-02 nm, Epot= -9.82813e+05 Fmax= 1.99106e+04, atom= 311Step=  413, Dmax= 8.4e-03 nm, Epot= -9.83089e+05 Fmax= 6.69953e+03, atom= 311
-Step=  414, Dmax= 1.0e-02 nm, Epot= -9.83193e+05 Fmax= 9.10779e+03, atom= 311
-Step=  415, Dmax= 1.2e-02 nm, Epot= -9.83307e+05 Fmax= 9.78671e+03, atom= 311
-Step=  416, Dmax= 1.5e-02 nm, Epot= -9.83367e+05 Fmax= 1.29592e+04, atom= 311
-Step=  417, Dmax= 1.7e-02 nm, Epot= -9.83458e+05 Fmax= 1.42203e+04, atom= 311
- number 408, elapsed = 0.016070
-[ATIV-6]Paramount number 409, elapsed = 0.021569
-[ATIV-6]Paramount number 410, elapsed = 0.011454
-[ATIV-6]Paramount number 411, elapsed = 0.012686
-[ATIV-6]Paramount number 412, elapsed = 0.016161
-[ATIV-6]Paramount number 413, elapsed = 0.013152
-[ATIV-6]Paramount number 414, elapsed = 0.013166
-[ATIV-6]Paramount number 415, elapsed = 0.024784
-[ATIV-6]Paramount number 416, elapsed = 0.025745
-[ATIV-6]Paramount number 417, elapsed = 0.011766
-[ATIV-6]Paramount number 418, elapsed =Step=  418, Dmax= 2.1e-02 nm, Epot= -9.83449e+05 Fmax= 1.83472e+04, atom= 311Step=  419, Dmax= 1.0e-02 nm, Epot= -9.83742e+05 Fmax= 2.09833e+03, atom= 311
-Step=  420, Dmax= 1.3e-02 nm, Epot= -9.83763e+05 Fmax= 1.74977e+04, atom= 311
-Step=  421, Dmax= 1.5e-02 nm, Epot= -9.84194e+05 Fmax= 6.11538e+03, atom= 311
-Step=  422, Dmax= 1.8e-02 nm, Epot= -9.84078e+05 Fmax= 2.21784e+04, atom= 311Step=  423, Dmax= 9.0e-03 nm, Epot= -9.84371e+05 Fmax= 7.99976e+03, atom= 311
-Step=  424, Dmax= 1.1e-02 nm, Epot= -9.84502e+05 Fmax= 8.98512e+03, atom= 311
-Step=  425, Dmax= 1.3e-02 nm, Epot= -9.84591e+05 Fmax= 1.13794e+04, atom= 311
-Step=  426, Dmax= 1.6e-02 nm, Epot= -9.84677e+05 Fmax= 1.30744e+04, atom= 311
-Step=  427, Dmax= 1.9e-02 nm, Epot= -9.84718e+05 Fmax= 1.60979e+04, atom= 311
-Step=  428, Dmax= 2.2e-02 nm, Epot= -9.84746e+05 Fmax= 1.88691e+04, atom= 311
- 0.012652
-[ATIV-6]Paramount number 419, elapsed = 0.012170
-[ATIV-6]Paramount number 420, elapsed = 0.013813
-[ATIV-6]Paramount number 421, elapsed = 0.014600
-[ATIV-6]Paramount number 422, elapsed = 0.014211
-[ATIV-6]Paramount number 423, elapsed = 0.015672
-[ATIV-6]Paramount number 424, elapsed = 0.012928
-[ATIV-6]Paramount number 425, elapsed = 0.022377
-[ATIV-6]Paramount number 426, elapsed = 0.021974
-[ATIV-6]Paramount number 427, elapsed = 0.012334
-[ATIV-6]Paramount number 428, elapsed = 0.013688
-[ATIV-6]ParaStep=  429, Dmax= 2.7e-02 nm, Epot= -9.84706e+05 Fmax= 2.29015e+04, atom= 311Step=  430, Dmax= 1.3e-02 nm, Epot= -9.85160e+05 Fmax= 2.00076e+03, atom= 311
-Step=  431, Dmax= 1.6e-02 nm, Epot= -9.84988e+05 Fmax= 2.27386e+04, atom= 311Step=  432, Dmax= 8.1e-03 nm, Epot= -9.85282e+05 Fmax= 1.02802e+04, atom= 311
-Step=  433, Dmax= 9.7e-03 nm, Epot= -9.85521e+05 Fmax= 4.80425e+03, atom= 311
-Step=  434, Dmax= 1.2e-02 nm, Epot= -9.85557e+05 Fmax= 1.35431e+04, atom= 311
-Step=  435, Dmax= 1.4e-02 nm, Epot= -9.85803e+05 Fmax= 8.25561e+03, atom= 311
-Step=  436, Dmax= 1.7e-02 nm, Epot= -9.85687e+05 Fmax= 1.78874e+04, atom= 311Step=  437, Dmax= 8.4e-03 nm, Epot= -9.85946e+05 Fmax= 4.89141e+03, atom= 311
-Step=  438, Dmax= 1.0e-02 nm, Epot= -9.85993e+05 Fmax= 1.09816e+04, atom= 311
-mount number 429, elapsed = 0.013104
-[ATIV-6]Paramount number 430, elapsed = 0.015508
-[ATIV-6]Paramount number 431, elapsed = 0.025984
-[ATIV-6]Paramount number 432, elapsed = 0.017351
-[ATIV-6]Paramount number 433, elapsed = 0.014373
-[ATIV-6]Paramount number 434, elapsed = 0.016558
-[ATIV-6]Paramount number 435, elapsed = 0.013860
-[ATIV-6]Paramount number 436, elapsed = 0.018414
-[ATIV-6]Paramount number 437, elapsed = 0.017844
-[ATIV-6]Paramount number 438, elapsed = 0.011368
-[ATIV-6]Paramount number 439, elapStep=  439, Dmax= 1.2e-02 nm, Epot= -9.86174e+05 Fmax= 7.97964e+03, atom= 311
-Step=  440, Dmax= 1.4e-02 nm, Epot= -9.86154e+05 Fmax= 1.47018e+04, atom= 311Step=  441, Dmax= 7.2e-03 nm, Epot= -9.86314e+05 Fmax= 3.29523e+03, atom= 311
-Step=  442, Dmax= 8.7e-03 nm, Epot= -9.86374e+05 Fmax= 1.02321e+04, atom= 311
-Step=  443, Dmax= 1.0e-02 nm, Epot= -9.86580e+05 Fmax= 5.98451e+03, atom= 311
-Step=  444, Dmax= 1.3e-02 nm, Epot= -9.86573e+05 Fmax= 1.36207e+04, atom= 311Step=  445, Dmax= 6.3e-03 nm, Epot= -9.86702e+05 Fmax= 3.82213e+03, atom= 311
-Step=  446, Dmax= 7.5e-03 nm, Epot= -9.86785e+05 Fmax= 8.03928e+03, atom= 311
-Step=  447, Dmax= 9.0e-03 nm, Epot= -9.86934e+05 Fmax= 6.08024e+03, atom= 311
-Step=  448, Dmax= 1.1e-02 nm, Epot= -9.86977e+05 Fmax= 1.09082e+04, atom= 311
-Step=  449, Dmax= 1.3e-02 nm, Epot= -9.87124e+05 Fmax= 9.48061e+03, atom= 311
-sed = 0.015683
-[ATIV-6]Paramount number 440, elapsed = 0.011955
-[ATIV-6]Paramount number 441, elapsed = 0.011265
-[ATIV-6]Paramount number 442, elapsed = 0.062266
-[ATIV-6]Paramount number 443, elapsed = 0.016600
-[ATIV-6]Paramount number 444, elapsed = 0.023729
-[ATIV-6]Paramount number 445, elapsed = 0.068392
-[ATIV-6]Paramount number 446, elapsed = 0.020988
-[ATIV-6]Paramount number 447, elapsed = 0.020918
-[ATIV-6]Paramount number 448, elapsed = 0.028051
-[ATIV-6]Paramount number 449, elapsed = 0.017442
-[ATIV-6Step=  450, Dmax= 1.6e-02 nm, Epot= -9.87109e+05 Fmax= 1.47884e+04, atom= 311Step=  451, Dmax= 7.8e-03 nm, Epot= -9.87291e+05 Fmax= 2.59047e+03, atom= 311
-Step=  452, Dmax= 9.4e-03 nm, Epot= -9.87328e+05 Fmax= 1.19280e+04, atom= 311
-Step=  453, Dmax= 1.1e-02 nm, Epot= -9.87598e+05 Fmax= 5.50709e+03, atom= 311
-Step=  454, Dmax= 1.3e-02 nm, Epot= -9.87544e+05 Fmax= 1.55005e+04, atom= 311Step=  455, Dmax= 6.7e-03 nm, Epot= -9.87726e+05 Fmax= 5.01090e+03, atom= 311
-Step=  456, Dmax= 8.1e-03 nm, Epot= -9.87814e+05 Fmax= 7.72046e+03, atom= 311
-Step=  457, Dmax= 9.7e-03 nm, Epot= -9.87931e+05 Fmax= 7.47373e+03, atom= 311
-Step=  458, Dmax= 1.2e-02 nm, Epot= -9.87982e+05 Fmax= 1.07204e+04, atom= 311
-Step=  459, Dmax= 1.4e-02 nm, Epot= -9.88084e+05 Fmax= 1.11340e+04, atom= 311
-]Paramount number 450, elapsed = 0.012476
-[ATIV-6]Paramount number 451, elapsed = 0.014430
-[ATIV-6]Paramount number 452, elapsed = 0.016455
-[ATIV-6]Paramount number 453, elapsed = 0.016050
-[ATIV-6]Paramount number 454, elapsed = 0.013082
-[ATIV-6]Paramount number 455, elapsed = 0.015286
-[ATIV-6]Paramount number 456, elapsed = 0.019139
-[ATIV-6]Paramount number 457, elapsed = 0.054057
-[ATIV-6]Paramount number 458, elapsed = 0.014810
-[ATIV-6]Paramount number 459, elapsed = 0.012312
-[ATIV-6]Paramount number 460,Step=  460, Dmax= 1.7e-02 nm, Epot= -9.88086e+05 Fmax= 1.49101e+04, atom= 311
-Step=  461, Dmax= 2.0e-02 nm, Epot= -9.88145e+05 Fmax= 1.64157e+04, atom= 311
-Step=  462, Dmax= 2.4e-02 nm, Epot= -9.88059e+05 Fmax= 2.10686e+04, atom= 311Step=  463, Dmax= 1.2e-02 nm, Epot= -9.88520e+05 Fmax= 2.29508e+03, atom= 311
-Step=  464, Dmax= 1.4e-02 nm, Epot= -9.88302e+05 Fmax= 1.99717e+04, atom= 311Step=  465, Dmax= 7.2e-03 nm, Epot= -9.88600e+05 Fmax= 8.79204e+03, atom= 311
-Step=  466, Dmax= 8.7e-03 nm, Epot= -9.88802e+05 Fmax= 4.72184e+03, atom= 311
-Step=  467, Dmax= 1.0e-02 nm, Epot= -9.88818e+05 Fmax= 1.15746e+04, atom= 311
-Step=  468, Dmax= 1.3e-02 nm, Epot= -9.89024e+05 Fmax= 7.94283e+03, atom= 311
-Step=  469, Dmax= 1.5e-02 nm, Epot= -9.88935e+05 Fmax= 1.54788e+04, atom= 311Step=  470, Dmax= 7.5e-03 nm, Epot= -9.89165e+05 Fmax= 3.90110e+03, atom= 311
- elapsed = 0.014584
-[ATIV-6]Paramount number 461, elapsed = 0.015377
-[ATIV-6]Paramount number 462, elapsed = 0.030590
-[ATIV-6]Paramount number 463, elapsed = 0.016143
-[ATIV-6]Paramount number 464, elapsed = 0.018677
-[ATIV-6]Paramount number 465, elapsed = 0.020517
-[ATIV-6]Paramount number 466, elapsed = 0.012908
-[ATIV-6]Paramount number 467, elapsed = 0.011770
-[ATIV-6]Paramount number 468, elapsed = 0.015815
-[ATIV-6]Paramount number 469, elapsed = 0.013480
-[ATIV-6]Paramount number 470, elapsed = 0.019553
-[AStep=  471, Dmax= 9.0e-03 nm, Epot= -9.89193e+05 Fmax= 1.03061e+04, atom= 311
-Step=  472, Dmax= 1.1e-02 nm, Epot= -9.89386e+05 Fmax= 6.59653e+03, atom= 311
-Step=  473, Dmax= 1.3e-02 nm, Epot= -9.89351e+05 Fmax= 1.36857e+04, atom= 311Step=  474, Dmax= 6.5e-03 nm, Epot= -9.89507e+05 Fmax= 3.50607e+03, atom= 311
-Step=  475, Dmax= 7.8e-03 nm, Epot= -9.89561e+05 Fmax= 8.63326e+03, atom= 311
-Step=  476, Dmax= 9.3e-03 nm, Epot= -9.89729e+05 Fmax= 5.94022e+03, atom= 311
-Step=  477, Dmax= 1.1e-02 nm, Epot= -9.89735e+05 Fmax= 1.15420e+04, atom= 311
-Step=  478, Dmax= 1.3e-02 nm, Epot= -9.89901e+05 Fmax= 9.42557e+03, atom= 311
-Step=  479, Dmax= 1.6e-02 nm, Epot= -9.89823e+05 Fmax= 1.57288e+04, atom= 311Step=  480, Dmax= 8.1e-03 nm, Epot= -9.90067e+05 Fmax= 3.25497e+03, atom= 311
-TIV-6]Paramount number 471, elapsed = 0.012597
-[ATIV-6]Paramount number 472, elapsed = 0.011548
-[ATIV-6]Paramount number 473, elapsed = 0.011940
-[ATIV-6]Paramount number 474, elapsed = 0.013268
-[ATIV-6]Paramount number 475, elapsed = 0.013068
-[ATIV-6]Paramount number 476, elapsed = 0.012015
-[ATIV-6]Paramount number 477, elapsed = 0.011688
-[ATIV-6]Paramount number 478, elapsed = 0.012939
-[ATIV-6]Paramount number 479, elapsed = 0.013152
-[ATIV-6]Paramount number 480, elapsed = 0.010955
-[ATIV-6]Paramount numberStep=  481, Dmax= 9.7e-03 nm, Epot= -9.90060e+05 Fmax= 1.20217e+04, atom= 311Step=  482, Dmax= 4.8e-03 nm, Epot= -9.90155e+05 Fmax= 4.37925e+03, atom= 311
-Step=  483, Dmax= 5.8e-03 nm, Epot= -9.90256e+05 Fmax= 4.77562e+03, atom= 311
-Step=  484, Dmax= 7.0e-03 nm, Epot= -9.90346e+05 Fmax= 6.16510e+03, atom= 311
-Step=  485, Dmax= 8.4e-03 nm, Epot= -9.90441e+05 Fmax= 6.91481e+03, atom= 311
-Step=  486, Dmax= 1.0e-02 nm, Epot= -9.90515e+05 Fmax= 8.79495e+03, atom= 311
-Step=  487, Dmax= 1.2e-02 nm, Epot= -9.90593e+05 Fmax= 1.00500e+04, atom= 311
-Step=  488, Dmax= 1.4e-02 nm, Epot= -9.90639e+05 Fmax= 1.24763e+04, atom= 311
-Step=  489, Dmax= 1.7e-02 nm, Epot= -9.90678e+05 Fmax= 1.46346e+04, atom= 311
-Step=  490, Dmax= 2.1e-02 nm, Epot= -9.90672e+05 Fmax= 1.77133e+04, atom= 311 481, elapsed = 0.011656
-[ATIV-6]Paramount number 482, elapsed = 0.014028
-[ATIV-6]Paramount number 483, elapsed = 0.012966
-[ATIV-6]Paramount number 484, elapsed = 0.012724
-[ATIV-6]Paramount number 485, elapsed = 0.014665
-[ATIV-6]Paramount number 486, elapsed = 0.011318
-[ATIV-6]Paramount number 487, elapsed = 0.013586
-[ATIV-6]Paramount number 488, elapsed = 0.011024
-[ATIV-6]Paramount number 489, elapsed = 0.016071
-[ATIV-6]Paramount number 490, elapsed = 0.011791
-[ATIV-6]Paramount number 491, elapsed = 0.0116Step=  491, Dmax= 1.0e-02 nm, Epot= -9.90986e+05 Fmax= 1.50591e+03, atom= 311
-Step=  492, Dmax= 1.2e-02 nm, Epot= -9.90857e+05 Fmax= 1.76860e+04, atom= 311Step=  493, Dmax= 6.2e-03 nm, Epot= -9.91084e+05 Fmax= 8.03814e+03, atom= 311
-Step=  494, Dmax= 7.5e-03 nm, Epot= -9.91296e+05 Fmax= 3.64007e+03, atom= 311
-Step=  495, Dmax= 9.0e-03 nm, Epot= -9.91361e+05 Fmax= 1.04360e+04, atom= 311
-Step=  496, Dmax= 1.1e-02 nm, Epot= -9.91558e+05 Fmax= 6.40116e+03, atom= 311
-Step=  497, Dmax= 1.3e-02 nm, Epot= -9.91508e+05 Fmax= 1.38552e+04, atom= 311Step=  498, Dmax= 6.5e-03 nm, Epot= -9.91674e+05 Fmax= 3.80670e+03, atom= 311
-Step=  499, Dmax= 7.8e-03 nm, Epot= -9.91727e+05 Fmax= 8.44053e+03, atom= 311
-Step=  500, Dmax= 9.3e-03 nm, Epot= -9.91875e+05 Fmax= 6.29409e+03, atom= 311
-Step=  501, Dmax= 1.1e-02 nm, Epot= -9.91890e+05 Fmax= 1.12012e+04, atom= 311
-02
-[ATIV-6]Paramount number 492, elapsed = 0.011495
-[ATIV-6]Paramount number 493, elapsed = 0.012162
-[ATIV-6]Paramount number 494, elapsed = 0.012381
-[ATIV-6]Paramount number 495, elapsed = 0.012999
-[ATIV-6]Paramount number 496, elapsed = 0.014437
-[ATIV-6]Paramount number 497, elapsed = 0.015457
-[ATIV-6]Paramount number 498, elapsed = 0.011876
-[ATIV-6]Paramount number 499, elapsed = 0.011707
-[ATIV-6]Paramount number 500, elapsed = 0.012484
-[ATIV-6]Paramount number 501, elapsed = 0.012480
-[ATIV-6]Paramount nStep=  502, Dmax= 1.3e-02 nm, Epot= -9.92027e+05 Fmax= 9.80698e+03, atom= 311
-Step=  503, Dmax= 1.6e-02 nm, Epot= -9.91978e+05 Fmax= 1.53119e+04, atom= 311Step=  504, Dmax= 8.1e-03 nm, Epot= -9.92198e+05 Fmax= 2.71544e+03, atom= 311
-Step=  505, Dmax= 9.7e-03 nm, Epot= -9.92176e+05 Fmax= 1.23287e+04, atom= 311Step=  506, Dmax= 4.8e-03 nm, Epot= -9.92280e+05 Fmax= 4.85260e+03, atom= 311
-Step=  507, Dmax= 5.8e-03 nm, Epot= -9.92392e+05 Fmax= 4.26604e+03, atom= 311
-Step=  508, Dmax= 7.0e-03 nm, Epot= -9.92466e+05 Fmax= 6.73137e+03, atom= 311
-Step=  509, Dmax= 8.3e-03 nm, Epot= -9.92574e+05 Fmax= 6.40994e+03, atom= 311
-Step=  510, Dmax= 1.0e-02 nm, Epot= -9.92625e+05 Fmax= 9.27924e+03, atom= 311
-Step=  511, Dmax= 1.2e-02 nm, Epot= -9.92721e+05 Fmax= 9.51858e+03, atom= 311
-umber 502, elapsed = 0.010734
-[ATIV-6]Paramount number 503, elapsed = 0.012599
-[ATIV-6]Paramount number 504, elapsed = 0.011073
-[ATIV-6]Paramount number 505, elapsed = 0.012854
-[ATIV-6]Paramount number 506, elapsed = 0.030189
-[ATIV-6]Paramount number 507, elapsed = 0.029719
-[ATIV-6]Paramount number 508, elapsed = 0.027464
-[ATIV-6]Paramount number 509, elapsed = 0.020672
-[ATIV-6]Paramount number 510, elapsed = 0.018500
-[ATIV-6]Paramount number 511, elapsed = 0.013347
-[ATIV-6]Paramount number 512, elapsed = 0Step=  512, Dmax= 1.4e-02 nm, Epot= -9.92734e+05 Fmax= 1.30648e+04, atom= 311
-Step=  513, Dmax= 1.7e-02 nm, Epot= -9.92806e+05 Fmax= 1.39313e+04, atom= 311
-Step=  514, Dmax= 2.1e-02 nm, Epot= -9.92745e+05 Fmax= 1.84719e+04, atom= 311Step=  515, Dmax= 1.0e-02 nm, Epot= -9.93082e+05 Fmax= 2.38525e+03, atom= 311
-Step=  516, Dmax= 1.2e-02 nm, Epot= -9.92955e+05 Fmax= 1.71776e+04, atom= 311Step=  517, Dmax= 6.2e-03 nm, Epot= -9.93153e+05 Fmax= 7.46032e+03, atom= 311
-Step=  518, Dmax= 7.5e-03 nm, Epot= -9.93309e+05 Fmax= 4.32307e+03, atom= 311
-Step=  519, Dmax= 9.0e-03 nm, Epot= -9.93353e+05 Fmax= 9.79329e+03, atom= 311
-Step=  520, Dmax= 1.1e-02 nm, Epot= -9.93506e+05 Fmax= 7.18013e+03, atom= 311
-Step=  521, Dmax= 1.3e-02 nm, Epot= -9.93498e+05 Fmax= 1.30400e+04, atom= 311Step=  522, Dmax= 6.5e-03 nm, Epot= -9.93616e+05 Fmax= 2.96734e+03, atom= 311
-.010613
-[ATIV-6]Paramount number 513, elapsed = 0.016269
-[ATIV-6]Paramount number 514, elapsed = 0.026415
-[ATIV-6]Paramount number 515, elapsed = 0.022586
-[ATIV-6]Paramount number 516, elapsed = 0.024319
-[ATIV-6]Paramount number 517, elapsed = 0.013170
-[ATIV-6]Paramount number 518, elapsed = 0.015508
-[ATIV-6]Paramount number 519, elapsed = 0.013120
-[ATIV-6]Paramount number 520, elapsed = 0.012151
-[ATIV-6]Paramount number 521, elapsed = 0.022770
-[ATIV-6]Paramount number 522, elapsed = 0.015807
-[ATIV-6]ParamoStep=  523, Dmax= 7.8e-03 nm, Epot= -9.93659e+05 Fmax= 9.24294e+03, atom= 311
-Step=  524, Dmax= 9.3e-03 nm, Epot= -9.93834e+05 Fmax= 5.32971e+03, atom= 311
-Step=  525, Dmax= 1.1e-02 nm, Epot= -9.93845e+05 Fmax= 1.21334e+04, atom= 311
-Step=  526, Dmax= 1.3e-02 nm, Epot= -9.94016e+05 Fmax= 8.81428e+03, atom= 311
-Step=  527, Dmax= 1.6e-02 nm, Epot= -9.93945e+05 Fmax= 1.62645e+04, atom= 311Step=  528, Dmax= 8.0e-03 nm, Epot= -9.94145e+05 Fmax= 3.82523e+03, atom= 311
-Step=  529, Dmax= 9.6e-03 nm, Epot= -9.94152e+05 Fmax= 1.13553e+04, atom= 311
-Step=  530, Dmax= 1.2e-02 nm, Epot= -9.94344e+05 Fmax= 6.86018e+03, atom= 311
-Step=  531, Dmax= 1.4e-02 nm, Epot= -9.94303e+05 Fmax= 1.48606e+04, atom= 311Step=  532, Dmax= 6.9e-03 nm, Epot= -9.94451e+05 Fmax= 4.03787e+03, atom= 311
-unt number 523, elapsed = 0.010862
-[ATIV-6]Paramount number 524, elapsed = 0.012226
-[ATIV-6]Paramount number 525, elapsed = 0.017676
-[ATIV-6]Paramount number 526, elapsed = 0.011874
-[ATIV-6]Paramount number 527, elapsed = 0.024148
-[ATIV-6]Paramount number 528, elapsed = 0.029051
-[ATIV-6]Paramount number 529, elapsed = 0.011861
-[ATIV-6]Paramount number 530, elapsed = 0.024956
-[ATIV-6]Paramount number 531, elapsed = 0.025198
-[ATIV-6]Paramount number 532, elapsed = 0.013663
-[ATIV-6]Paramount number 533, elapseStep=  533, Dmax= 8.3e-03 nm, Epot= -9.94495e+05 Fmax= 9.04214e+03, atom= 311
-Step=  534, Dmax= 1.0e-02 nm, Epot= -9.94637e+05 Fmax= 6.67717e+03, atom= 311
-Step=  535, Dmax= 1.2e-02 nm, Epot= -9.94648e+05 Fmax= 1.20800e+04, atom= 311
-Step=  536, Dmax= 1.4e-02 nm, Epot= -9.94780e+05 Fmax= 1.04171e+04, atom= 311
-Step=  537, Dmax= 1.7e-02 nm, Epot= -9.94724e+05 Fmax= 1.66056e+04, atom= 311Step=  538, Dmax= 8.6e-03 nm, Epot= -9.94935e+05 Fmax= 3.19780e+03, atom= 311
-Step=  539, Dmax= 1.0e-02 nm, Epot= -9.94917e+05 Fmax= 1.30535e+04, atom= 311Step=  540, Dmax= 5.2e-03 nm, Epot= -9.95010e+05 Fmax= 4.93977e+03, atom= 311
-Step=  541, Dmax= 6.2e-03 nm, Epot= -9.95107e+05 Fmax= 4.87693e+03, atom= 311
-Step=  542, Dmax= 7.5e-03 nm, Epot= -9.95181e+05 Fmax= 6.88712e+03, atom= 311
-Step=  543, Dmax= 9.0e-03 nm, Epot= -9.95272e+05 Fmax= 7.23431e+03, atom= 311
-d = 0.026525
-[ATIV-6]Paramount number 534, elapsed = 0.013203
-[ATIV-6]Paramount number 535, elapsed = 0.022154
-[ATIV-6]Paramount number 536, elapsed = 0.011839
-[ATIV-6]Paramount number 537, elapsed = 0.032386
-[ATIV-6]Paramount number 538, elapsed = 0.036261
-[ATIV-6]Paramount number 539, elapsed = 0.033364
-[ATIV-6]Paramount number 540, elapsed = 0.017253
-[ATIV-6]Paramount number 541, elapsed = 0.024274
-[ATIV-6]Paramount number 542, elapsed = 0.023081
-[ATIV-6]Paramount number 543, elapsed = 0.012767
-[ATIV-6]PStep=  544, Dmax= 1.1e-02 nm, Epot= -9.95331e+05 Fmax= 9.65105e+03, atom= 311
-Step=  545, Dmax= 1.3e-02 nm, Epot= -9.95408e+05 Fmax= 1.05222e+04, atom= 311
-Step=  546, Dmax= 1.5e-02 nm, Epot= -9.95435e+05 Fmax= 1.36553e+04, atom= 311
-Step=  547, Dmax= 1.9e-02 nm, Epot= -9.95484e+05 Fmax= 1.53387e+04, atom= 311
-Step=  548, Dmax= 2.2e-02 nm, Epot= -9.95454e+05 Fmax= 1.93210e+04, atom= 311Step=  549, Dmax= 1.1e-02 nm, Epot= -9.95752e+05 Fmax= 2.02212e+03, atom= 311
-Step=  550, Dmax= 1.3e-02 nm, Epot= -9.95575e+05 Fmax= 1.89507e+04, atom= 311Step=  551, Dmax= 6.7e-03 nm, Epot= -9.95810e+05 Fmax= 8.52908e+03, atom= 311
-Step=  552, Dmax= 8.0e-03 nm, Epot= -9.95989e+05 Fmax= 4.06791e+03, atom= 311
-Step=  553, Dmax= 9.6e-03 nm, Epot= -9.96021e+05 Fmax= 1.10181e+04, atom= 311
-aramount number 544, elapsed = 0.012288
-[ATIV-6]Paramount number 545, elapsed = 0.014036
-[ATIV-6]Paramount number 546, elapsed = 0.012544
-[ATIV-6]Paramount number 547, elapsed = 0.014528
-[ATIV-6]Paramount number 548, elapsed = 0.012102
-[ATIV-6]Paramount number 549, elapsed = 0.011817
-[ATIV-6]Paramount number 550, elapsed = 0.014239
-[ATIV-6]Paramount number 551, elapsed = 0.014877
-[ATIV-6]Paramount number 552, elapsed = 0.012766
-[ATIV-6]Paramount number 553, elapsed = 0.014215
-[ATIV-6]Paramount number 554, eStep=  554, Dmax= 1.2e-02 nm, Epot= -9.96196e+05 Fmax= 7.07046e+03, atom= 311
-Step=  555, Dmax= 1.4e-02 nm, Epot= -9.96150e+05 Fmax= 1.46141e+04, atom= 311Step=  556, Dmax= 6.9e-03 nm, Epot= -9.96301e+05 Fmax= 3.86830e+03, atom= 311
-Step=  557, Dmax= 8.3e-03 nm, Epot= -9.96336e+05 Fmax= 9.22108e+03, atom= 311
-Step=  558, Dmax= 1.0e-02 nm, Epot= -9.96481e+05 Fmax= 6.45240e+03, atom= 311
-Step=  559, Dmax= 1.2e-02 nm, Epot= -9.96475e+05 Fmax= 1.22925e+04, atom= 311Step=  560, Dmax= 6.0e-03 nm, Epot= -9.96579e+05 Fmax= 2.94005e+03, atom= 311
-Step=  561, Dmax= 7.2e-03 nm, Epot= -9.96616e+05 Fmax= 8.38425e+03, atom= 311
-Step=  562, Dmax= 8.6e-03 nm, Epot= -9.96771e+05 Fmax= 5.13907e+03, atom= 311
-Step=  563, Dmax= 1.0e-02 nm, Epot= -9.96781e+05 Fmax= 1.10523e+04, atom= 311
-Step=  564, Dmax= 1.2e-02 nm, Epot= -9.96932e+05 Fmax= 8.40599e+03, atom= 311
-lapsed = 0.011894
-[ATIV-6]Paramount number 555, elapsed = 0.013352
-[ATIV-6]Paramount number 556, elapsed = 0.011811
-[ATIV-6]Paramount number 557, elapsed = 0.017630
-[ATIV-6]Paramount number 558, elapsed = 0.011168
-[ATIV-6]Paramount number 559, elapsed = 0.013033
-[ATIV-6]Paramount number 560, elapsed = 0.011057
-[ATIV-6]Paramount number 561, elapsed = 0.011427
-[ATIV-6]Paramount number 562, elapsed = 0.013006
-[ATIV-6]Paramount number 563, elapsed = 0.011556
-[ATIV-6]Paramount number 564, elapsed = 0.012725
-[ATIStep=  565, Dmax= 1.5e-02 nm, Epot= -9.96873e+05 Fmax= 1.48881e+04, atom= 311Step=  566, Dmax= 7.5e-03 nm, Epot= -9.97055e+05 Fmax= 3.30450e+03, atom= 311
-Step=  567, Dmax= 8.9e-03 nm, Epot= -9.97048e+05 Fmax= 1.08279e+04, atom= 311Step=  568, Dmax= 4.5e-03 nm, Epot= -9.97125e+05 Fmax= 3.76144e+03, atom= 311
-Step=  569, Dmax= 5.4e-03 nm, Epot= -9.97203e+05 Fmax= 4.74860e+03, atom= 311
-Step=  570, Dmax= 6.4e-03 nm, Epot= -9.97287e+05 Fmax= 5.34933e+03, atom= 311
-Step=  571, Dmax= 7.7e-03 nm, Epot= -9.97359e+05 Fmax= 6.78951e+03, atom= 311
-Step=  572, Dmax= 9.3e-03 nm, Epot= -9.97432e+05 Fmax= 7.73343e+03, atom= 311
-Step=  573, Dmax= 1.1e-02 nm, Epot= -9.97485e+05 Fmax= 9.70682e+03, atom= 311
-Step=  574, Dmax= 1.3e-02 nm, Epot= -9.97539e+05 Fmax= 1.11992e+04, atom= 311
-V-6]Paramount number 565, elapsed = 0.035635
-[ATIV-6]Paramount number 566, elapsed = 0.012388
-[ATIV-6]Paramount number 567, elapsed = 0.013703
-[ATIV-6]Paramount number 568, elapsed = 0.011523
-[ATIV-6]Paramount number 569, elapsed = 0.012811
-[ATIV-6]Paramount number 570, elapsed = 0.013745
-[ATIV-6]Paramount number 571, elapsed = 0.013473
-[ATIV-6]Paramount number 572, elapsed = 0.012574
-[ATIV-6]Paramount number 573, elapsed = 0.013838
-[ATIV-6]Paramount number 574, elapsed = 0.012111
-[ATIV-6]Paramount number 5Step=  575, Dmax= 1.6e-02 nm, Epot= -9.97559e+05 Fmax= 1.38088e+04, atom= 311
-Step=  576, Dmax= 1.9e-02 nm, Epot= -9.97571e+05 Fmax= 1.61440e+04, atom= 311
-Step=  577, Dmax= 2.3e-02 nm, Epot= -9.97521e+05 Fmax= 1.98735e+04, atom= 311Step=  578, Dmax= 1.2e-02 nm, Epot= -9.97903e+05 Fmax= 1.92907e+03, atom= 311
-Step=  579, Dmax= 1.4e-02 nm, Epot= -9.97642e+05 Fmax= 1.95801e+04, atom= 311Step=  580, Dmax= 6.9e-03 nm, Epot= -9.97938e+05 Fmax= 8.84119e+03, atom= 311
-Step=  581, Dmax= 8.3e-03 nm, Epot= -9.98131e+05 Fmax= 4.18234e+03, atom= 311
-Step=  582, Dmax= 1.0e-02 nm, Epot= -9.98146e+05 Fmax= 1.14657e+04, atom= 311
-Step=  583, Dmax= 1.2e-02 nm, Epot= -9.98331e+05 Fmax= 7.29330e+03, atom= 311
-Step=  584, Dmax= 1.4e-02 nm, Epot= -9.98251e+05 Fmax= 1.51728e+04, atom= 31175, elapsed = 0.012916
-[ATIV-6]Paramount number 576, elapsed = 0.012057
-[ATIV-6]Paramount number 577, elapsed = 0.013474
-[ATIV-6]Paramount number 578, elapsed = 0.013836
-[ATIV-6]Paramount number 579, elapsed = 0.015071
-[ATIV-6]Paramount number 580, elapsed = 0.015600
-[ATIV-6]Paramount number 581, elapsed = 0.040172
-[ATIV-6]Paramount number 582, elapsed = 0.021819
-[ATIV-6]Paramount number 583, elapsed = 0.018617
-[ATIV-6]Paramount number 584, elapsed = 0.011765
-[ATIV-6]Paramount number 585, elapsed = 0.014855Step=  585, Dmax= 7.2e-03 nm, Epot= -9.98439e+05 Fmax= 3.96120e+03, atom= 311
-Step=  586, Dmax= 8.6e-03 nm, Epot= -9.98454e+05 Fmax= 9.62389e+03, atom= 311
-Step=  587, Dmax= 1.0e-02 nm, Epot= -9.98606e+05 Fmax= 6.55226e+03, atom= 311
-Step=  588, Dmax= 1.2e-02 nm, Epot= -9.98568e+05 Fmax= 1.27916e+04, atom= 311Step=  589, Dmax= 6.2e-03 nm, Epot= -9.98707e+05 Fmax= 3.13580e+03, atom= 311
-Step=  590, Dmax= 7.4e-03 nm, Epot= -9.98725e+05 Fmax= 8.54129e+03, atom= 311
-Step=  591, Dmax= 8.9e-03 nm, Epot= -9.98882e+05 Fmax= 5.45660e+03, atom= 311
-Step=  592, Dmax= 1.1e-02 nm, Epot= -9.98867e+05 Fmax= 1.13311e+04, atom= 311Step=  593, Dmax= 5.4e-03 nm, Epot= -9.98974e+05 Fmax= 2.95663e+03, atom= 311
-Step=  594, Dmax= 6.4e-03 nm, Epot= -9.99010e+05 Fmax= 7.23916e+03, atom= 311
-Step=  595, Dmax= 7.7e-03 nm, Epot= -9.99146e+05 Fmax= 4.85853e+03, atom= 311
-
-[ATIV-6]Paramount number 586, elapsed = 0.012822
-[ATIV-6]Paramount number 587, elapsed = 0.013233
-[ATIV-6]Paramount number 588, elapsed = 0.018951
-[ATIV-6]Paramount number 589, elapsed = 0.010712
-[ATIV-6]Paramount number 590, elapsed = 0.014601
-[ATIV-6]Paramount number 591, elapsed = 0.013255
-[ATIV-6]Paramount number 592, elapsed = 0.012012
-[ATIV-6]Paramount number 593, elapsed = 0.013287
-[ATIV-6]Paramount number 594, elapsed = 0.014693
-[ATIV-6]Paramount number 595, elapsed = 0.011890
-[ATIV-6]Paramount numStep=  596, Dmax= 9.3e-03 nm, Epot= -9.99154e+05 Fmax= 9.70813e+03, atom= 311
-Step=  597, Dmax= 1.1e-02 nm, Epot= -9.99288e+05 Fmax= 7.71350e+03, atom= 311
-Step=  598, Dmax= 1.3e-02 nm, Epot= -9.99238e+05 Fmax= 1.30765e+04, atom= 311Step=  599, Dmax= 6.7e-03 nm, Epot= -9.99411e+05 Fmax= 2.71708e+03, atom= 311
-Step=  600, Dmax= 8.0e-03 nm, Epot= -9.99390e+05 Fmax= 9.86470e+03, atom= 311Step=  601, Dmax= 4.0e-03 nm, Epot= -9.99474e+05 Fmax= 3.56385e+03, atom= 311
-Step=  602, Dmax= 4.8e-03 nm, Epot= -9.99553e+05 Fmax= 4.00745e+03, atom= 311
-Step=  603, Dmax= 5.8e-03 nm, Epot= -9.99622e+05 Fmax= 5.02931e+03, atom= 311
-Step=  604, Dmax= 6.9e-03 nm, Epot= -9.99695e+05 Fmax= 5.83737e+03, atom= 311
-Step=  605, Dmax= 8.3e-03 nm, Epot= -9.99753e+05 Fmax= 7.16134e+03, atom= 311
-ber 596, elapsed = 0.017962
-[ATIV-6]Paramount number 597, elapsed = 0.011760
-[ATIV-6]Paramount number 598, elapsed = 0.012746
-[ATIV-6]Paramount number 599, elapsed = 0.012855
-[ATIV-6]Paramount number 600, elapsed = 0.018631
-[ATIV-6]Paramount number 601, elapsed = 0.010462
-[ATIV-6]Paramount number 602, elapsed = 0.011737
-[ATIV-6]Paramount number 603, elapsed = 0.012246
-[ATIV-6]Paramount number 604, elapsed = 0.012553
-[ATIV-6]Paramount number 605, elapsed = 0.016025
-[ATIV-6]Paramount number 606, elapsed = 0.0Step=  606, Dmax= 1.0e-02 nm, Epot= -9.99809e+05 Fmax= 8.43080e+03, atom= 311
-Step=  607, Dmax= 1.2e-02 nm, Epot= -9.99843e+05 Fmax= 1.03211e+04, atom= 311
-Step=  608, Dmax= 1.4e-02 nm, Epot= -9.99872e+05 Fmax= 1.21384e+04, atom= 311
-Step=  609, Dmax= 1.7e-02 nm, Epot= -9.99862e+05 Fmax= 1.47163e+04, atom= 311Step=  610, Dmax= 8.6e-03 nm, Epot= -1.00012e+06 Fmax= 1.33803e+03, atom= 311
-Step=  611, Dmax= 1.0e-02 nm, Epot= -9.99927e+05 Fmax= 1.48605e+04, atom= 311Step=  612, Dmax= 5.2e-03 nm, Epot= -1.00016e+06 Fmax= 6.81626e+03, atom= 311
-Step=  613, Dmax= 6.2e-03 nm, Epot= -1.00034e+06 Fmax= 2.93694e+03, atom= 311
-Step=  614, Dmax= 7.4e-03 nm, Epot= -1.00039e+06 Fmax= 8.91225e+03, atom= 311
-Step=  615, Dmax= 8.9e-03 nm, Epot= -1.00056e+06 Fmax= 5.07278e+03, atom= 311
-Step=  616, Dmax= 1.1e-02 nm, Epot= -1.00051e+06 Fmax= 1.17507e+04, atom= 31110099
-[ATIV-6]Paramount number 607, elapsed = 0.013921
-[ATIV-6]Paramount number 608, elapsed = 0.015283
-[ATIV-6]Paramount number 609, elapsed = 0.011834
-[ATIV-6]Paramount number 610, elapsed = 0.011635
-[ATIV-6]Paramount number 611, elapsed = 0.012573
-[ATIV-6]Paramount number 612, elapsed = 0.015344
-[ATIV-6]Paramount number 613, elapsed = 0.013394
-[ATIV-6]Paramount number 614, elapsed = 0.012917
-[ATIV-6]Paramount number 615, elapsed = 0.013441
-[ATIV-6]Paramount number 616, elapsed = 0.012306
-[ATIV-6]ParamounStep=  617, Dmax= 5.4e-03 nm, Epot= -1.00065e+06 Fmax= 3.33376e+03, atom= 311
-Step=  618, Dmax= 6.4e-03 nm, Epot= -1.00068e+06 Fmax= 6.77841e+03, atom= 311
-Step=  619, Dmax= 7.7e-03 nm, Epot= -1.00080e+06 Fmax= 5.30196e+03, atom= 311
-Step=  620, Dmax= 9.2e-03 nm, Epot= -1.00081e+06 Fmax= 9.21344e+03, atom= 311
-Step=  621, Dmax= 1.1e-02 nm, Epot= -1.00092e+06 Fmax= 8.18427e+03, atom= 311
-Step=  622, Dmax= 1.3e-02 nm, Epot= -1.00087e+06 Fmax= 1.26862e+04, atom= 311Step=  623, Dmax= 6.7e-03 nm, Epot= -1.00106e+06 Fmax= 2.27267e+03, atom= 311
-Step=  624, Dmax= 8.0e-03 nm, Epot= -1.00100e+06 Fmax= 1.03010e+04, atom= 311Step=  625, Dmax= 4.0e-03 nm, Epot= -1.00111e+06 Fmax= 4.00629e+03, atom= 311
-Step=  626, Dmax= 4.8e-03 nm, Epot= -1.00120e+06 Fmax= 3.50616e+03, atom= 311
-t number 617, elapsed = 0.013795
-[ATIV-6]Paramount number 618, elapsed = 0.013005
-[ATIV-6]Paramount number 619, elapsed = 0.018606
-[ATIV-6]Paramount number 620, elapsed = 0.015487
-[ATIV-6]Paramount number 621, elapsed = 0.017524
-[ATIV-6]Paramount number 622, elapsed = 0.015352
-[ATIV-6]Paramount number 623, elapsed = 0.016915
-[ATIV-6]Paramount number 624, elapsed = 0.016250
-[ATIV-6]Paramount number 625, elapsed = 0.015654
-[ATIV-6]Paramount number 626, elapsed = 0.014506
-[ATIV-6]Paramount number 627, elapsed Step=  627, Dmax= 5.8e-03 nm, Epot= -1.00125e+06 Fmax= 5.57203e+03, atom= 311
-Step=  628, Dmax= 6.9e-03 nm, Epot= -1.00134e+06 Fmax= 5.24214e+03, atom= 311
-Step=  629, Dmax= 8.3e-03 nm, Epot= -1.00137e+06 Fmax= 7.84423e+03, atom= 311
-Step=  630, Dmax= 9.9e-03 nm, Epot= -1.00146e+06 Fmax= 7.72704e+03, atom= 311
-Step=  631, Dmax= 1.2e-02 nm, Epot= -1.00145e+06 Fmax= 1.09608e+04, atom= 311Step=  632, Dmax= 6.0e-03 nm, Epot= -1.00159e+06 Fmax= 1.61036e+03, atom= 311
-Step=  633, Dmax= 7.2e-03 nm, Epot= -1.00155e+06 Fmax= 9.72287e+03, atom= 311Step=  634, Dmax= 3.6e-03 nm, Epot= -1.00165e+06 Fmax= 4.05748e+03, atom= 311
-Step=  635, Dmax= 4.3e-03 nm, Epot= -1.00176e+06 Fmax= 2.72092e+03, atom= 311
-Step=  636, Dmax= 5.2e-03 nm, Epot= -1.00181e+06 Fmax= 5.36643e+03, atom= 311
-Step=  637, Dmax= 6.2e-03 nm, Epot= -1.00191e+06 Fmax= 4.34969e+03, atom= 311
-= 0.015239
-[ATIV-6]Paramount number 628, elapsed = 0.013833
-[ATIV-6]Paramount number 629, elapsed = 0.011247
-[ATIV-6]Paramount number 630, elapsed = 0.011507
-[ATIV-6]Paramount number 631, elapsed = 0.011322
-[ATIV-6]Paramount number 632, elapsed = 0.012606
-[ATIV-6]Paramount number 633, elapsed = 0.014014
-[ATIV-6]Paramount number 634, elapsed = 0.011928
-[ATIV-6]Paramount number 635, elapsed = 0.011409
-[ATIV-6]Paramount number 636, elapsed = 0.035752
-[ATIV-6]Paramount number 637, elapsed = 0.011443
-[ATIV-6]ParStep=  638, Dmax= 7.4e-03 nm, Epot= -1.00194e+06 Fmax= 7.27261e+03, atom= 311
-Step=  639, Dmax= 8.9e-03 nm, Epot= -1.00204e+06 Fmax= 6.68146e+03, atom= 311
-Step=  640, Dmax= 1.1e-02 nm, Epot= -1.00204e+06 Fmax= 1.00804e+04, atom= 311Step=  641, Dmax= 5.3e-03 nm, Epot= -1.00215e+06 Fmax= 1.71453e+03, atom= 311
-Step=  642, Dmax= 6.4e-03 nm, Epot= -1.00213e+06 Fmax= 8.44354e+03, atom= 311Step=  643, Dmax= 3.2e-03 nm, Epot= -1.00220e+06 Fmax= 3.35622e+03, atom= 311
-Step=  644, Dmax= 3.8e-03 nm, Epot= -1.00230e+06 Fmax= 2.68079e+03, atom= 311
-Step=  645, Dmax= 4.6e-03 nm, Epot= -1.00235e+06 Fmax= 4.57433e+03, atom= 311
-Step=  646, Dmax= 5.5e-03 nm, Epot= -1.00244e+06 Fmax= 4.17417e+03, atom= 311
-Step=  647, Dmax= 6.6e-03 nm, Epot= -1.00249e+06 Fmax= 6.31784e+03, atom= 311
-amount number 638, elapsed = 0.015302
-[ATIV-6]Paramount number 639, elapsed = 0.013416
-[ATIV-6]Paramount number 640, elapsed = 0.012485
-[ATIV-6]Paramount number 641, elapsed = 0.020936
-[ATIV-6]Paramount number 642, elapsed = 0.013832
-[ATIV-6]Paramount number 643, elapsed = 0.012657
-[ATIV-6]Paramount number 644, elapsed = 0.012288
-[ATIV-6]Paramount number 645, elapsed = 0.018945
-[ATIV-6]Paramount number 646, elapsed = 0.011831
-[ATIV-6]Paramount number 647, elapsed = 0.014196
-[ATIV-6]Paramount number 648, elaStep=  648, Dmax= 8.0e-03 nm, Epot= -1.00257e+06 Fmax= 6.19209e+03, atom= 311
-Step=  649, Dmax= 9.6e-03 nm, Epot= -1.00259e+06 Fmax= 8.89669e+03, atom= 311
-Step=  650, Dmax= 1.1e-02 nm, Epot= -1.00266e+06 Fmax= 9.07628e+03, atom= 311
-Step=  651, Dmax= 1.4e-02 nm, Epot= -1.00263e+06 Fmax= 1.25290e+04, atom= 311Step=  652, Dmax= 6.9e-03 nm, Epot= -1.00282e+06 Fmax= 1.70077e+03, atom= 311
-Step=  653, Dmax= 8.3e-03 nm, Epot= -1.00271e+06 Fmax= 1.14392e+04, atom= 311Step=  654, Dmax= 4.1e-03 nm, Epot= -1.00287e+06 Fmax= 4.83492e+03, atom= 311
-Step=  655, Dmax= 5.0e-03 nm, Epot= -1.00299e+06 Fmax= 2.98451e+03, atom= 311
-Step=  656, Dmax= 6.0e-03 nm, Epot= -1.00302e+06 Fmax= 6.32976e+03, atom= 311
-Step=  657, Dmax= 7.1e-03 nm, Epot= -1.00314e+06 Fmax= 4.90864e+03, atom= 311
-Step=  658, Dmax= 8.6e-03 nm, Epot= -1.00314e+06 Fmax= 8.61869e+03, atom= 311
-psed = 0.012261
-[ATIV-6]Paramount number 649, elapsed = 0.011508
-[ATIV-6]Paramount number 650, elapsed = 0.022262
-[ATIV-6]Paramount number 651, elapsed = 0.025609
-[ATIV-6]Paramount number 652, elapsed = 0.013250
-[ATIV-6]Paramount number 653, elapsed = 0.024986
-[ATIV-6]Paramount number 654, elapsed = 0.013716
-[ATIV-6]Paramount number 655, elapsed = 0.011666
-[ATIV-6]Paramount number 656, elapsed = 0.017595
-[ATIV-6]Paramount number 657, elapsed = 0.029363
-[ATIV-6]Paramount number 658, elapsed = 0.012810
-[ATIV-Step=  659, Dmax= 1.0e-02 nm, Epot= -1.00325e+06 Fmax= 7.51684e+03, atom= 311
-Step=  660, Dmax= 1.2e-02 nm, Epot= -1.00320e+06 Fmax= 1.18270e+04, atom= 311Step=  661, Dmax= 6.2e-03 nm, Epot= -1.00337e+06 Fmax= 2.15729e+03, atom= 311
-Step=  662, Dmax= 7.4e-03 nm, Epot= -1.00331e+06 Fmax= 9.56954e+03, atom= 311Step=  663, Dmax= 3.7e-03 nm, Epot= -1.00342e+06 Fmax= 3.69923e+03, atom= 311
-Step=  664, Dmax= 4.4e-03 nm, Epot= -1.00351e+06 Fmax= 3.28553e+03, atom= 311
-Step=  665, Dmax= 5.3e-03 nm, Epot= -1.00355e+06 Fmax= 5.09591e+03, atom= 311
-Step=  666, Dmax= 6.4e-03 nm, Epot= -1.00363e+06 Fmax= 4.94904e+03, atom= 311
-Step=  667, Dmax= 7.7e-03 nm, Epot= -1.00367e+06 Fmax= 7.15926e+03, atom= 311
-Step=  668, Dmax= 9.2e-03 nm, Epot= -1.00374e+06 Fmax= 7.24928e+03, atom= 311
-6]Paramount number 659, elapsed = 0.015126
-[ATIV-6]Paramount number 660, elapsed = 0.014408
-[ATIV-6]Paramount number 661, elapsed = 0.017747
-[ATIV-6]Paramount number 662, elapsed = 0.023836
-[ATIV-6]Paramount number 663, elapsed = 0.028911
-[ATIV-6]Paramount number 664, elapsed = 0.017379
-[ATIV-6]Paramount number 665, elapsed = 0.038781
-[ATIV-6]Paramount number 666, elapsed = 0.014356
-[ATIV-6]Paramount number 667, elapsed = 0.018445
-[ATIV-6]Paramount number 668, elapsed = 0.015299
-[ATIV-6]Paramount number 669Step=  669, Dmax= 1.1e-02 nm, Epot= -1.00374e+06 Fmax= 1.01561e+04, atom= 311Step=  670, Dmax= 5.5e-03 nm, Epot= -1.00387e+06 Fmax= 1.40799e+03, atom= 311
-Step=  671, Dmax= 6.6e-03 nm, Epot= -1.00381e+06 Fmax= 8.85316e+03, atom= 311Step=  672, Dmax= 3.3e-03 nm, Epot= -1.00392e+06 Fmax= 3.70315e+03, atom= 311
-Step=  673, Dmax= 4.0e-03 nm, Epot= -1.00403e+06 Fmax= 2.55476e+03, atom= 311
-Step=  674, Dmax= 4.8e-03 nm, Epot= -1.00407e+06 Fmax= 4.86447e+03, atom= 311
-Step=  675, Dmax= 5.7e-03 nm, Epot= -1.00417e+06 Fmax= 4.16979e+03, atom= 311
-Step=  676, Dmax= 6.9e-03 nm, Epot= -1.00419e+06 Fmax= 6.67351e+03, atom= 311
-Step=  677, Dmax= 8.3e-03 nm, Epot= -1.00427e+06 Fmax= 6.27632e+03, atom= 311
-Step=  678, Dmax= 9.9e-03 nm, Epot= -1.00426e+06 Fmax= 9.27471e+03, atom= 311Step=  679, Dmax= 5.0e-03 nm, Epot= -1.00439e+06 Fmax= 1.50502e+03, atom= 311
-, elapsed = 0.012303
-[ATIV-6]Paramount number 670, elapsed = 0.061773
-[ATIV-6]Paramount number 671, elapsed = 0.022771
-[ATIV-6]Paramount number 672, elapsed = 0.014778
-[ATIV-6]Paramount number 673, elapsed = 0.013459
-[ATIV-6]Paramount number 674, elapsed = 0.015844
-[ATIV-6]Paramount number 675, elapsed = 0.012482
-[ATIV-6]Paramount number 676, elapsed = 0.012970
-[ATIV-6]Paramount number 677, elapsed = 0.013617
-[ATIV-6]Paramount number 678, elapsed = 0.014471
-[ATIV-6]Paramount number 679, elapsed = 0.012234
-[Step=  680, Dmax= 5.9e-03 nm, Epot= -1.00435e+06 Fmax= 7.96176e+03, atom= 311Step=  681, Dmax= 3.0e-03 nm, Epot= -1.00444e+06 Fmax= 3.23327e+03, atom= 311
-Step=  682, Dmax= 3.6e-03 nm, Epot= -1.00453e+06 Fmax= 2.37722e+03, atom= 311
-Step=  683, Dmax= 4.3e-03 nm, Epot= -1.00458e+06 Fmax= 4.38555e+03, atom= 311
-Step=  684, Dmax= 5.1e-03 nm, Epot= -1.00467e+06 Fmax= 3.68794e+03, atom= 311
-Step=  685, Dmax= 6.2e-03 nm, Epot= -1.00470e+06 Fmax= 5.99187e+03, atom= 311
-Step=  686, Dmax= 7.4e-03 nm, Epot= -1.00478e+06 Fmax= 5.60392e+03, atom= 311
-Step=  687, Dmax= 8.9e-03 nm, Epot= -1.00478e+06 Fmax= 8.35724e+03, atom= 311Step=  688, Dmax= 4.4e-03 nm, Epot= -1.00489e+06 Fmax= 1.34790e+03, atom= 311
-Step=  689, Dmax= 5.3e-03 nm, Epot= -1.00486e+06 Fmax= 6.77355e+03, atom= 311ATIV-6]Paramount number 680, elapsed = 0.012467
-[ATIV-6]Paramount number 681, elapsed = 0.011339
-[ATIV-6]Paramount number 682, elapsed = 0.013977
-[ATIV-6]Paramount number 683, elapsed = 0.012159
-[ATIV-6]Paramount number 684, elapsed = 0.013609
-[ATIV-6]Paramount number 685, elapsed = 0.011462
-[ATIV-6]Paramount number 686, elapsed = 0.014476
-[ATIV-6]Paramount number 687, elapsed = 0.014626
-[ATIV-6]Paramount number 688, elapsed = 0.010398
-[ATIV-6]Paramount number 689, elapsed = 0.013852
-[ATIV-6]Paramount numbeStep=  690, Dmax= 2.7e-03 nm, Epot= -1.00494e+06 Fmax= 2.71254e+03, atom= 311
-Step=  691, Dmax= 3.2e-03 nm, Epot= -1.00503e+06 Fmax= 2.29336e+03, atom= 311
-Step=  692, Dmax= 3.8e-03 nm, Epot= -1.00508e+06 Fmax= 3.75759e+03, atom= 421
-Step=  693, Dmax= 4.6e-03 nm, Epot= -1.00516e+06 Fmax= 3.50146e+03, atom= 421
-Step=  694, Dmax= 5.5e-03 nm, Epot= -1.00519e+06 Fmax= 5.24597e+03, atom= 421
-Step=  695, Dmax= 6.6e-03 nm, Epot= -1.00527e+06 Fmax= 5.15762e+03, atom= 421
-Step=  696, Dmax= 7.9e-03 nm, Epot= -1.00527e+06 Fmax= 7.33069e+03, atom= 421
-Step=  697, Dmax= 9.5e-03 nm, Epot= -1.00534e+06 Fmax= 7.56151e+03, atom= 421
-Step=  698, Dmax= 1.1e-02 nm, Epot= -1.00530e+06 Fmax= 1.03698e+04, atom= 421Step=  699, Dmax= 5.7e-03 nm, Epot= -1.00551e+06 Fmax= 1.34988e+03, atom= 311
-r 690, elapsed = 0.013939
-[ATIV-6]Paramount number 691, elapsed = 0.012107
-[ATIV-6]Paramount number 692, elapsed = 0.011843
-[ATIV-6]Paramount number 693, elapsed = 0.013823
-[ATIV-6]Paramount number 694, elapsed = 0.016209
-[ATIV-6]Paramount number 695, elapsed = 0.013518
-[ATIV-6]Paramount number 696, elapsed = 0.014849
-[ATIV-6]Paramount number 697, elapsed = 0.038853
-[ATIV-6]Paramount number 698, elapsed = 0.024556
-[ATIV-6]Paramount number 699, elapsed = 0.015695
-[ATIV-6]Paramount number 700, elapsed = 0.106Step=  700, Dmax= 6.9e-03 nm, Epot= -1.00535e+06 Fmax= 9.63947e+03, atom= 311Step=  701, Dmax= 3.4e-03 nm, Epot= -1.00554e+06 Fmax= 4.14806e+03, atom= 311
-Step=  702, Dmax= 4.1e-03 nm, Epot= -1.00567e+06 Fmax= 2.31213e+03, atom= 421
-Step=  703, Dmax= 4.9e-03 nm, Epot= -1.00567e+06 Fmax= 5.49808e+03, atom= 311
-Step=  704, Dmax= 5.9e-03 nm, Epot= -1.00580e+06 Fmax= 3.84486e+03, atom= 421
-Step=  705, Dmax= 7.1e-03 nm, Epot= -1.00578e+06 Fmax= 7.30406e+03, atom= 421Step=  706, Dmax= 3.6e-03 nm, Epot= -1.00588e+06 Fmax= 1.78353e+03, atom= 421
-Step=  707, Dmax= 4.3e-03 nm, Epot= -1.00589e+06 Fmax= 4.99872e+03, atom= 421
-Step=  708, Dmax= 5.1e-03 nm, Epot= -1.00602e+06 Fmax= 3.08323e+03, atom= 421
-Step=  709, Dmax= 6.2e-03 nm, Epot= -1.00602e+06 Fmax= 6.67311e+03, atom= 421Step=  710, Dmax= 3.1e-03 nm, Epot= -1.00610e+06 Fmax= 1.74939e+03, atom= 421
-748
-[ATIV-6]Paramount number 701, elapsed = 0.049806
-[ATIV-6]Paramount number 702, elapsed = 0.013681
-[ATIV-6]Paramount number 703, elapsed = 0.026842
-[ATIV-6]Paramount number 704, elapsed = 0.014286
-[ATIV-6]Paramount number 705, elapsed = 0.046803
-[ATIV-6]Paramount number 706, elapsed = 0.014297
-[ATIV-6]Paramount number 707, elapsed = 0.014805
-[ATIV-6]Paramount number 708, elapsed = 0.013989
-[ATIV-6]Paramount number 709, elapsed = 0.011734
-[ATIV-6]Paramount number 710, elapsed = 0.012810
-[ATIV-6]Paramount Step=  711, Dmax= 3.7e-03 nm, Epot= -1.00612e+06 Fmax= 4.06198e+03, atom= 421
-Step=  712, Dmax= 4.4e-03 nm, Epot= -1.00623e+06 Fmax= 2.95340e+03, atom= 421
-Step=  713, Dmax= 5.3e-03 nm, Epot= -1.00625e+06 Fmax= 5.42269e+03, atom= 421
-Step=  714, Dmax= 6.4e-03 nm, Epot= -1.00635e+06 Fmax= 4.66518e+03, atom= 421
-Step=  715, Dmax= 7.7e-03 nm, Epot= -1.00633e+06 Fmax= 7.31665e+03, atom= 421Step=  716, Dmax= 3.8e-03 nm, Epot= -1.00644e+06 Fmax= 1.37680e+03, atom= 421
-Step=  717, Dmax= 4.6e-03 nm, Epot= -1.00641e+06 Fmax= 5.90568e+03, atom= 421Step=  718, Dmax= 2.3e-03 nm, Epot= -1.00649e+06 Fmax= 2.23895e+03, atom= 421
-Step=  719, Dmax= 2.8e-03 nm, Epot= -1.00656e+06 Fmax= 2.11493e+03, atom= 421
-Step=  720, Dmax= 3.3e-03 nm, Epot= -1.00661e+06 Fmax= 3.13829e+03, atom= 421
-number 711, elapsed = 0.011943
-[ATIV-6]Paramount number 712, elapsed = 0.014985
-[ATIV-6]Paramount number 713, elapsed = 0.011448
-[ATIV-6]Paramount number 714, elapsed = 0.037272
-[ATIV-6]Paramount number 715, elapsed = 0.013674
-[ATIV-6]Paramount number 716, elapsed = 0.011433
-[ATIV-6]Paramount number 717, elapsed = 0.022861
-[ATIV-6]Paramount number 718, elapsed = 0.012824
-[ATIV-6]Paramount number 719, elapsed = 0.012153
-[ATIV-6]Paramount number 720, elapsed = 0.011040
-[ATIV-6]Paramount number 721, elapsed = Step=  721, Dmax= 4.0e-03 nm, Epot= -1.00668e+06 Fmax= 3.13659e+03, atom= 421
-Step=  722, Dmax= 4.8e-03 nm, Epot= -1.00672e+06 Fmax= 4.44124e+03, atom= 421
-Step=  723, Dmax= 5.7e-03 nm, Epot= -1.00679e+06 Fmax= 4.54365e+03, atom= 1093
-Step=  724, Dmax= 6.9e-03 nm, Epot= -1.00681e+06 Fmax= 6.31117e+03, atom= 421
-Step=  725, Dmax= 8.2e-03 nm, Epot= -1.00687e+06 Fmax= 6.68632e+03, atom= 1093
-Step=  726, Dmax= 9.9e-03 nm, Epot= -1.00685e+06 Fmax= 8.78438e+03, atom= 1093Step=  727, Dmax= 4.9e-03 nm, Epot= -1.00702e+06 Fmax= 1.10825e+03, atom= 1093
-Step=  728, Dmax= 5.9e-03 nm, Epot= -1.00691e+06 Fmax= 7.87721e+03, atom= 1093Step=  729, Dmax= 3.0e-03 nm, Epot= -1.00705e+06 Fmax= 3.42733e+03, atom= 1093
-Step=  730, Dmax= 3.6e-03 nm, Epot= -1.00717e+06 Fmax= 2.23371e+03, atom= 1093
-Step=  731, Dmax= 4.3e-03 nm, Epot= -1.00720e+06 Fmax= 4.60767e+03, atom= 1093
-0.011829
-[ATIV-6]Paramount number 722, elapsed = 0.013248
-[ATIV-6]Paramount number 723, elapsed = 0.013669
-[ATIV-6]Paramount number 724, elapsed = 0.031468
-[ATIV-6]Paramount number 725, elapsed = 0.015993
-[ATIV-6]Paramount number 726, elapsed = 0.015095
-[ATIV-6]Paramount number 727, elapsed = 0.022405
-[ATIV-6]Paramount number 728, elapsed = 0.019967
-[ATIV-6]Paramount number 729, elapsed = 0.020939
-[ATIV-6]Paramount number 730, elapsed = 0.015248
-[ATIV-6]Paramount number 731, elapsed = 0.016999
-[ATIV-6]ParamStep=  732, Dmax= 5.1e-03 nm, Epot= -1.00730e+06 Fmax= 3.50072e+03, atom= 1093
-Step=  733, Dmax= 6.1e-03 nm, Epot= -1.00731e+06 Fmax= 6.22326e+03, atom= 1093
-Step=  734, Dmax= 7.4e-03 nm, Epot= -1.00740e+06 Fmax= 5.35343e+03, atom= 1093
-Step=  735, Dmax= 8.8e-03 nm, Epot= -1.00737e+06 Fmax= 8.59218e+03, atom= 1093Step=  736, Dmax= 4.4e-03 nm, Epot= -1.00751e+06 Fmax= 1.64628e+03, atom= 1093
-Step=  737, Dmax= 5.3e-03 nm, Epot= -1.00746e+06 Fmax= 6.76134e+03, atom= 1093Step=  738, Dmax= 2.7e-03 nm, Epot= -1.00755e+06 Fmax= 2.57628e+03, atom= 1093
-Step=  739, Dmax= 3.2e-03 nm, Epot= -1.00762e+06 Fmax= 2.50044e+03, atom= 1093
-Step=  740, Dmax= 3.8e-03 nm, Epot= -1.00766e+06 Fmax= 3.58094e+03, atom= 1093
-Step=  741, Dmax= 4.6e-03 nm, Epot= -1.00773e+06 Fmax= 3.74705e+03, atom= 1093
-ount number 732, elapsed = 0.013813
-[ATIV-6]Paramount number 733, elapsed = 0.014570
-[ATIV-6]Paramount number 734, elapsed = 0.016609
-[ATIV-6]Paramount number 735, elapsed = 0.019018
-[ATIV-6]Paramount number 736, elapsed = 0.012151
-[ATIV-6]Paramount number 737, elapsed = 0.015929
-[ATIV-6]Paramount number 738, elapsed = 0.014055
-[ATIV-6]Paramount number 739, elapsed = 0.014053
-[ATIV-6]Paramount number 740, elapsed = 0.010571
-[ATIV-6]Paramount number 741, elapsed = 0.011916
-[ATIV-6]Paramount number 742, elapsStep=  742, Dmax= 5.5e-03 nm, Epot= -1.00777e+06 Fmax= 4.97006e+03, atom= 1093
-Step=  743, Dmax= 6.6e-03 nm, Epot= -1.00782e+06 Fmax= 5.46259e+03, atom= 1093
-Step=  744, Dmax= 7.9e-03 nm, Epot= -1.00785e+06 Fmax= 7.01752e+03, atom= 1093
-Step=  745, Dmax= 9.5e-03 nm, Epot= -1.00789e+06 Fmax= 7.92621e+03, atom= 1093
-Step=  746, Dmax= 1.1e-02 nm, Epot= -1.00788e+06 Fmax= 9.90075e+03, atom= 1093Step=  747, Dmax= 5.7e-03 nm, Epot= -1.00805e+06 Fmax= 1.05867e+03, atom= 1093
-Step=  748, Dmax= 6.8e-03 nm, Epot= -1.00789e+06 Fmax= 9.24465e+03, atom= 1093Step=  749, Dmax= 3.4e-03 nm, Epot= -1.00807e+06 Fmax= 4.14204e+03, atom= 1093
-Step=  750, Dmax= 4.1e-03 nm, Epot= -1.00821e+06 Fmax= 2.37029e+03, atom= 1093
-Step=  751, Dmax= 4.9e-03 nm, Epot= -1.00824e+06 Fmax= 5.52533e+03, atom= 1093
-Step=  752, Dmax= 5.9e-03 nm, Epot= -1.00835e+06 Fmax= 3.81635e+03, atom= 1093
-ed = 0.016555
-[ATIV-6]Paramount number 743, elapsed = 0.013519
-[ATIV-6]Paramount number 744, elapsed = 0.017100
-[ATIV-6]Paramount number 745, elapsed = 0.018240
-[ATIV-6]Paramount number 746, elapsed = 0.014397
-[ATIV-6]Paramount number 747, elapsed = 0.048822
-[ATIV-6]Paramount number 748, elapsed = 0.016426
-[ATIV-6]Paramount number 749, elapsed = 0.013098
-[ATIV-6]Paramount number 750, elapsed = 0.010724
-[ATIV-6]Paramount number 751, elapsed = 0.027231
-[ATIV-6]Paramount number 752, elapsed = 0.012929
-[ATIV-6]Step=  753, Dmax= 7.1e-03 nm, Epot= -1.00834e+06 Fmax= 7.45705e+03, atom= 1093Step=  754, Dmax= 3.5e-03 nm, Epot= -1.00842e+06 Fmax= 1.85545e+03, atom= 1093
-Step=  755, Dmax= 4.3e-03 nm, Epot= -1.00844e+06 Fmax= 4.82797e+03, atom= 1093
-Step=  756, Dmax= 5.1e-03 nm, Epot= -1.00855e+06 Fmax= 3.27898e+03, atom= 1093
-Step=  757, Dmax= 6.1e-03 nm, Epot= -1.00856e+06 Fmax= 6.47177e+03, atom= 1093
-Step=  758, Dmax= 7.4e-03 nm, Epot= -1.00866e+06 Fmax= 5.19614e+03, atom= 1093
-Step=  759, Dmax= 8.8e-03 nm, Epot= -1.00863e+06 Fmax= 8.68944e+03, atom= 1093Step=  760, Dmax= 4.4e-03 nm, Epot= -1.00874e+06 Fmax= 1.79200e+03, atom= 1093
-Step=  761, Dmax= 5.3e-03 nm, Epot= -1.00872e+06 Fmax= 6.46554e+03, atom= 1093Step=  762, Dmax= 2.6e-03 nm, Epot= -1.00878e+06 Fmax= 2.36535e+03, atom= 1093
-Paramount number 753, elapsed = 0.018604
-[ATIV-6]Paramount number 754, elapsed = 0.013799
-[ATIV-6]Paramount number 755, elapsed = 0.013566
-[ATIV-6]Paramount number 756, elapsed = 0.011123
-[ATIV-6]Paramount number 757, elapsed = 0.013014
-[ATIV-6]Paramount number 758, elapsed = 0.012148
-[ATIV-6]Paramount number 759, elapsed = 0.013101
-[ATIV-6]Paramount number 760, elapsed = 0.012924
-[ATIV-6]Paramount number 761, elapsed = 0.011798
-[ATIV-6]Paramount number 762, elapsed = 0.021918
-[ATIV-6]Paramount number 763, Step=  763, Dmax= 3.2e-03 nm, Epot= -1.00884e+06 Fmax= 2.62785e+03, atom= 1093
-Step=  764, Dmax= 3.8e-03 nm, Epot= -1.00889e+06 Fmax= 3.40744e+03, atom= 1093
-Step=  765, Dmax= 4.6e-03 nm, Epot= -1.00895e+06 Fmax= 3.88043e+03, atom= 1093
-Step=  766, Dmax= 5.5e-03 nm, Epot= -1.00900e+06 Fmax= 4.85461e+03, atom= 1093
-Step=  767, Dmax= 6.6e-03 nm, Epot= -1.00905e+06 Fmax= 5.56258e+03, atom= 1093
-Step=  768, Dmax= 7.9e-03 nm, Epot= -1.00908e+06 Fmax= 6.92686e+03, atom= 1093
-Step=  769, Dmax= 9.5e-03 nm, Epot= -1.00911e+06 Fmax= 7.94810e+03, atom= 1093
-Step=  770, Dmax= 1.1e-02 nm, Epot= -1.00912e+06 Fmax= 9.95958e+03, atom= 1093
-Step=  771, Dmax= 1.4e-02 nm, Epot= -1.00913e+06 Fmax= 1.12750e+04, atom= 1093
-Step=  772, Dmax= 1.6e-02 nm, Epot= -1.00906e+06 Fmax= 1.42434e+04, atom= 1093Step=  773, Dmax= 8.2e-03 nm, Epot= -1.00938e+06 Fmax= 1.51095e+03, atom= 1093
-elapsed = 0.012494
-[ATIV-6]Paramount number 764, elapsed = 0.020818
-[ATIV-6]Paramount number 765, elapsed = 0.016512
-[ATIV-6]Paramount number 766, elapsed = 0.015783
-[ATIV-6]Paramount number 767, elapsed = 0.028374
-[ATIV-6]Paramount number 768, elapsed = 0.034533
-[ATIV-6]Paramount number 769, elapsed = 0.013392
-[ATIV-6]Paramount number 770, elapsed = 0.012401
-[ATIV-6]Paramount number 771, elapsed = 0.012449
-[ATIV-6]Paramount number 772, elapsed = 0.012452
-[ATIV-6]Paramount number 773, elapsed = 0.015443
-[ATStep=  774, Dmax= 9.8e-03 nm, Epot= -1.00904e+06 Fmax= 1.39023e+04, atom= 1093Step=  775, Dmax= 4.9e-03 nm, Epot= -1.00936e+06 Fmax= 6.26576e+03, atom= 1093Step=  776, Dmax= 2.5e-03 nm, Epot= -1.00942e+06 Fmax= 2.38107e+03, atom= 1093
-Step=  777, Dmax= 3.0e-03 nm, Epot= -1.00949e+06 Fmax= 2.23709e+03, atom= 1093
-Step=  778, Dmax= 3.5e-03 nm, Epot= -1.00953e+06 Fmax= 3.38735e+03, atom= 1093
-Step=  779, Dmax= 4.3e-03 nm, Epot= -1.00960e+06 Fmax= 3.31793e+03, atom= 1093
-Step=  780, Dmax= 5.1e-03 nm, Epot= -1.00963e+06 Fmax= 4.83565e+03, atom= 1093
-Step=  781, Dmax= 6.1e-03 nm, Epot= -1.00970e+06 Fmax= 4.89033e+03, atom= 1093
-Step=  782, Dmax= 7.3e-03 nm, Epot= -1.00972e+06 Fmax= 6.69974e+03, atom= 1093
-Step=  783, Dmax= 8.8e-03 nm, Epot= -1.00977e+06 Fmax= 7.25562e+03, atom= 1093
-IV-6]Paramount number 774, elapsed = 0.021522
-[ATIV-6]Paramount number 775, elapsed = 0.011624
-[ATIV-6]Paramount number 776, elapsed = 0.013822
-[ATIV-6]Paramount number 777, elapsed = 0.012842
-[ATIV-6]Paramount number 778, elapsed = 0.028833
-[ATIV-6]Paramount number 779, elapsed = 0.013773
-[ATIV-6]Paramount number 780, elapsed = 0.012443
-[ATIV-6]Paramount number 781, elapsed = 0.011238
-[ATIV-6]Paramount number 782, elapsed = 0.013914
-[ATIV-6]Paramount number 783, elapsed = 0.013506
-[ATIV-6]Paramount number Step=  784, Dmax= 1.1e-02 nm, Epot= -1.00977e+06 Fmax= 9.24562e+03, atom= 1093
-Step=  785, Dmax= 1.3e-02 nm, Epot= -1.00979e+06 Fmax= 1.06310e+04, atom= 1093
-Step=  786, Dmax= 1.5e-02 nm, Epot= -1.00975e+06 Fmax= 1.30269e+04, atom= 1093Step=  787, Dmax= 7.6e-03 nm, Epot= -1.01001e+06 Fmax= 1.29591e+03, atom= 1093
-Step=  788, Dmax= 9.1e-03 nm, Epot= -1.00971e+06 Fmax= 1.27370e+04, atom= 1093Step=  789, Dmax= 4.6e-03 nm, Epot= -1.00999e+06 Fmax= 5.79209e+03, atom= 1093Step=  790, Dmax= 2.3e-03 nm, Epot= -1.01005e+06 Fmax= 2.26931e+03, atom= 1093
-Step=  791, Dmax= 2.7e-03 nm, Epot= -1.01012e+06 Fmax= 2.05875e+03, atom= 1093
-Step=  792, Dmax= 3.3e-03 nm, Epot= -1.01017e+06 Fmax= 3.07597e+03, atom= 1093
-Step=  793, Dmax= 3.9e-03 nm, Epot= -1.01023e+06 Fmax= 3.15446e+03, atom= 1093
-784, elapsed = 0.013042
-[ATIV-6]Paramount number 785, elapsed = 0.014381
-[ATIV-6]Paramount number 786, elapsed = 0.011399
-[ATIV-6]Paramount number 787, elapsed = 0.012169
-[ATIV-6]Paramount number 788, elapsed = 0.013801
-[ATIV-6]Paramount number 789, elapsed = 0.012021
-[ATIV-6]Paramount number 790, elapsed = 0.012058
-[ATIV-6]Paramount number 791, elapsed = 0.011813
-[ATIV-6]Paramount number 792, elapsed = 0.011283
-[ATIV-6]Paramount number 793, elapsed = 0.012181
-[ATIV-6]Paramount number 794, elapsed = 0.01192Step=  794, Dmax= 4.7e-03 nm, Epot= -1.01027e+06 Fmax= 4.34370e+03, atom= 1093
-Step=  795, Dmax= 5.7e-03 nm, Epot= -1.01033e+06 Fmax= 4.68805e+03, atom= 1093
-Step=  796, Dmax= 6.8e-03 nm, Epot= -1.01036e+06 Fmax= 6.15838e+03, atom= 1093
-Step=  797, Dmax= 8.2e-03 nm, Epot= -1.01041e+06 Fmax= 6.71472e+03, atom= 1093
-Step=  798, Dmax= 9.8e-03 nm, Epot= -1.01041e+06 Fmax= 8.79102e+03, atom= 1093
-Step=  799, Dmax= 1.2e-02 nm, Epot= -1.01045e+06 Fmax= 9.56099e+03, atom= 1093
-Step=  800, Dmax= 1.4e-02 nm, Epot= -1.01040e+06 Fmax= 1.25547e+04, atom= 1093Step=  801, Dmax= 7.1e-03 nm, Epot= -1.01064e+06 Fmax= 1.48063e+03, atom= 1093
-Step=  802, Dmax= 8.5e-03 nm, Epot= -1.01038e+06 Fmax= 1.18223e+04, atom= 1093Step=  803, Dmax= 4.2e-03 nm, Epot= -1.01063e+06 Fmax= 5.25317e+03, atom= 1093Step=  804, Dmax= 2.1e-03 nm, Epot= -1.01068e+06 Fmax= 1.89051e+03, atom= 1093
-7
-[ATIV-6]Paramount number 795, elapsed = 0.012078
-[ATIV-6]Paramount number 796, elapsed = 0.011573
-[ATIV-6]Paramount number 797, elapsed = 0.011733
-[ATIV-6]Paramount number 798, elapsed = 0.011318
-[ATIV-6]Paramount number 799, elapsed = 0.015985
-[ATIV-6]Paramount number 800, elapsed = 0.011988
-[ATIV-6]Paramount number 801, elapsed = 0.011299
-[ATIV-6]Paramount number 802, elapsed = 0.011206
-[ATIV-6]Paramount number 803, elapsed = 0.012636
-[ATIV-6]Paramount number 804, elapsed = 0.011978
-[ATIV-6]Paramount nuStep=  805, Dmax= 2.5e-03 nm, Epot= -1.01073e+06 Fmax= 2.09099e+03, atom= 1093
-Step=  806, Dmax= 3.1e-03 nm, Epot= -1.01078e+06 Fmax= 2.79354e+03, atom= 1093
-Step=  807, Dmax= 3.7e-03 nm, Epot= -1.01084e+06 Fmax= 2.95170e+03, atom= 1093
-Step=  808, Dmax= 4.4e-03 nm, Epot= -1.01088e+06 Fmax= 4.08888e+03, atom= 1093
-Step=  809, Dmax= 5.3e-03 nm, Epot= -1.01094e+06 Fmax= 4.31927e+03, atom= 1093
-Step=  810, Dmax= 6.3e-03 nm, Epot= -1.01097e+06 Fmax= 5.72406e+03, atom= 1093
-Step=  811, Dmax= 7.6e-03 nm, Epot= -1.01102e+06 Fmax= 6.36042e+03, atom= 1093
-Step=  812, Dmax= 9.1e-03 nm, Epot= -1.01104e+06 Fmax= 7.89751e+03, atom= 1093
-Step=  813, Dmax= 1.1e-02 nm, Epot= -1.01106e+06 Fmax= 9.31631e+03, atom= 1093
-Step=  814, Dmax= 1.3e-02 nm, Epot= -1.01105e+06 Fmax= 1.10993e+04, atom= 1093mber 805, elapsed = 0.013845
-[ATIV-6]Paramount number 806, elapsed = 0.011127
-[ATIV-6]Paramount number 807, elapsed = 0.013170
-[ATIV-6]Paramount number 808, elapsed = 0.020789
-[ATIV-6]Paramount number 809, elapsed = 0.016068
-[ATIV-6]Paramount number 810, elapsed = 0.017607
-[ATIV-6]Paramount number 811, elapsed = 0.026389
-[ATIV-6]Paramount number 812, elapsed = 0.014248
-[ATIV-6]Paramount number 813, elapsed = 0.017705
-[ATIV-6]Paramount number 814, elapsed = 0.019332
-[ATIV-6]Paramount number 815, elapsed = 0.Step=  815, Dmax= 6.6e-03 nm, Epot= -1.01124e+06 Fmax= 9.62383e+02, atom= 1093
-
-writing lowest energy coordinates.
-
-Back Off! I just backed up em.gro to ./#em.gro.2#
-
-Steepest Descents converged to Fmax < 1000 in 816 steps
-Potential Energy  = -1.0112365e+06
-Maximum force     =  9.6238263e+02 on atom 1093
-Norm of force     =  4.0465545e+01
-
-GROMACS reminds you: "UNIX is basically a simple operating system. It just takes a genius to understand its simplicity." (Dennis Ritchie)
-
-040069
-[ATIV-6]Paramount number 816, elapsed = 0.016530
-[ATIV-6] Finish process start: 1589180651.684709
-[ATIV-6]Application finished
-[ATIV-6]Finish time stamp 1589180651.752640
+Init time,0.030799
+Iteration,1,0.034510,0.065311
+Iteration,2,0.035144,0.100456
+Iteration,3,0.010113,0.110570
+Iteration,4,0.033014,0.143586
+Iteration,5,0.030053,0.173640
+Iteration,6,0.010730,0.184372
+Iteration,7,0.099539,0.283912
+Iteration,8,0.095228,0.379141
+Iteration,9,0.009776,0.388919
+Iteration,10,0.019290,0.408210
+Iteration,11,0.009698,0.417909
+Iteration,12,0.010628,0.428538
+Iteration,13,0.035806,0.464345
+Iteration,14,0.016902,0.481248
+Iteration,15,0.010005,0.491254
+Iteration,16,0.017537,0.508792
+Iteration,17,0.016092,0.524885
+Iteration,18,0.052704,0.577590
+Iteration,19,0.009383,0.586975
+Iteration,20,0.013627,0.600603
+Iteration,21,0.011555,0.612159
+Iteration,22,0.021731,0.633891
+Iteration,23,0.010337,0.644229
+Iteration,24,0.036133,0.680363
+Iteration,25,0.010180,0.690544
+Iteration,26,0.040486,0.731031
+Iteration,27,0.082030,0.813062
+Iteration,28,0.074372,0.887435
+Iteration,29,0.079181,0.966618
+Iteration,30,0.017123,0.983742
+Iteration,31,0.014927,0.998671
+Iteration,32,0.062474,1.061146
+Iteration,33,0.055094,1.116241
+Iteration,34,0.016986,1.133228
+Iteration,35,0.011828,1.145057
+Iteration,36,0.014319,1.159377
+Iteration,37,0.009575,1.168953
+Iteration,38,0.016054,1.185008
+Iteration,39,0.010967,1.195977
+Iteration,40,0.010606,1.206584
+Iteration,41,0.041755,1.248340
+Iteration,42,0.064159,1.312500
+Iteration,43,0.009553,1.322055
+Iteration,44,0.013979,1.336036
+Iteration,45,0.011478,1.347515
+Iteration,46,0.010714,1.358231
+Iteration,47,0.013352,1.371584
+Iteration,48,0.013118,1.384704
+Iteration,49,0.013119,1.397825
+Iteration,50,0.014542,1.412368
+Iteration,51,0.010859,1.423228
+Iteration,52,0.010999,1.434234
+Iteration,53,0.012800,1.447035
+Iteration,54,0.014970,1.462006
+Iteration,55,0.018819,1.480826
+Iteration,56,0.010620,1.491447
+Iteration,57,0.015970,1.507418
+Iteration,58,0.009932,1.517351
+Iteration,59,0.014474,1.531826
+Iteration,60,0.011201,1.543028
+Iteration,61,0.009085,1.552114
+Iteration,62,0.018233,1.570349
+Iteration,63,0.012245,1.582595
+Iteration,64,0.015145,1.597741
+Iteration,65,0.010361,1.608103
+Iteration,66,0.011683,1.619787
+Iteration,67,0.016837,1.636625
+Iteration,68,0.009359,1.645985
+Iteration,69,0.013769,1.659755
+Iteration,70,0.010949,1.670705
+Iteration,71,0.020096,1.690802
+Iteration,72,0.015028,1.705831
+Iteration,73,0.014666,1.720498
+Iteration,74,0.010714,1.731213
+Iteration,75,0.010297,1.741511
+Iteration,76,0.015471,1.756984
+Iteration,77,0.009212,1.766197
+Iteration,78,0.013407,1.779605
+Iteration,79,0.011307,1.790913
+Iteration,80,0.009549,1.800464
+Iteration,81,0.014420,1.814885
+Iteration,82,0.046256,1.861143
+Iteration,83,0.018820,1.879964
+Iteration,84,0.010326,1.890291
+Iteration,85,0.015568,1.905860
+Iteration,86,0.010693,1.916554
+Iteration,87,0.010749,1.927304
+Iteration,88,0.013667,1.940973
+Iteration,89,0.010187,1.951161
+Iteration,90,0.015371,1.966533
+Iteration,91,0.010172,1.976706
+Iteration,92,0.011402,1.988109
+Iteration,93,0.014879,2.002989
+Iteration,94,0.012845,2.015836
+Iteration,95,0.051624,2.067461
+Iteration,96,0.015282,2.082745
+Iteration,97,0.016516,2.099262
+Iteration,98,0.013270,2.112533
+Iteration,99,0.009468,2.122003
+Iteration,100,0.013512,2.135516
+Iteration,101,0.010294,2.145812
+Iteration,102,0.016118,2.161931
+Iteration,103,0.009606,2.171538
+Iteration,104,0.009665,2.181205
+Iteration,105,0.015042,2.196249
+Iteration,106,0.009527,2.205777
+Iteration,107,0.012391,2.218169
+Iteration,108,0.015303,2.233473
+Iteration,109,0.010315,2.243789
+Iteration,110,0.013996,2.257786
+Iteration,111,0.012576,2.270363
+Iteration,112,0.017412,2.287777
+Iteration,113,0.010993,2.298771
+Iteration,114,0.010405,2.309177
+Iteration,115,0.017880,2.327058
+Iteration,116,0.009763,2.336822
+Iteration,117,0.013338,2.350161
+Iteration,118,0.010806,2.360969
+Iteration,119,0.009920,2.370890
+Iteration,120,0.014251,2.385143
+Iteration,121,0.010580,2.395724
+Iteration,122,0.017410,2.413135
+Iteration,123,0.013451,2.426587
+Iteration,124,0.009662,2.436251
+Iteration,125,0.014354,2.450606
+Iteration,126,0.009112,2.459720
+Iteration,127,0.013193,2.472914
+Iteration,128,0.010361,2.483276
+Iteration,129,0.019429,2.502706
+Iteration,130,0.010070,2.512777
+Iteration,131,0.012543,2.525322
+Iteration,132,0.012651,2.537988
+Iteration,133,0.010133,2.548123
+Iteration,134,0.010530,2.558654
+Iteration,135,0.015044,2.573699
+Iteration,136,0.011391,2.585091
+Iteration,137,0.012777,2.597870
+Iteration,138,0.011008,2.608879
+Iteration,139,0.011739,2.620619
+Iteration,140,0.017545,2.638165
+Iteration,141,0.011819,2.649985
+Iteration,142,0.014722,2.664708
+Iteration,143,0.009002,2.673711
+Iteration,144,0.012579,2.686291
+Iteration,145,0.013475,2.699768
+Iteration,146,0.009639,2.709408
+Iteration,147,0.009613,2.719022
+Iteration,148,0.015225,2.734248
+Iteration,149,0.010511,2.744761
+Iteration,150,0.013323,2.758085
+Iteration,151,0.014040,2.772126
+Iteration,152,0.013872,2.785999
+Iteration,153,0.010322,2.796322
+Iteration,154,0.009184,2.805508
+Iteration,155,0.013320,2.818829
+Iteration,156,0.011312,2.830143
+Iteration,157,0.015879,2.846023
+Iteration,158,0.009429,2.855454
+Iteration,159,0.011055,2.866510
+Iteration,160,0.015174,2.881685
+Iteration,161,0.009701,2.891387
+Iteration,162,0.015985,2.907373
+Iteration,163,0.009890,2.917264
+Iteration,164,0.013041,2.930306
+Iteration,165,0.016276,2.946583
+Iteration,166,0.009995,2.956580
+Iteration,167,0.016819,2.973401
+Iteration,168,0.010893,2.984295
+Iteration,169,0.025355,3.009651
+Iteration,170,0.072425,3.082077
+Iteration,171,0.009510,3.091589
+Iteration,172,0.020022,3.111612
+Iteration,173,0.010297,3.121910
+Iteration,174,0.045436,3.167347
+Iteration,175,0.010255,3.177603
+Iteration,176,0.010191,3.187795
+Iteration,177,0.010870,3.198667
+Iteration,178,0.015097,3.213766
+Iteration,179,0.009182,3.222949
+Iteration,180,0.018764,3.241717
+Iteration,181,0.011676,3.253394
+Iteration,182,0.018280,3.271675
+Iteration,183,0.015481,3.287158
+Iteration,184,0.037315,3.324474
+Iteration,185,0.015942,3.340418
+Iteration,186,0.012869,3.353289
+Iteration,187,0.014123,3.367413
+Iteration,188,0.010625,3.378039
+Iteration,189,0.012334,3.390374
+Iteration,190,0.010588,3.400964
+Iteration,191,0.009934,3.410900
+Iteration,192,0.015086,3.425987
+Iteration,193,0.012014,3.438003
+Iteration,194,0.014651,3.452655
+Iteration,195,0.011023,3.463679
+Iteration,196,0.014102,3.477782
+Iteration,197,0.017291,3.495075
+Iteration,198,0.010803,3.505879
+Iteration,199,0.015006,3.520886
+Iteration,200,0.010564,3.531451
+Iteration,201,0.014194,3.545647
+Iteration,202,0.009910,3.555558
+Iteration,203,0.011174,3.566734
+Iteration,204,0.014617,3.581352
+Iteration,205,0.009698,3.591051
+Iteration,206,0.013689,3.604742
+Iteration,207,0.010875,3.615619
+Iteration,208,0.009067,3.624687
+Iteration,209,0.015639,3.640327
+Iteration,210,0.010689,3.651017
+Iteration,211,0.011952,3.662970
+Iteration,212,0.016136,3.679109
+Iteration,213,0.010422,3.689533
+Iteration,214,0.017158,3.706692
+Iteration,215,0.010358,3.717051
+Iteration,216,0.010124,3.727176
+Iteration,217,0.015959,3.743136
+Iteration,218,0.011183,3.754320
+Iteration,219,0.012809,3.767130
+Iteration,220,0.010166,3.777297
+Iteration,221,0.013314,3.790612
+Iteration,222,0.010740,3.801354
+Iteration,223,0.010183,3.811538
+Iteration,224,0.015691,3.827231
+Iteration,225,0.010433,3.837665
+Iteration,226,0.015508,3.853174
+Iteration,227,0.013277,3.866452
+Iteration,228,0.019658,3.886111
+Iteration,229,0.011847,3.897960
+Iteration,230,0.010425,3.908386
+Iteration,231,0.015665,3.924052
+Iteration,232,0.011302,3.935355
+Iteration,233,0.016341,3.951697
+Iteration,234,0.009351,3.961049
+Iteration,235,0.011245,3.972295
+Iteration,236,0.015121,3.987417
+Iteration,237,0.010752,3.998170
+Iteration,238,0.009525,4.007696
+Iteration,239,0.013502,4.021200
+Iteration,240,0.010685,4.031887
+Iteration,241,0.011428,4.043317
+Iteration,242,0.016725,4.060044
+Iteration,243,0.012886,4.072931
+Iteration,244,0.012547,4.085480
+Iteration,245,0.014467,4.099948
+Iteration,246,0.010329,4.110279
+Iteration,247,0.011747,4.122027
+Iteration,248,0.012665,4.134694
+Iteration,249,0.009288,4.143983
+Iteration,250,0.012212,4.156196
+Iteration,251,0.015727,4.171924
+Iteration,252,0.010740,4.182666
+Iteration,253,0.012559,4.195227
+Iteration,254,0.010376,4.205605
+Iteration,255,0.010044,4.215650
+Iteration,256,0.014812,4.230464
+Iteration,257,0.010332,4.240797
+Iteration,258,0.019949,4.260747
+Iteration,259,0.010992,4.271740
+Iteration,260,0.017050,4.288807
+Iteration,261,0.011622,4.300430
+Iteration,262,0.011550,4.311981
+Iteration,263,0.011807,4.323789
+Iteration,264,0.010047,4.333837
+Iteration,265,0.009540,4.343379
+Iteration,266,0.014475,4.357855
+Iteration,267,0.010203,4.368059
+Iteration,268,0.013866,4.381926
+Iteration,269,0.009706,4.391634
+Iteration,270,0.010574,4.402210
+Iteration,271,0.013371,4.415582
+Iteration,272,0.010351,4.425935
+Iteration,273,0.009460,4.435396
+Iteration,274,0.011935,4.447332
+Iteration,275,0.012869,4.460203
+Iteration,276,0.019718,4.479922
+Iteration,277,0.011113,4.491036
+Iteration,278,0.015776,4.506813
+Iteration,279,0.012522,4.519336
+Iteration,280,0.009551,4.528888
+Iteration,281,0.012410,4.541299
+Iteration,282,0.010306,4.551607
+Iteration,283,0.011978,4.563586
+Iteration,284,0.014656,4.578244
+Iteration,285,0.010148,4.588393
+Iteration,286,0.014935,4.603329
+Iteration,287,0.009800,4.613130
+Iteration,288,0.009308,4.622439
+Iteration,289,0.016758,4.639198
+Iteration,290,0.009888,4.649087
+Iteration,291,0.015019,4.664108
+Iteration,292,0.012982,4.677091
+Iteration,293,0.018760,4.695853
+Iteration,294,0.010457,4.706311
+Iteration,295,0.010397,4.716710
+Iteration,296,0.015569,4.732281
+Iteration,297,0.009806,4.742088
+Iteration,298,0.015090,4.757180
+Iteration,299,0.011305,4.768486
+Iteration,300,0.010299,4.778787
+Iteration,301,0.016337,4.795125
+Iteration,302,0.010343,4.805469
+Iteration,303,0.009470,4.814940
+Iteration,304,0.015717,4.830658
+Iteration,305,0.010320,4.840979
+Iteration,306,0.014661,4.855642
+Iteration,307,0.010414,4.866057
+Iteration,308,0.019308,4.885366
+Iteration,309,0.009648,4.895015
+Iteration,310,0.015097,4.910113
+Iteration,311,0.011732,4.921847
+Iteration,312,0.009747,4.931595
+Iteration,313,0.015034,4.946630
+Iteration,314,0.009509,4.956140
+Iteration,315,0.013057,4.969198
+Iteration,316,0.014646,4.983845
+Iteration,317,0.011348,4.995194
+Iteration,318,0.014363,5.009558
+Iteration,319,0.009485,5.019045
+Iteration,320,0.010672,5.029718
+Iteration,321,0.012088,5.041807
+Iteration,322,0.012010,5.053818
+Iteration,323,0.011956,5.065775
+Iteration,324,0.020738,5.086514
+Iteration,325,0.009942,5.096457
+Iteration,326,0.012677,5.109135
+Iteration,327,0.011252,5.120388
+Iteration,328,0.010721,5.131110
+Iteration,329,0.015183,5.146294
+Iteration,330,0.009866,5.156162
+Iteration,331,0.021987,5.178150
+Iteration,332,0.010226,5.188377
+Iteration,333,0.009868,5.198246
+Iteration,334,0.027468,5.225715
+Iteration,335,0.024412,5.250129
+Iteration,336,0.012090,5.262220
+Iteration,337,0.059951,5.322172
+Iteration,338,0.010986,5.333159
+Iteration,339,0.021966,5.355126
+Iteration,340,0.010097,5.365225
+Iteration,341,0.016067,5.381293
+Iteration,342,0.014049,5.395343
+Iteration,343,0.011550,5.406894
+Iteration,344,0.009349,5.416244
+Iteration,345,0.017828,5.434073
+Iteration,346,0.014967,5.449041
+Iteration,347,0.010966,5.460009
+Iteration,348,0.020075,5.480085
+Iteration,349,0.010256,5.490342
+Iteration,350,0.013421,5.503764
+Iteration,351,0.016220,5.519985
+Iteration,352,0.010139,5.530126
+Iteration,353,0.028455,5.558583
+Iteration,354,0.016021,5.574605
+Iteration,355,0.046554,5.621161
+Iteration,356,0.023971,5.645133
+Iteration,357,0.015117,5.660251
+Iteration,358,0.012793,5.673045
+Iteration,359,0.013082,5.686128
+Iteration,360,0.014522,5.700651
+Iteration,361,0.010007,5.710659
+Iteration,362,0.014692,5.725352
+Iteration,363,0.010917,5.736270
+Iteration,364,0.011373,5.747644
+Iteration,365,0.022876,5.770521
+Iteration,366,0.011809,5.782331
+Iteration,367,0.010671,5.793003
+Iteration,368,0.009644,5.802648
+Iteration,369,0.044440,5.847089
+Iteration,370,0.065061,5.912151
+Iteration,371,0.046021,5.958173
+Iteration,372,0.017004,5.975178
+Iteration,373,0.022681,5.997861
+Iteration,374,0.014317,6.012180
+Iteration,375,0.010532,6.022713
+Iteration,376,0.009700,6.032414
+Iteration,377,0.023034,6.055449
+Iteration,378,0.009586,6.065036
+Iteration,379,0.016709,6.081746
+Iteration,380,0.018239,6.099986
+Iteration,381,0.011323,6.111310
+Iteration,382,0.010066,6.121377
+Iteration,383,0.014081,6.135459
+Iteration,384,0.010827,6.146288
+Iteration,385,0.009578,6.155867
+Iteration,386,0.014530,6.170398
+Iteration,387,0.010449,6.180849
+Iteration,388,0.024721,6.205593
+Iteration,389,0.009608,6.215202
+Iteration,390,0.010847,6.226050
+Iteration,391,0.013103,6.239154
+Iteration,392,0.011577,6.250732
+Iteration,393,0.014229,6.264962
+Iteration,394,0.013954,6.278917
+Iteration,395,0.010341,6.289259
+Iteration,396,0.018656,6.307916
+Iteration,397,0.010654,6.318571
+Iteration,398,0.014417,6.332989
+Iteration,399,0.010299,6.343290
+Iteration,400,0.009867,6.353158
+Iteration,401,0.012881,6.366040
+Iteration,402,0.010857,6.376898
+Iteration,403,0.017551,6.394450
+Iteration,404,0.010870,6.405321
+Iteration,405,0.010005,6.415327
+Iteration,406,0.014838,6.430166
+Iteration,407,0.010987,6.441154
+Iteration,408,0.010535,6.451691
+Iteration,409,0.015943,6.467636
+Iteration,410,0.012794,6.480431
+Iteration,411,0.012635,6.493067
+Iteration,412,0.038562,6.531630
+Iteration,413,0.012674,6.544305
+Iteration,414,0.013658,6.557965
+Iteration,415,0.010182,6.568149
+Iteration,416,0.010787,6.578937
+Iteration,417,0.013167,6.592105
+Iteration,418,0.011277,6.603383
+Iteration,419,0.032174,6.635559
+Iteration,420,0.014378,6.649939
+Iteration,421,0.010377,6.660317
+Iteration,422,0.010403,6.670721
+Iteration,423,0.015748,6.686470
+Iteration,424,0.015982,6.702454
+Iteration,425,0.015003,6.717458
+Iteration,426,0.010626,6.728085
+Iteration,427,0.009504,6.737590
+Iteration,428,0.013528,6.751119
+Iteration,429,0.010488,6.761608
+Iteration,430,0.011027,6.772637
+Iteration,431,0.012249,6.784887
+Iteration,432,0.010997,6.795885
+Iteration,433,0.045208,6.841094
+Iteration,434,0.032913,6.874009
+Iteration,435,0.013898,6.887908
+Iteration,436,0.013865,6.901775
+Iteration,437,0.013321,6.915097
+Iteration,438,0.009834,6.924933
+Iteration,439,0.013996,6.938930
+Iteration,440,0.011184,6.950116
+Iteration,441,0.010286,6.960403
+Iteration,442,0.014313,6.974717
+Iteration,443,0.010385,6.985103
+Iteration,444,0.010229,6.995333
+Iteration,445,0.012598,7.007932
+Iteration,446,0.011961,7.019894
+Iteration,447,0.013349,7.033244
+Iteration,448,0.009537,7.042782
+Iteration,449,0.010998,7.053781
+Iteration,450,0.012556,7.066338
+Iteration,451,0.016290,7.082629
+Iteration,452,0.010612,7.093243
+Iteration,453,0.079331,7.172575
+Iteration,454,0.009831,7.182407
+Iteration,455,0.065738,7.248146
+Iteration,456,0.019117,7.267264
+Iteration,457,0.018206,7.285471
+Iteration,458,0.017066,7.302538
+Iteration,459,0.026357,7.328897
+Iteration,460,0.012333,7.341231
+Iteration,461,0.038307,7.379539
+Iteration,462,0.040886,7.420426
+Iteration,463,0.012023,7.432450
+Iteration,464,0.015382,7.447834
+Iteration,465,0.009600,7.457435
+Iteration,466,0.021855,7.479291
+Iteration,467,0.009655,7.488948
+Iteration,468,0.020760,7.509709
+Iteration,469,0.011239,7.520950
+Iteration,470,0.078631,7.599586
+Iteration,471,0.009829,7.609416
+Iteration,472,0.014456,7.623874
+Iteration,473,0.013384,7.637259
+Iteration,474,0.011063,7.648323
+Iteration,475,0.009690,7.658015
+Iteration,476,0.048652,7.706669
+Iteration,477,0.011843,7.718513
+Iteration,478,0.021712,7.740226
+Iteration,479,0.015481,7.755708
+Iteration,480,0.013328,7.769037
+Iteration,481,0.014805,7.783843
+Iteration,482,0.009658,7.793503
+Iteration,483,0.013229,7.806733
+Iteration,484,0.011201,7.817935
+Iteration,485,0.013036,7.830972
+Iteration,486,0.014383,7.845356
+Iteration,487,0.009229,7.854586
+Iteration,488,0.014196,7.868783
+Iteration,489,0.014222,7.883006
+Iteration,490,0.032631,7.915638
+Iteration,491,0.021113,7.936752
+Iteration,492,0.009817,7.946570
+Iteration,493,0.011675,7.958247
+Iteration,494,0.013882,7.972131
+Iteration,495,0.010321,7.982453
+Iteration,496,0.014613,7.997068
+Iteration,497,0.010024,8.007093
+Iteration,498,0.010896,8.017991
+Iteration,499,0.013236,8.031228
+Iteration,500,0.009205,8.040435
+Iteration,501,0.010588,8.051024
+Iteration,502,0.014859,8.065884
+Iteration,503,0.012415,8.078301
+Iteration,504,0.011555,8.089857
+Iteration,505,0.016419,8.106278
+Iteration,506,0.009542,8.115821
+Iteration,507,0.013813,8.129635
+Iteration,508,0.010486,8.140123
+Iteration,509,0.010867,8.150991
+Iteration,510,0.014049,8.165042
+Iteration,511,0.010276,8.175319
+Iteration,512,0.011397,8.186718
+Iteration,513,0.013738,8.200458
+Iteration,514,0.009737,8.210196
+Iteration,515,0.014710,8.224907
+Iteration,516,0.010346,8.235265
+Iteration,517,0.011419,8.246685
+Iteration,518,0.014386,8.261072
+Iteration,519,0.009754,8.270827
+Iteration,520,0.012713,8.283542
+Iteration,521,0.015778,8.299322
+Iteration,522,0.010743,8.310066
+Iteration,523,0.016865,8.326932
+Iteration,524,0.020622,8.347556
+Iteration,525,0.013405,8.360962
+Iteration,526,0.011833,8.372796
+Iteration,527,0.012927,8.385724
+Iteration,528,0.011237,8.396962
+Iteration,529,0.011153,8.408117
+Iteration,530,0.012307,8.420425
+Iteration,531,0.011361,8.431787
+Iteration,532,0.013588,8.445376
+Iteration,533,0.009794,8.455172
+Iteration,534,0.010999,8.466172
+Iteration,535,0.015436,8.481609
+Iteration,536,0.010564,8.492174
+Iteration,537,0.013840,8.506015
+Iteration,538,0.009585,8.515601
+Iteration,539,0.010212,8.525815
+Iteration,540,0.015013,8.540830
+Iteration,541,0.010907,8.551739
+Iteration,542,0.009624,8.561364
+Iteration,543,0.012743,8.574109
+Iteration,544,0.009862,8.583972
+Iteration,545,0.010590,8.594564
+Iteration,546,0.016569,8.611134
+Iteration,547,0.009632,8.620767
+Iteration,548,0.010647,8.631416
+Iteration,549,0.013809,8.645226
+Iteration,550,0.009682,8.654909
+Iteration,551,0.018437,8.673347
+Iteration,552,0.015305,8.688653
+Iteration,553,0.013826,8.702480
+Iteration,554,0.010811,8.713293
+Iteration,555,0.014493,8.727787
+Iteration,556,0.009654,8.737443
+Iteration,557,0.012156,8.749600
+Iteration,558,0.012678,8.762280
+Iteration,559,0.010454,8.772735
+Iteration,560,0.012836,8.785573
+Iteration,561,0.013650,8.799224
+Iteration,562,0.010295,8.809521
+Iteration,563,0.014283,8.823806
+Iteration,564,0.010887,8.834694
+Iteration,565,0.011658,8.846354
+Iteration,566,0.013519,8.859874
+Iteration,567,0.009953,8.869829
+Iteration,568,0.014418,8.884248
+Iteration,569,0.017818,8.902069
+Iteration,570,0.009936,8.912006
+Iteration,571,0.010519,8.922526
+Iteration,572,0.013450,8.935977
+Iteration,573,0.009440,8.945418
+Iteration,574,0.010663,8.956083
+Iteration,575,0.014302,8.970386
+Iteration,576,0.040247,9.010634
+Iteration,577,0.009739,9.020374
+Iteration,578,0.011806,9.032181
+Iteration,579,0.010017,9.042199
+Iteration,580,0.011941,9.054141
+Iteration,581,0.012654,9.066796
+Iteration,582,0.012667,9.079465
+Iteration,583,0.013200,9.092666
+Iteration,584,0.013506,9.106173
+Iteration,585,0.009512,9.115687
+Iteration,586,0.013119,9.128807
+Iteration,587,0.011406,9.140215
+Iteration,588,0.013936,9.154153
+Iteration,589,0.010533,9.164687
+Iteration,590,0.013632,9.178320
+Iteration,591,0.016177,9.194498
+Iteration,592,0.014680,9.209180
+Iteration,593,0.010538,9.219719
+Iteration,594,0.010648,9.230369
+Iteration,595,0.015569,9.245939
+Iteration,596,0.016254,9.262195
+Iteration,597,0.011886,9.274082
+Iteration,598,0.013247,9.287331
+Iteration,599,0.038786,9.326118
+Iteration,600,0.042950,9.369069
+Iteration,601,0.010589,9.379659
+Iteration,602,0.010480,9.390141
+Iteration,603,0.046011,9.436154
+Iteration,604,0.052601,9.488757
+Iteration,605,0.022218,9.510977
+Iteration,606,0.010745,9.521723
+Iteration,607,0.024098,9.545822
+Iteration,608,0.009234,9.555058
+Iteration,609,0.011196,9.566255
+Iteration,610,0.021885,9.588141
+Iteration,611,0.010127,9.598269
+Iteration,612,0.014602,9.612872
+Iteration,613,0.011103,9.623976
+Iteration,614,0.009589,9.633566
+Iteration,615,0.013844,9.647411
+Iteration,616,0.011189,9.658602
+Iteration,617,0.011501,9.670104
+Iteration,618,0.014981,9.685087
+Iteration,619,0.011553,9.696641
+Iteration,620,0.018103,9.714746
+Iteration,621,0.010001,9.724748
+Iteration,622,0.014645,9.739394
+Iteration,623,0.011276,9.750671
+Iteration,624,0.010636,9.761308
+Iteration,625,0.054895,9.816205
+Iteration,626,0.019014,9.835220
+Iteration,627,0.010965,9.846187
+Iteration,628,0.012959,9.859147
+Iteration,629,0.043495,9.902644
+Iteration,630,0.013766,9.916412
+Iteration,631,0.010451,9.926864
+Iteration,632,0.014090,9.940955
+Iteration,633,0.011706,9.952663
+Iteration,634,0.010350,9.963014
+Iteration,635,0.013919,9.976935
+Iteration,636,0.009643,9.986580
+Iteration,637,0.009885,9.996466
+Iteration,638,0.032232,10.028699
+Iteration,639,0.016822,10.045523
+Iteration,640,0.010413,10.055937
+Iteration,641,0.015192,10.071130
+Iteration,642,0.060360,10.131492
+Iteration,643,0.011893,10.143386
+Iteration,644,0.014415,10.157807
+Iteration,645,0.017390,10.175198
+Iteration,646,0.010509,10.185708
+Iteration,647,0.012802,10.198511
+Iteration,648,0.010508,10.209020
+Iteration,649,0.017513,10.226535
+Iteration,650,0.010082,10.236618
+Iteration,651,0.010567,10.247186
+Iteration,652,0.013633,10.260821
+Iteration,653,0.019367,10.280189
+Iteration,654,0.041754,10.321945
+Iteration,655,0.010058,10.332004
+Iteration,656,0.030440,10.362445
+Iteration,657,0.015491,10.377938
+Iteration,658,0.013733,10.391672
+Iteration,659,0.014137,10.405810
+Iteration,660,0.009609,10.415421
+Iteration,661,0.016775,10.432197
+Iteration,662,0.010607,10.442806
+Iteration,663,0.015271,10.458079
+Iteration,664,0.012082,10.470163
+Iteration,665,0.013395,10.483560
+Iteration,666,0.016678,10.500239
+Iteration,667,0.012159,10.512399
+Iteration,668,0.015965,10.528366
+Iteration,669,0.014916,10.543283
+Iteration,670,0.010245,10.553530
+Iteration,671,0.009694,10.563225
+Iteration,672,0.020166,10.583392
+Iteration,673,0.010389,10.593782
+Iteration,674,0.013456,10.607240
+Iteration,675,0.009270,10.616512
+Iteration,676,0.015651,10.632164
+Iteration,677,0.012993,10.645158
+Iteration,678,0.010027,10.655187
+Iteration,679,0.013648,10.668836
+Iteration,680,0.015388,10.684226
+Iteration,681,0.016136,10.700364
+Iteration,682,0.011196,10.711562
+Iteration,683,0.016086,10.727649
+Iteration,684,0.009947,10.737598
+Iteration,685,0.010049,10.747649
+Iteration,686,0.045757,10.793407
+Iteration,687,0.010922,10.804331
+Iteration,688,0.009264,10.813596
+Iteration,689,0.065588,10.879186
+Iteration,690,0.029094,10.908282
+Iteration,691,0.024604,10.932887
+Iteration,692,0.011016,10.943904
+Iteration,693,0.057208,11.001114
+Iteration,694,0.039921,11.041037
+Iteration,695,0.011662,11.052700
+Iteration,696,0.015623,11.068325
+Iteration,697,0.011439,11.079765
+Iteration,698,0.045572,11.125338
+Iteration,699,0.009256,11.134595
+Iteration,700,0.013278,11.147874
+Iteration,701,0.014360,11.162235
+Iteration,702,0.010762,11.172998
+Iteration,703,0.010864,11.183863
+Iteration,704,0.016433,11.200297
+Iteration,705,0.012210,11.212508
+Iteration,706,0.014308,11.226818
+Iteration,707,0.009983,11.236802
+Iteration,708,0.013759,11.250563
+Iteration,709,0.010139,11.260704
+Iteration,710,0.010363,11.271068
+Iteration,711,0.013916,11.284986
+Iteration,712,0.018567,11.303554
+Iteration,713,0.014115,11.317670
+Iteration,714,0.010675,11.328346
+Iteration,715,0.045776,11.374123
+Iteration,716,0.017136,11.391261
+Iteration,717,0.013048,11.404311
+Iteration,718,0.046313,11.450625
+Iteration,719,0.011552,11.462179
+Iteration,720,0.016977,11.479158
+Iteration,721,0.012314,11.491474
+Iteration,722,0.045592,11.537068
+Iteration,723,0.011256,11.548326
+Iteration,724,0.011000,11.559327
+Iteration,725,0.015061,11.574389
+Iteration,726,0.011564,11.585954
+Iteration,727,0.016141,11.602097
+Iteration,728,0.011552,11.613650
+Iteration,729,0.010727,11.624378
+Iteration,730,0.021974,11.646353
+Iteration,731,0.009355,11.655710
+Iteration,732,0.040983,11.696694
+Iteration,733,0.021899,11.718594
+Iteration,734,0.020297,11.738892
+Iteration,735,0.009399,11.748293
+Iteration,736,0.036720,11.785014
+Iteration,737,0.017367,11.802383
+Iteration,738,0.012906,11.815291
+Iteration,739,0.041850,11.857143
+Iteration,740,0.024360,11.881505
+Iteration,741,0.014786,11.896293
+Iteration,742,0.016071,11.912366
+Iteration,743,0.009601,11.921969
+Iteration,744,0.010713,11.932683
+Iteration,745,0.014004,11.946688
+Iteration,746,0.010110,11.956799
+Iteration,747,0.010773,11.967574
+Iteration,748,0.017334,11.984910
+Iteration,749,0.010442,11.995353
+Iteration,750,0.014815,12.010169
+Iteration,751,0.010007,12.020177
+Iteration,752,0.014028,12.034206
+Iteration,753,0.012089,12.046297
+Iteration,754,0.009291,12.055590
+Iteration,755,0.013505,12.069096
+Iteration,756,0.010975,12.080072
+Iteration,757,0.019133,12.099206
+Iteration,758,0.010384,12.109591
+Iteration,759,0.019365,12.128958
+Iteration,760,0.009783,12.138743
+Iteration,761,0.009471,12.148216
+Iteration,762,0.013181,12.161399
+Iteration,763,0.010099,12.171500
+Iteration,764,0.010227,12.181728
+Iteration,765,0.017388,12.199118
+Iteration,766,0.010093,12.209213
+Iteration,767,0.011298,12.220513
+Iteration,768,0.010066,12.230599
+Iteration,769,0.009598,12.240198
+Iteration,770,0.014283,12.254482
+Iteration,771,0.010225,12.264708
+Iteration,772,0.011291,12.276000
+Iteration,773,0.016137,12.292138
+Iteration,774,0.014907,12.307046
+Iteration,775,0.039750,12.346797
+Iteration,776,0.010972,12.357770
+Iteration,777,0.011747,12.369518
+Iteration,778,0.021036,12.390556
+Iteration,779,0.010854,12.401412
+Iteration,780,0.013427,12.414841
+Iteration,781,0.011713,12.426555
+Iteration,782,0.013884,12.440441
+Iteration,783,0.010607,12.451050
+Iteration,784,0.010216,12.461268
+Iteration,785,0.014177,12.475447
+Iteration,786,0.009717,12.485165
+Iteration,787,0.011595,12.496761
+Iteration,788,0.020374,12.517136
+Iteration,789,0.015939,12.533076
+Iteration,790,0.010920,12.543997
+Iteration,791,0.010787,12.554786
+Iteration,792,0.014057,12.568844
+Iteration,793,0.009839,12.578685
+Iteration,794,0.030526,12.609212
+Iteration,795,0.038037,12.647250
+Iteration,796,0.009088,12.656340
+Iteration,797,0.010627,12.666968
+Iteration,798,0.010965,12.677935
+Iteration,799,0.016921,12.694857
+Iteration,800,0.011589,12.706447
+Iteration,801,0.013797,12.720246
+Iteration,802,0.011746,12.731993
+Iteration,803,0.010418,12.742412
+Iteration,804,0.012740,12.755153
+Iteration,805,0.009329,12.764483
+Iteration,806,0.011346,12.775830
+Iteration,807,0.015593,12.791425
+Iteration,808,0.010754,12.802180
+Iteration,809,0.013692,12.815873
+Iteration,810,0.012112,12.827987
+Finish time 1589217688.824286
