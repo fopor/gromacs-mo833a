@@ -2582,6 +2582,9 @@ void LegacySimulator::do_steep()
 
         par_end = mysecond();
         printf("Iteration,%d,%f,%f\n", par_count, (par_end - par_start), (par_end - initTimeStamp));
+
+        /* force termination at paramount iteration 10 */
+        if (par_count == 10) exit(0);
     } /* End of the loop  */
 
     finishTimeStamp = mysecond();
