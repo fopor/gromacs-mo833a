@@ -1,0 +1,7 @@
+micro-instance:
+    provider: aws-config-us-east-1
+    login: login-ubuntu
+    flavor: t2.micro
+    image_id: ami-085925f297f89fce1
+    security_group: rfreitas-mpi-nas
+

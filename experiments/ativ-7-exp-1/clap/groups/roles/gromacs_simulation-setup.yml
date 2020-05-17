@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: Downloading simulation files
+    shell: "wget https://github.com/fopor/gromacs-mo833a/raw/ativi-7-exp-1/experiments/ativ-7-exp-1/em.tpr"

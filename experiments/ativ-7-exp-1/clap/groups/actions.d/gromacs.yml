@@ -1,0 +1,17 @@
+---
+actions:
+  setup:
+    playbook: roles/gromacs_setup.yml
+    description: Install Gromacs dependencies
+
+  simulation-setup:
+    playbook: roles/gromacs_simulation-setup.yml
+    description: Generate simulation input
+
+  run:
+    playbook: roles/gromacs_run.yml
+    description: Run Gromacs over MPI, using the entire cluster
+
+  fetch-result:
+    playbook: roles/gromacs_fetch-result.yml
+    description: Download mdrun output

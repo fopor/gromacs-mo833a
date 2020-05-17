@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: Update packages (works on UBUNTU ONLY!)
+    become: yes
+    shell: "apt update"
+
+  - name: Installing GROMACS
+    become: yes
+    shell: "git clone --single-branch --depth=1 --branch ativi-7-exp-1 https://github.com/fopor/gromacs-mo833a.git && chmod 777 gromacs-mo833a/ && cd gromacs-mo833a/experiments/ativ-7-exp-1 && sh build_gromacs.sh"

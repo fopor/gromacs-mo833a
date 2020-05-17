@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: Running simulation across nodes
+        shell: "mpirun --hostfile /home/ubuntu/hostfile gmx_mpi mdrun -v -deffnm em 1> gmx.out 2> gmx.err"
