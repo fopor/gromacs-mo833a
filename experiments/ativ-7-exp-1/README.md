@@ -35,11 +35,11 @@ Then, add the cluster to the Gromacs grup using:
 
 Now, simply perform the desired actions:
 
-`$ clapp group action gromacs simulation-setup `
+`$ clapp cluster action cluster-0 gromacs simulation-setup `
 
-`$ clapp group action gromacs run `
+`$ clapp cluster action cluster-0 gromacs run `
 
-`$ clapp group action gromacs fetch-result `
+`$ clapp cluster action cluster-0 gromacs fetch-result `
 
 ## Results
 The table below contains the time needed to run a paramount iteration on each configuration. The collected data can be found [here](https://docs.google.com/spreadsheets/d/1nlMd-0aVXRfoBHESskhAPq6645uriQ0X9uXUaXU6Jio/edit?usp=sharing).
