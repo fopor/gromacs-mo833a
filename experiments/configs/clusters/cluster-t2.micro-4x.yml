@@ -1,0 +1,12 @@
+clusters:
+  cluster-t2.micro-4x:
+    nodes:
+      node-type-master:
+        type: micro-instance
+        count: 1
+        min_count: 1
+
+      node-type-slave-1:
+        type: micro-instance
+        count: 3
+        min_count: 3
