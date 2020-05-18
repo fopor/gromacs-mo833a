@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: master
   tasks:
     - name: Remove hosts file
       file:
@@ -26,7 +26,7 @@
         key: "{{ lookup('file','buffer/{{item}}-id_rsa.pub')}}"
       when: "{{ item != ansible_hostname }}"
       with_items: 
-        - "{{ groups['gromacs'] }}"  
+        - "{{ groups['master'] }}"  
 
     - name: Add Ansible inventory mappings to /home/ubuntu/hosts
       blockinfile:
