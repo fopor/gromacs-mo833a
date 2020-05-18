@@ -25,8 +25,14 @@ All the actions needed to run Gromacs on the cloud are in the gromacs group.
 | cluster-t2.micro-8x | A cluster with eight t2.micro machines |
 
 
-To start a cluster, run:` $ clapp cluster start cluster-t2.micro-2x`.
-Then, add the cluster to the Gromacs grup using ` $ clapp cluster group cluster-0 gromacs`
+To start a cluster, run:
+
+`$ clapp cluster start cluster-t2.micro-2x`
+
+Then, add the cluster to the Gromacs grup using:
+
+`$ clapp cluster group cluster-0 gromacs`
+
 
 ## Results
 The table below contains the time needed to run a paramount iteration on each configuration. The collected data can be found [here](https://docs.google.com/spreadsheets/d/1nlMd-0aVXRfoBHESskhAPq6645uriQ0X9uXUaXU6Jio/edit?usp=sharing).
