@@ -1,5 +1,5 @@
 ---
-- hosts: master
+- hosts: all
   tasks:
   - name: Downloading std output text file...
     synchronize:
