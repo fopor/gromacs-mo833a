@@ -1,9 +1,9 @@
 # Using CLAP to deploy Gromacs-ready clusters
 
-[CLAP](https://github.com/lmcad-unicamp/CLAP) provides a interface to deploy HPC applications. The folders groups and configs contain the necessary files to deploy an AWS cluster ready to run ten Gromacs paramount iterations of a defined simulation.
+[CLAP](https://github.com/lmcad-unicamp/CLAP) provides an interface to deploy HPC applications. The folders groups and configs contain the necessary files to deploy an AWS cluster ready to run Gromacs. This version of Gromacs has been modified to run 10 paramount iterations and then exit, reporting the time spend in each iteration.
 
 ## Usage
-After installing CLAP, simply copy the configuration files from groups and configs folder. Those file define three types of clusters of t2.micro machines and the playbooks needed to install Gromacs, MPI and run a simulation.
+After installing CLAP, simply copy the configuration files from groups and configs folder. Those files define three types of clusters of t2.micro machines and the playbooks needed to install Gromacs, MPI, and run a simulation.
 
 ### 'gromacs' group
 All the actions needed to run Gromacs on the cloud are in the gromacs group. 
@@ -26,10 +26,10 @@ All the actions needed to run Gromacs on the cloud are in the gromacs group.
 
 
 To start a cluster, run:` $ clapp cluster start cluster-t2.micro-2x`.
-Then, add the cluster to the Gromacs grupo using ` $ clapp cluster group cluster-0 gromacs`
+Then, add the cluster to the Gromacs grup using ` $ clapp cluster group cluster-0 gromacs`
 
 ## Results
-The table bellow contains the time needed to run a paramount iteration on each configuration. The collected data can be found [here](https://docs.google.com/spreadsheets/d/1nlMd-0aVXRfoBHESskhAPq6645uriQ0X9uXUaXU6Jio/edit?usp=sharing).
+The table below contains the time needed to run a paramount iteration on each configuration. The collected data can be found [here](https://docs.google.com/spreadsheets/d/1nlMd-0aVXRfoBHESskhAPq6645uriQ0X9uXUaXU6Jio/edit?usp=sharing).
 
 ![Graph](par_time.png)
 
