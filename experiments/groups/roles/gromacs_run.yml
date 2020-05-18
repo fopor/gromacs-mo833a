@@ -38,4 +38,4 @@
           {% endfor %}
 
     - name: Running simulation across nodes
-        shell: "mpirun --hostfile /home/ubuntu/hosts gmx_mpi mdrun -v -deffnm em 1> /home/ubuntu/gmx.out 2> /home/ubuntu/gmx.err"
+      shell: "mpirun --hostfile /home/ubuntu/hosts gmx_mpi mdrun -v -deffnm em 1> /home/ubuntu/gmx.out 2> /home/ubuntu/gmx.err"
