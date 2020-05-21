@@ -9,6 +9,12 @@
     become: yes
     shell: "git clone --single-branch --depth=1 --branch ativi-7-exp-1 https://github.com/fopor/gromacs-mo833a.git && chmod 777 gromacs-mo833a/ && cd gromacs-mo833a/experiments/ativ-7-exp-1 && sh build_gromacs.sh"
 
+  - name: Disable hostkey check
+    become: yes
+    shell: |
+      echo 'Host *' > /home/ubuntu/.ssh/config
+      echo "StrictHostKeyChecking no" >> /home/ubuntu/.ssh/config
+
   - name: Remove hosts file
     file:
       path: /home/ubuntu/hosts
@@ -42,5 +48,5 @@
       path: /home/ubuntu/hosts
       block: |
         {% for host in groups['all'] %}
-        {{ hostvars[host].ansible_host }} slots=1
+        {{ hostvars[host].ansible_default_ipv4.address }} slots=1
         {% endfor %}
