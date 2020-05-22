@@ -40,7 +40,7 @@
       key: "{{ lookup('file','buffer/{{item}}-id_rsa.pub')}}"
     when: "{{ item != ansible_hostname }}"
     with_items: 
-      - "{{ groups['master'] }}"  
+      - "{{ groups['all'] }}"  
 
   - name: Add Ansible inventory mappings to /home/ubuntu/hosts
     blockinfile:
