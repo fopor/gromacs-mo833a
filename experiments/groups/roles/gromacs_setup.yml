@@ -13,7 +13,12 @@
     become: yes
     shell: |
       echo 'Host *' > /home/ubuntu/.ssh/config
-      echo "StrictHostKeyChecking no" >> /home/ubuntu/.ssh/config
+      echo "  StrictHostKeyChecking no" >> /home/ubuntu/.ssh/config
+
+  - name: Change owner of id_rsa key
+    become: yes
+    shell: |
+      chown ubuntu /home/ubuntu/.ssh/id_rsa
 
   - name: Remove hosts file
     file:
