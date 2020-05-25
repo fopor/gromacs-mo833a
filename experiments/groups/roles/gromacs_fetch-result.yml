@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: all[0]
   tasks:
   - name: Downloading std output text file...
     synchronize:

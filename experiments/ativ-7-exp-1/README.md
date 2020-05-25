@@ -43,14 +43,10 @@ The next commands must run on the master node only. Identify it using:
 
 Now run the simulation and get the results:
 
-~~`$ clapp cluster action cluster-0 gromacs run`~~
+`$ clapp cluster action cluster-0 gromacs run`
 
-`$ clapp group action gromacs run --nodes node-27`
+`$ clapp cluster action cluster-0 gromacs fetch-result `
 
-
-~~`$ clapp cluster action cluster-0 gromacs fetch-result `~~
-
-`$ clapp group action gromacs fetch-result --nodes node-27`
 
 ## Results
 The table below contains the time needed to run a paramount iteration on each configuration. The collected data can be found [here](https://docs.google.com/spreadsheets/d/1nlMd-0aVXRfoBHESskhAPq6645uriQ0X9uXUaXU6Jio/edit?usp=sharing).
